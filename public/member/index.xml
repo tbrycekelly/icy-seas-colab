@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Members on Icy Seas Co-Lab</title>
+    <link>http://localhost:1313/member/</link>
+    <description>Recent content in Members on Icy Seas Co-Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 15:52:22 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/member/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gwenn Hennon</title>
+      <link>http://localhost:1313/member/gwennhennon/</link>
+      <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/gwennhennon/</guid>
+      <description>&lt;p&gt;I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thomas Bryce Kelly</title>
+      <link>http://localhost:1313/member/thomaskelly/</link>
+      <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/thomaskelly/</guid>
+      <description>&lt;p&gt;I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/member/tylerhennon/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/tylerhennon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amy Lauren</title>
+      <link>http://localhost:1313/member/amylauren/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/amylauren/</guid>
+      <description>&lt;p&gt;Amy Lauren is an award-winning filmmaker/artist working at the nexus between research, education and artistic practice. She specializes in immersive storytelling using virtual reality.&lt;/p&gt;&#xA;&lt;p&gt;Learn more about her work &lt;a href=&#34;https://www.amylauren.net/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>caitlinhope</title>
+      <link>http://localhost:1313/member/caitlinhope/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/caitlinhope/</guid>
+      <description>&lt;p&gt;I am a geoscience undergraduate with my concentration in geophysics. My academic journey first began in biology, until I discovered my true passion of understanding the Earth through geosciences. I am interested in oceanography research as it excavates insights about processes of the natural world. My goal is to develop my skills of understanding of systems through data analysis and modeling techniques. Outside of my studies, I find inspiration in nature adventures and a good cup of coffee.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jack Cook</title>
+      <link>http://localhost:1313/member/jackcook/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/jackcook/</guid>
+      <description>&lt;p&gt;A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the Arctic Flux Repository. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laura Whitmore</title>
+      <link>http://localhost:1313/member/laurawhitmore/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/laurawhitmore/</guid>
+      <description>&lt;p&gt;Centered on Arctic Ocean dynamics, I study several trace elements to assess their utility as indicators of circulation and biogeochemical processes. At the University of Alaska Fairbanks, I research biogeochemical cycling of nutrients, tracers of water mass mixing, and the connectivity between the sea ice system and the water column. I’m further interested in how the broad Arctic Ocean continental margins influence oceanographic biogeochemical cycles and the connectivity of the land-sea interface.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

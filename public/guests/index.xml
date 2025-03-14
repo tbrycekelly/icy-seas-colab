@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guests on Icy Seas Co-Lab</title>
+    <link>http://localhost:1313/guests/</link>
+    <description>Recent content in Guests on Icy Seas Co-Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
+    <lastBuildDate>Tue, 12 Jul 2016 15:52:22 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/guests/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/guests/sarahhendricks/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/sarahhendricks/</guid>
+      <description>&lt;p&gt;fg&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Megan Brauner</title>
+      <link>http://localhost:1313/guests/meganbrauner/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/meganbrauner/</guid>
+      <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Icy Seas Co-Lab</title>
+    <link>http://localhost:1313/publication/</link>
+    <description>Recent content in Publications on Icy Seas Co-Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
+    <lastBuildDate>Mon, 20 May 2024 16:37:31 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Temporal variability in the relationship between LHA and chlorophyll concentration: a case study from the Northern GOA</title>
+      <link>http://localhost:1313/publication/lowin2024/</link>
+      <pubDate>Mon, 20 May 2024 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/lowin2024/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Strong and efficient summertime carbon export driven by aggregation processes in a subarctic coastal ecosystem</title>
+      <link>http://localhost:1313/publication/odaly2024/</link>
+      <pubDate>Wed, 03 Apr 2024 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/odaly2024/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lateral advection in the oligotrophic GOM</title>
+      <link>http://localhost:1313/publication/kelly2021/</link>
+      <pubDate>Thu, 03 Jun 2021 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/kelly2021/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary-of-findings&#34;&gt;Summary of Findings&lt;/h2&gt;&#xA;&lt;p&gt;In contrast to its productive coastal margins, the open-ocean Gulf of Mexico (GoM) is notable for highly stratified surface waters with extremely low nutrient and chlorophyll concentrations. Field campaigns in 2017 and 2018 identified low rates of turbulent mixing, which combined with oligotrophic nutrient conditions, give very low estimates for diffusive flux of nitrate into the euphotic zone (&amp;lt; 1 µmol N m&lt;sup&gt;-2&lt;/sup&gt; d&lt;sup&gt;-1&lt;/sup&gt;). Estimates of local N2-fixation were similarly low. In comparison, measured export rates of sinking particulate nitrogen from the euphotic zone were 2 – 3 orders of magnitude higher.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The importance of mesozooplankton DVM in sustaining the mesopelagic food web</title>
+      <link>http://localhost:1313/publication/kelly2019/</link>
+      <pubDate>Thu, 12 Sep 2019 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/kelly2019/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spatial and interannual variability in export efficiency in an eastern boundary current system</title>
+      <link>http://localhost:1313/publication/kelly-2018/</link>
+      <pubDate>Fri, 12 Oct 2018 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/kelly-2018/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deep Learning</title>
+      <link>http://localhost:1313/publication/learning/</link>
+      <pubDate>Tue, 12 Jul 2016 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/learning/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

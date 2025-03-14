@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Icy Seas Co-Lab</title>
+    <link>http://localhost:1313/project/</link>
+    <description>Recent content in Projects on Icy Seas Co-Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 16:10:22 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Northern Gulf of Alaska LTER</title>
+      <link>http://localhost:1313/project/ngalter/</link>
+      <pubDate>Fri, 12 Jul 2024 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/ngalter/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OVERVIEW&lt;/h2&gt;&#xA;&lt;p&gt;The Northern Gulf of Alaska (NGA) is a highly productive subarctic marine ecosystem sustaining one of the world’s largest fisheries, iconic high latitude species, ecotourism, cultural continuity, and food security for coastal communities. The NGA LTER overarching conceptual framework is that intense environmental variability – both temporally and spatially – has yielded a highly resilient ecosystem through species adaptation and community organization. Building off 25 years of multidisciplinary observations along the Seward Line in LTER’s five core areas, NGA Phase-II seeks improved mechanistic understanding of this biome’s key communities, ecological processes, and responses to climate change. The NGA biome comprises a mosaic of habitats postulated to underlie the high productivity and resilience of the ecosystem. Phase-II studies and associated broader impacts will focus on growing and interpreting long-term data sets; studying functional redundancy in the context of disturbance and long-term change, as well as relationships between redundancy and resilience; and investigating oceanographic fronts, associated ecotones, and their combined role in supporting key ecosystem properties that generate resilience. We propose to tackle each element with a combination of observational methodologies, process studies, and modeling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alaska Science Stories</title>
+      <link>http://localhost:1313/project/akss/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/akss/</guid>
+      <description>&lt;p&gt;Alaska Science Stories is an educational program that creates space for shared research and learning experiences by bringing Alaskans into the world of scientific fieldwork with virtual reality.&lt;/p&gt;&#xA;&lt;p&gt;We facilitate impactful in-class learning that empowers Alaskans to feel involved and autonomous in their environment.&lt;/p&gt;&#xA;&lt;p&gt;Our program is builds bridges between Alaskans and their local research community with immersive and interactive storytelling designed to reach those who are impacted by climate change but not at the forefront of science outreach.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Collaboration: DOC in Coastal Alaska</title>
+      <link>http://localhost:1313/project/doc/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/doc/</guid>
+      <description>&lt;p&gt;Here we propose a new study of the NGA in conjunction with the Northern Gulf of Alaska LTER program to assess carbon cycling&#xA;dynamics from coastal margins to the open ocean. To complete this, samples will be collected by Dr. Tom&#xA;Kelly (co-PI, NGA LTER) and undergraduate student Ryan Owens who have frequently participated in&#xA;research cruises in the region. This established relationship will ensure that shipboard time is available&#xA;and will build future collaborations for the continuation of this long-term study of DOM cycling in the&#xA;NGA. Laboratory analyses will be conducted by Ryan Owens and Dr. Johnston to characterize DOM. The&#xA;methods proposed will be conducted with instrumentation available at UAF using established protocols.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UxS Glider Program</title>
+      <link>http://localhost:1313/project/uxs/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/uxs/</guid>
+      <description>&lt;p&gt;sdfsd&#xA;sdf&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SEAS the Change</title>
+      <link>http://localhost:1313/project/seas/</link>
+      <pubDate>Tue, 12 Jul 2022 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/seas/</guid>
+      <description>&lt;p&gt;fsdfds&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alaskan Marine Dynamics from Ocean Color</title>
+      <link>http://localhost:1313/project/amdoc/</link>
+      <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/amdoc/</guid>
+      <description>&lt;p&gt;sfds&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pelagic Imagaing and Machine Learning</title>
+      <link>http://localhost:1313/project/deeplearning/</link>
+      <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/deeplearning/</guid>
+      <description>&lt;p&gt;fsfdsfs&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

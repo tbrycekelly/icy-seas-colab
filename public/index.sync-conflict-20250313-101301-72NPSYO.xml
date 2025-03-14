@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icy Seas Co-Lab</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Icy Seas Co-Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 16:10:22 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Northern Gulf of Alaska LTER</title>
+      <link>http://localhost:1313/project/ngalter/</link>
+      <pubDate>Fri, 12 Jul 2024 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/ngalter/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;OVERVIEW&lt;/h2&gt;&#xA;&lt;p&gt;The Northern Gulf of Alaska (NGA) is a highly productive subarctic marine ecosystem sustaining one of the world’s largest fisheries, iconic high latitude species, ecotourism, cultural continuity, and food security for coastal communities. The NGA LTER overarching conceptual framework is that intense environmental variability – both temporally and spatially – has yielded a highly resilient ecosystem through species adaptation and community organization. Building off 25 years of multidisciplinary observations along the Seward Line in LTER’s five core areas, NGA Phase-II seeks improved mechanistic understanding of this biome’s key communities, ecological processes, and responses to climate change. The NGA biome comprises a mosaic of habitats postulated to underlie the high productivity and resilience of the ecosystem. Phase-II studies and associated broader impacts will focus on growing and interpreting long-term data sets; studying functional redundancy in the context of disturbance and long-term change, as well as relationships between redundancy and resilience; and investigating oceanographic fronts, associated ecotones, and their combined role in supporting key ecosystem properties that generate resilience. We propose to tackle each element with a combination of observational methodologies, process studies, and modeling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Temporal variability in the relationship between LHA and chlorophyll concentration: a case study from the Northern GOA</title>
+      <link>http://localhost:1313/publication/lowin2024/</link>
+      <pubDate>Mon, 20 May 2024 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/lowin2024/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Strong and efficient summertime carbon export driven by aggregation processes in a subarctic coastal ecosystem</title>
+      <link>http://localhost:1313/publication/odaly2024/</link>
+      <pubDate>Wed, 03 Apr 2024 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/odaly2024/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Retrieving data from the bottom of the ocean: OCR for ROV</title>
+      <link>http://localhost:1313/post/ocr/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/ocr/</guid>
+      <description>&lt;p&gt;When advising students about their career goals, paths forward, and expectations; I often recommend that they consider learning a program language. While the language itself depends on the goals and background of the person, being able to work directly with data is powerful. Today’s project is a good example of just such a case.&lt;/p&gt;&#xA;&lt;p&gt;A colleague approached me to see if I could help pull data off some video files since the original data had been lost. For context, these video files were collected as part of a deep-sea survey of marine organisms with many hours of footage collected by a remotely operated vehicle (ROV). Attached to the ROV are a number of sensors besides the camera–such as pressure, temperature, and salinity; and it was some of those sensor feeds that are lost to time. Luckily for us, the data feeds were directly overlaid into the feed feed. So all we need to do is pull some numbers from the video, how hard could that be?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alaska Science Stories</title>
+      <link>http://localhost:1313/project/akss/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/akss/</guid>
+      <description>&lt;p&gt;Alaska Science Stories is an educational program that creates space for shared research and learning experiences by bringing Alaskans into the world of scientific fieldwork with virtual reality.&lt;/p&gt;&#xA;&lt;p&gt;We facilitate impactful in-class learning that empowers Alaskans to feel involved and autonomous in their environment.&lt;/p&gt;&#xA;&lt;p&gt;Our program is builds bridges between Alaskans and their local research community with immersive and interactive storytelling designed to reach those who are impacted by climate change but not at the forefront of science outreach.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Collaboration: DOC in Coastal Alaska</title>
+      <link>http://localhost:1313/project/doc/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/doc/</guid>
+      <description>&lt;p&gt;Here we propose a new study of the NGA in conjunction with the Northern Gulf of Alaska LTER program to assess carbon cycling&#xA;dynamics from coastal margins to the open ocean. To complete this, samples will be collected by Dr. Tom&#xA;Kelly (co-PI, NGA LTER) and undergraduate student Ryan Owens who have frequently participated in&#xA;research cruises in the region. This established relationship will ensure that shipboard time is available&#xA;and will build future collaborations for the continuation of this long-term study of DOM cycling in the&#xA;NGA. Laboratory analyses will be conducted by Ryan Owens and Dr. Johnston to characterize DOM. The&#xA;methods proposed will be conducted with instrumentation available at UAF using established protocols.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Project</title>
+      <link>http://localhost:1313/open_projects/doc/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/open_projects/doc/</guid>
+      <description>&lt;p&gt;fsdfsd&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UxS Glider Program</title>
+      <link>http://localhost:1313/project/uxs/</link>
+      <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/uxs/</guid>
+      <description>&lt;p&gt;sdfsd&#xA;sdf&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NGA Phase 2 Process Studies</title>
+      <link>http://localhost:1313/post/nga-phase-2/</link>
+      <pubDate>Fri, 24 Feb 2023 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/nga-phase-2/</guid>
+      <description>&lt;p&gt;Transitioning from the first funding cycle of an LTER site (phase 1) to the second come with a lot of considerations and opportunities. Phase 1 has largely focused on survey and monitoring work where the emphasis was clearly on maintaining and expanding existing time series (e.g., Sewardline). While there were some process studies, those activities that try to interrogate the flows of energy and interactions between members of the ecosystem, they were generally quite resource limited and short on time (2-4 days). As someone that comes from a process study background (for reference, the California Current Ecosystem LTER site has entire 30-35 day cruises focused entirely on processes), I knew I wanted to advocate for expanded process work in Phase 2.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inditun Kick-off</title>
+      <link>http://localhost:1313/post/inditun/</link>
+      <pubDate>Thu, 23 Feb 2023 16:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/inditun/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;INDITUN: Trophic ecology of southern bluefun tuna larvae in the North-eastern Indian Ocean&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://prezi.com/p/cwcenyucvuiu/inditun-20/&#34;&gt;INDITUN is a collaborative project&lt;/a&gt; funded by the Spanish Ministry of Science and Innovation to compile and synthesize data collected over the past few years on Bluefin Tuna Larvae growth and survival. This project connects naturally with &lt;a href=&#34;https://academic.oup.com/plankt/article/44/5/600/6645206&#34;&gt;BLOOFINZ-GOM&lt;/a&gt; (Gulf of Mexico) and BLOOFINZ-IO (Indian Ocean) conducted between 2017 and 2022.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/inditun/inditun1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;During the BLOOFINZ-GOM project I was a student at Florida State University and was in charge of phytoplankton growth, nutrient utilization, and export production. Then for the BLOOFINZ-IO cruise I was a postdoc working on trace metal distributions and export from the euphotic zone. For the INDITUN project (unfunded collaborator) I’ll facilitate data compilation and provide an oceanographic context for the assessment of larval dynamics, which are often associated with mesoscale features.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NSF Postdoctoral Fellowship</title>
+      <link>http://localhost:1313/post/2022-postdoc-fellowship/</link>
+      <pubDate>Fri, 29 Jul 2022 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2022-postdoc-fellowship/</guid>
+      <description>&lt;p&gt;Last year the OCE directorate at the National Science Foundation reinstated their postdoctoral research fellowship program whereby applicants vie for two years of postdoctoral salary and a small research budget. This program supports a wide range of early career researchers (ECR) and allows many to pursue exciting, and potentially novel research. I am proud and thankful to say that I’ve been afforded one of these opportunities.&lt;/p&gt;&#xA;&lt;p&gt;As a carbon biogeochemist, my project centers of direct observations of particle export (via sediment traps) within the Northern Gulf of Alaska. Sinking bits of carbon, commonly referred to as marine snow, are important for (A) supplying organic matter to ecosystems in the deep ocean, (B) removing carbon and nutrients from the surface ocean, and (C) our understanding of how chemical and biological transformations interaction within the physical ocean.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SEAS the Change</title>
+      <link>http://localhost:1313/project/seas/</link>
+      <pubDate>Tue, 12 Jul 2022 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/seas/</guid>
+      <description>&lt;p&gt;fsdfds&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alaskan Marine Dynamics from Ocean Color</title>
+      <link>http://localhost:1313/project/amdoc/</link>
+      <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/amdoc/</guid>
+      <description>&lt;p&gt;sfds&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pelagic Imagaing and Machine Learning</title>
+      <link>http://localhost:1313/project/deeplearning/</link>
+      <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/deeplearning/</guid>
+      <description>&lt;p&gt;fsfdsfs&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NGA LTER Summer Voyage: Biogeochemistry Section Report</title>
+      <link>http://localhost:1313/post/2021-skq202110s/</link>
+      <pubDate>Thu, 10 Jun 2021 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2021-skq202110s/</guid>
+      <description>&lt;h2 id=&#34;optical-instruments&#34;&gt;Optical Instruments&lt;/h2&gt;&#xA;&lt;p&gt;Two rosette-mounted optical instruments were used during the cruise: the underwater vision profiler (Hydroptic UVP5; sn009) and the laser in situ scatterometer and transmissometer (Sequoia LISST-200x; sn2167). Both instruments measure particle abundance and size spectra during the downcast. The UVP5 was used on almost all casts (n = 68) and assesses particles between ~250 – 2500 µm while the LISST-200x was used on shallow casts (600m depth rating; n = 46) and quantifies particles into 36 size classes between 1 – 500 µm. Blanks for the LISST-200x (milli-q water) were consistently low and in line with factory calibration values. The LISST-200x was also used onboard the towed DPI instrument during tow-yo transects.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lateral advection in the oligotrophic GOM</title>
+      <link>http://localhost:1313/publication/kelly2021/</link>
+      <pubDate>Thu, 03 Jun 2021 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/kelly2021/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary-of-findings&#34;&gt;Summary of Findings&lt;/h2&gt;&#xA;&lt;p&gt;In contrast to its productive coastal margins, the open-ocean Gulf of Mexico (GoM) is notable for highly stratified surface waters with extremely low nutrient and chlorophyll concentrations. Field campaigns in 2017 and 2018 identified low rates of turbulent mixing, which combined with oligotrophic nutrient conditions, give very low estimates for diffusive flux of nitrate into the euphotic zone (&amp;lt; 1 µmol N m&lt;sup&gt;-2&lt;/sup&gt; d&lt;sup&gt;-1&lt;/sup&gt;). Estimates of local N2-fixation were similarly low. In comparison, measured export rates of sinking particulate nitrogen from the euphotic zone were 2 – 3 orders of magnitude higher.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NGA LTER Spring Voyage: Biogeochemistry Section Report</title>
+      <link>http://localhost:1313/post/2021-skq202106s/</link>
+      <pubDate>Wed, 05 May 2021 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2021-skq202106s/</guid>
+      <description>&lt;p&gt;During the cruise 6 deployments of the surface-tethered sediment trap arrays were completed with a target duration of 24h. Deployments were conducted across a representative set of pelagic stations (KOD5, KOD9, MID10, GAK4, GAK8, and GAK15) in order to measure gravitationally settling organic matter quantity and quality. Each array was outfitted with 2-3 cross-frames placed (1) near the base of the euphotic zone at 40 m, (2) 100 m, and 180 m (when water depth permitted). Four collection tubes per depth allowed for replicate sampling for Chl-a (n = 60) and carbon and nitrogen abundance and isotopic composition (n = 90) of sinking matter. Additionally, samples for biogenic silica were collected from one tube per depth (n = 15). Use of a 5m spar buoy, SPOT satellite beacon, and strobe light permitted efficient recovery. Pigment fluxes have been calculated for all sediment trap deployments (Figure 1).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Thorium</title>
+      <link>http://localhost:1313/post/2021-about-thorium/</link>
+      <pubDate>Thu, 11 Mar 2021 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2021-about-thorium/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is a short blurb put together for the participants of a research voyage down to Antarctica, which I participated on in Jan 2020. I wanted to share one of the projects I was completing with a relatively general audience.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;about-thorium&#34;&gt;About Thorium&lt;/h2&gt;&#xA;&lt;p&gt;Thorium-234, an isotope of Thorium, has found popular use as a tracer of ecological processes and is actually measured by dozens of labs around the world. Thorium-234, which has a half-life of 24 days, is a daughter radionuclide of Uranium-238 which itself has a half-life of 3.8 billion years. Since Uranium-238 has a very long half-life and is quite soluble in seawater, U-238 concentrations in seawater are nearly the same everywhere and can be predicted given the salinity. Thorium-234, on the other hand, has a short half-life and is generally in-soluble in seawater. In fact, Thorium will rapidly bind to the surfaces of organic matter in seawater. Thus, as organic particles sink out of the surface ocean, they efficiently remove Thorium-234.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gwenn Hennon</title>
+      <link>http://localhost:1313/member/gwennhennon/</link>
+      <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/gwennhennon/</guid>
+      <description>&lt;p&gt;I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thomas Bryce Kelly</title>
+      <link>http://localhost:1313/member/thomaskelly/</link>
+      <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/thomaskelly/</guid>
+      <description>&lt;p&gt;I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The importance of mesozooplankton DVM in sustaining the mesopelagic food web</title>
+      <link>http://localhost:1313/publication/kelly2019/</link>
+      <pubDate>Thu, 12 Sep 2019 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/kelly2019/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spatial and interannual variability in export efficiency in an eastern boundary current system</title>
+      <link>http://localhost:1313/publication/kelly-2018/</link>
+      <pubDate>Fri, 12 Oct 2018 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/kelly-2018/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deep Learning</title>
+      <link>http://localhost:1313/publication/learning/</link>
+      <pubDate>Tue, 12 Jul 2016 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/learning/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/guests/stephanieodaly/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/stephanieodaly/</guid>
+      <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/member/tylerhennon/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/tylerhennon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amelia England</title>
+      <link>http://localhost:1313/alumni/ameliaengland/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/alumni/ameliaengland/</guid>
+      <description>&lt;p&gt;A chemical engineering undergraduate at UAF, and now gone on to continue her degree at Georgia Tech, Amelia was a valued member of the lab. She focused on processing sediment trap samples for carbon and nitrogen analysis, as well as engaging local middle school and high school students via Alaska Science Stories.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Amy Lauren</title>
+      <link>http://localhost:1313/member/amylauren/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/amylauren/</guid>
+      <description>&lt;p&gt;Amy Lauren is an award-winning filmmaker/artist working at the nexus between research, education and artistic practice. She specializes in immersive storytelling using virtual reality.&lt;/p&gt;&#xA;&lt;p&gt;Learn more about her work &lt;a href=&#34;https://www.amylauren.net/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>caitlinhope</title>
+      <link>http://localhost:1313/member/caitlinhope/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/caitlinhope/</guid>
+      <description>&lt;p&gt;I am a geoscience undergraduate with my concentration in geophysics. My academic journey first began in biology, until I discovered my true passion of understanding the Earth through geosciences. I am interested in oceanography research as it excavates insights about processes of the natural world. My goal is to develop my skills of understanding of systems through data analysis and modeling techniques. Outside of my studies, I find inspiration in nature adventures and a good cup of coffee.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hannah Kepner</title>
+      <link>http://localhost:1313/guests/hannahkepner/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/hannahkepner/</guid>
+      <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jack Cook</title>
+      <link>http://localhost:1313/member/jackcook/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/jackcook/</guid>
+      <description>&lt;p&gt;A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the Arctic Flux Repository. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laura Whitmore</title>
+      <link>http://localhost:1313/member/laurawhitmore/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/member/laurawhitmore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Megan Brauner</title>
+      <link>http://localhost:1313/guests/meganbrauner/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/meganbrauner/</guid>
+      <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xavier Warren</title>
+      <link>http://localhost:1313/alumni/xavierwarren/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/alumni/xavierwarren/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interpolating Bathymetry To Unstructured Mesh</title>
+      <link>http://localhost:1313/post/2016-unstructured-mesh/</link>
+      <pubDate>Fri, 25 Mar 2016 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2016-unstructured-mesh/</guid>
+      <description>&lt;p&gt;A few weeks (perhaps months) ago I introduced the side project that I am involved with whereby our aim is to develop a hydrographic model for Apalachicola Bay, Fl. Today I wanted to provide an update for that project while also sharing some interesting problems that we’ve had to work around.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/2016-unstructured-mesh/figure1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The last we spoke, we had decided on using FVCOM to model the bay and surrounding waters. Our choice was contingent on having a model that could accurately describe the complex coastline and relatively flat and shallow water column. FVCOM uses an unstructured mesh, meaning that instead of using a grid with a regular pattern (think Manhattan’s streets and avenues), the model domain is instead more freeform (think rural street map). This offered both the possibility for improved spatial resolution and an opportunity for use all to gain proficiency in a new skill.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-the-icy-seas-co-lab&#34;&gt;About the Icy Seas Co-Lab&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-we-do&#34;&gt;What we do&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum finemque prunaque longe et sunt. Sed super aulaea in Paridis&#xA;noctisque cubile? Iacit coetus, vastatoremque dedit; Vidi magna, recurvatis&#xA;copia. Quod sit; per cingo tamen Hyperionis si vacat &lt;strong&gt;inclitus&lt;/strong&gt; instabat&#xA;curaque arma saxea, naturaeque pondere quaeque aer!&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Agros apertum aliis dominaeque rapidus&lt;/li&gt;&#xA;&lt;li&gt;Prima nulla est&lt;/li&gt;&#xA;&lt;li&gt;Hortatibus voto&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;where-did-we-come-from&#34;&gt;Where did we come from&lt;/h2&gt;&#xA;&lt;p&gt;Quaque coeptis lumina mea nuda dentes semine agitavit, caesique voluptas. Proque&#xA;priori vultus est colle fuit manet manibusque Liber vulnus famulosque memorante&#xA;dari. Aut quod ergo, oris simulasse. Ministros cogeret momordit aut tibi, posita&#xA;non inhaesit sede vulnera sontes Phoebeos, faenilibus non rursus.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/approach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/approach/</guid>
+      <description>&lt;h1 id=&#34;et-malis-vellet-tellus-deseruere-in-credant&#34;&gt;Et malis vellet tellus deseruere in credant&lt;/h1&gt;&#xA;&lt;h2 id=&#34;inde-sidera-moenia-lacertis-nomen-nostra-membra&#34;&gt;Inde sidera moenia lacertis nomen nostra membra&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum miranti. Sonus faciunt omnibus frustra: illa possem ad regio&#xA;Anubis tamen. Sustulerat debent fluviis herbis attollere rogus et formae&#xA;nitentem avellere motis clipeus Achilles felix videam undas. &lt;em&gt;Posuit haec ipse&lt;/em&gt;&#xA;posse.&lt;/p&gt;&#xA;&lt;p&gt;Ore fame mons Olympi tantae &lt;em&gt;stringit&lt;/em&gt; columbas proxima habebat, longius alta&#xA;non. Haeserat gerunt detinuit genis est huc, dixit tam dumque nitidum.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Cristata causam Triones moenia habentem subito utentem&lt;/li&gt;&#xA;&lt;li&gt;Astraea castris contentus nisi leve eum invia&lt;/li&gt;&#xA;&lt;li&gt;Inferiusque capta cognoscenda flaventi locuta notavi fallere&lt;/li&gt;&#xA;&lt;li&gt;Moriens scripsi ictus tuo cum&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Tarpeias insurgens summo sinistra vertice, in neve utroque exempla Cyparissus&#xA;tanta tecti terras. Dextras superest flammis accipe volatu vulneris indomitae&#xA;unguibus insignia tempora aquas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/mission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mission/</guid>
+      <description>&lt;h1 id=&#34;auras-queritur-facientes-dixit-venti-sustinui&#34;&gt;Auras queritur facientes dixit venti sustinui&lt;/h1&gt;&#xA;&lt;h2 id=&#34;e-in-mora&#34;&gt;E in mora&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum poenaque nuper destituit silendo quoniam, nec ait consorte&#xA;membra, figuram hanc cum. Manifesta vitae facies exiguumque iunctam dictis.&#xA;Vidit eadem, hanc cum descendit &lt;strong&gt;sinu&lt;/strong&gt; misit quem fecit, positisque pastorve.&#xA;Missus solos &lt;em&gt;potentia in&lt;/em&gt; erant noctem est!&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;if (dvdProcessorVolume &amp;lt; mpegProcess(slashdot, gigahertz)) {&#xA;    transferAnsiBotnet.and(logSoftware, hsfClipboardSubnet.queue_publishing(&#xA;            systemMemory, 5, yahoo));&#xA;} else {&#xA;    swappableIpv -= spoolingAdwareCrossplatform;&#xA;    extranetAppArchitecture(1, dtd_rpc_font(45, 67, development_sli));&#xA;}&#xA;antivirus_ipv = touchscreenFiosGrep.portIcsDrive(zone_vista);&#xA;bootExpression = 2 * sprite_dv + apache;&#xA;if (cifsZone(status) &amp;gt; wddm_cifs) {&#xA;    disk_access_www.halftone_plagiarism = 4;&#xA;} else {&#xA;    domainFat(vectorCdnMalware, -2, hard.smartphone_e_wep(phreaking_memory,&#xA;            5, kerningError));&#xA;    address += troubleshooting;&#xA;    rdramRegistry(printerHoc);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Ipsa namque impetus crinem nefandas, parant inmensum noviens specie vita. Ire&#xA;locus quietis, amata occiderat Achaidas cervum quos pavit dissiluit an&#xA;&lt;a href=&#34;http://artenitido.org/non.html&#34;&gt;loqui&lt;/a&gt; consolantia fontes; &lt;em&gt;tenus quae&lt;/em&gt;. Facit&#xA;verumque per Pindusque paelice inmensi: vino exire, fuisse munera. Quam pars&#xA;quod gravidi pennas: non illa et senex, et Iunone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/</guid>
+      <description>&lt;h1 id=&#34;modo-est&#34;&gt;Modo est&lt;/h1&gt;&#xA;&lt;h2 id=&#34;non-sub-haedum-tenet&#34;&gt;Non sub haedum tenet&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum esse diversa quoque vocavit, quam! Vires tibi axis dum spolium&#xA;&lt;em&gt;vaticinor fulminis&lt;/em&gt;, a dixere attrahit generisque tamen?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Petit invergens iram praetendat iam&lt;/li&gt;&#xA;&lt;li&gt;Mecum res curva iunctura silvis hoc leonum&lt;/li&gt;&#xA;&lt;li&gt;Iacent gemitum quos&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;non-est-duram-mitis-sonat-proculcat-tumulos&#34;&gt;Non est duram mitis sonat proculcat tumulos&lt;/h2&gt;&#xA;&lt;p&gt;Alce bimembres Dauni, cur ex voces referam adunco in sors. Manibusque poples&#xA;prodidit lata tantum quem suos ratae Aeginae sederunt degenerat Bacchus&#xA;descendere, patriisque ieiunia.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/vacancy/vacancy1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vacancy/vacancy1/</guid>
+      <description>&lt;p&gt;You can write $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;&#xA;&lt;h1 id=&#34;minyae-adgnoscitque-fugiebat-parentis-ausum-superos-huius&#34;&gt;Minyae adgnoscitque fugiebat parentis ausum superos huius&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ait-erili-meruisse-iactatis-omnibus-erat&#34;&gt;Ait erili meruisse iactatis omnibus erat&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum natis, ipsi ipsi aut relictus saxo comitantibus aegro amori&#xA;verba fugisse &lt;strong&gt;mira mortisque leones&lt;/strong&gt;! Prior sui liquidissimus leve&#xA;properandum totidem studio, refert &lt;em&gt;magno&lt;/em&gt;, me quibus. Sternitur discordia&#xA;summaque, si deus in undam et vulnere dirusque est felices pallam miserere&#xA;curvamine comites. Tegumenque decipit suis, poscitur una dea sumus adnuerant,&#xA;gerebat est edam plura. Armigerae Cyllenius freti vaga adeunda, rura undas,&#xA;equarum ubi non laetoque pice.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
