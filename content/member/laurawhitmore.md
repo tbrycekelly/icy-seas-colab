@@ -1,7 +1,7 @@
 +++
 bio = ""
 date = "2016-07-12T15:52:22+02:00"
-id = "laurawhitmore"
+id = "Laura M. Whitmore"
 interests = ["Actic Circulation", "Sea Ice Chemistry", "Geochemical Tracers"]
 name = "Laura Whitmore"
 portrait = "/avatar/whitmore.jpg"

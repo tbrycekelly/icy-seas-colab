@@ -1,5 +1,5 @@
 +++
-bio = "sfdgdf"
+bio = ""
 date = "2016-07-12T15:52:22+02:00"
 id = "ameliaengland"
 interests = ["Actic Circulation", "Sea Ice Chemistry", "Geochemical Tracers"]
@@ -9,30 +9,6 @@ short_bio = "My short bio. I am Member Member."
 short_name = ""
 title = "Amelia England"
 
-[[social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:test@example.org"
-
-[[social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/"
-
-[[social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.nl/"
-
-[[social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/"
-
-[[education]]
-    course = "BS"
-    institution = 'Montana State University'
-    year = 2013
 
 [[organizations]]
     name = "Georgia Tech"

@@ -1,7 +1,7 @@
 +++
 bio = ""
 date = "2016-07-12T15:52:22+02:00"
-id = "caitlinhope"
+id = "Caitlin Hope"
 interests = ["Data Analysis"]
 name = "Caitlin Hope"
 portrait = "/avatar/hope.jpg"

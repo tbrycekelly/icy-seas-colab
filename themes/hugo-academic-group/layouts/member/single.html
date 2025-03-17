@@ -147,11 +147,8 @@
                 {{ $publications := where .Site.RegularPages "Type" "publication" }}
                 
                 {{- $.Page.Scratch.Add "column_count" 1 -}} 
-                <div class="splitbox">
-                    <div class="column-left">
                 
                     {{ range $publications }}
-                
                 
                         {{ $found := false }}
                         {{ range .Params.authors }}
@@ -164,15 +161,22 @@
                             {{ end }}
                         {{ end }}
                         {{ if $found }}
+                            <div class="col-sm-6">
                             {{ partial "publication_li_detailed" . }}
-                            </div><div class="column-right">
+                            </div>
                         {{ end }}
                     {{ end }}
                     </div>
                     <div style="clear:both"></div>
-                </div>
+                    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                
             </div>
         </div>
 </div>
+
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}

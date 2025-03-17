@@ -1,7 +1,7 @@
 +++
 bio = ""
 date = "2016-07-12T15:52:22+02:00"
-id = "jackcook"
+id = "John Cook"
 interests = ["Learning New Skills", "Field Work"]
 name = "Jack Cook"
 portrait = "/avatar/cook.jpg"

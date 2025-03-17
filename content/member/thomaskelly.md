@@ -65,18 +65,16 @@ Ultimately I am always interested in learning new approaches and working togethe
 ---
 
 ### Contact Information
-*Physical Address*
 
 **Mailing:**
-2150 Koyukuk Drive
-O’Neill Bulding 245
-Fairbanks AK, 99775
+
+>2150 Koyukuk Drive
+>
+>O’Neill Bulding 245
+>
+>Fairbanks AK, 99775
+
 
 **Office:** O’Neill Building room 127
+
 **Lab:** Irving II room 239
-
-*Digital Address*
-
-**EMail:** tbkelly@alaska.edu
-**Website:** https://tkelly.org/
-**Github:** https://github.com/tbrycekelly
