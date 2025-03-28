@@ -32,16 +32,23 @@
     </item>
     <item>
       <title>Temporal variability in the relationship between line height absorption and chlorophyll concentration: a case study from the Northern Gulf of Alaska</title>
-      <link>http://localhost:1313/publication/lowin2024/</link>
+      <link>http://localhost:1313/publication/2024lowin/</link>
       <pubDate>Mon, 20 May 2024 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/lowin2024/</guid>
+      <guid>http://localhost:1313/publication/2024lowin/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Relationships between plankton size spectra, net primary production, and the biological carbon pump</title>
+      <link>http://localhost:1313/publication/2024stukel/</link>
+      <pubDate>Fri, 12 Apr 2024 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2024stukel/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-points&#34;&gt;Key Points&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Normalized biomass size spectra (NBSS) slopes spanning bacteria to zooplankton ranged from −1.6 to −1.2 across diverse ocean regions&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Whole community NBSS slope, microbial NBSS slope, and zooplankton:microbe ratio were positively correlated with net primary production&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;NBSS slope was positively correlated with sinking carbon export but was not significantly correlated with export efficiency&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h2&gt;&#xA;&lt;p&gt;Plankton communities in the open ocean are incredibly diverse taxonomically and with respect to size. They include bacteria smaller than 0.5 µm and metazoan zooplankton greater than 10-cm long. Organism size puts strong physiological constraints on many species; hence, changes in the relative sizes of plankton communities are predicted to correlate with important ecosystem functions, including photosynthesis rates, efficiency of food-web energy transfer, and carbon sequestration in the deep ocean by sinking organic particles. However, few studies have quantified the full size spectra of plankton communities across different marine ecosystems and none have concurrently measured photosynthesis and carbon export rates. We compiled plankton size spectra from the tropics to the Southern Ocean using consistent methods for bacteria, protists, and multicellular zooplankton. Size spectra slopes, which compare the relative biomass of large and small organisms, are slightly less than negative one, indicating that larger size classes contain less biomass than smaller ones. Ecosystems with higher photosynthetic rates are dominated by larger organisms and support a stronger biological carbon pump, transporting more carbon to the deep ocean. However, at similar levels of productivity, ecosystems with larger organisms do not transport significantly more carbon to the deep ocean than those dominated by smaller plankton.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Strong and efficient summertime carbon export driven by aggregation processes in a subarctic coastal ecosystem</title>
-      <link>http://localhost:1313/publication/odaly2024/</link>
+      <link>http://localhost:1313/publication/2024odaly/</link>
       <pubDate>Wed, 03 Apr 2024 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/odaly2024/</guid>
+      <guid>http://localhost:1313/publication/2024odaly/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
@@ -50,6 +57,13 @@
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/2024-ocr/</guid>
       <description>&lt;p&gt;When advising students about their career goals, paths forward, and expectations; I often recommend that they consider learning a program language. While the language itself depends on the goals and background of the person, being able to work directly with data is powerful. Today’s project is a good example of just such a case.&lt;/p&gt;&#xA;&lt;p&gt;A colleague approached me to see if I could help pull data off some video files since the original data had been lost. For context, these video files were collected as part of a deep-sea survey of marine organisms with many hours of footage collected by a remotely operated vehicle (ROV). Attached to the ROV are a number of sensors besides the camera–such as pressure, temperature, and salinity; and it was some of those sensor feeds that are lost to time. Luckily for us, the data feeds were directly overlaid into the feed feed. So all we need to do is pull some numbers from the video, how hard could that be?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nutrient and arsenic biogeochemistry of Sargassum in the western Atlantic</title>
+      <link>http://localhost:1313/publication/2023mcgillicuddy/</link>
+      <pubDate>Thu, 12 Oct 2023 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2023mcgillicuddy/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alaska Science Stories</title>
@@ -80,6 +94,20 @@
       <description>&lt;p&gt;sdfsd&#xA;sdf&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Arctic Flux Repository</title>
+      <link>http://localhost:1313/project/arctic-flux-repository/</link>
+      <pubDate>Tue, 06 Jun 2023 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/arctic-flux-repository/</guid>
+      <description>&lt;p&gt;The Arctic Flux Repository (AFR) is a shared resource for the research community to promote long-term and shared discovery about Arctic biogeochemical cycles. What sets this program apart from other biogeochemical surveys of the marine environment is the collection and distribution of physical sample material.&lt;/p&gt;&#xA;&lt;h3 id=&#34;locations-of-interest&#34;&gt;Locations of Interest&lt;/h3&gt;&#xA;&lt;p&gt;This project proposes to establish standard operating procedures (SOP) for the collection, preservation, and sharing of sedimentation samples collected in the Arctic marine system. As such, initial efforts will leverage established time series in the Pacific Arctic (i.e. Bering Sea, Chukchi Sea, Beaufort Sea, and Siberian Sea; Figure 2). While no long term Arctic progams have included gravitational flux as priority measurements, several programs have opportunistically deployed sediment traps. The Nansen and Amundsen Basin observational system (NABOS) successfully deployed a moored sediment trap in XXXX, the first and only sediment trap of their 20 year history. Similarly, the distributed biological observational system (DBO) has operated in the Bering and Chukchi Seas for XX years and has recently added moored sediment traps to several study sites (Figure 2).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carbon sequestration by multiple biological pump pathways in a coastal upwelling biome</title>
+      <link>http://localhost:1313/publication/2023stukel/</link>
+      <pubDate>Wed, 12 Apr 2023 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2023stukel/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>NGA Phase 2 Process Studies</title>
       <link>http://localhost:1313/post/2023-nga-phase-2/</link>
       <pubDate>Fri, 24 Feb 2023 15:50:58 +0200</pubDate>
@@ -92,6 +120,13 @@
       <pubDate>Thu, 23 Feb 2023 16:50:58 +0200</pubDate>
       <guid>http://localhost:1313/post/2023-inditun/</guid>
       <description>&lt;p&gt;&lt;strong&gt;INDITUN: Trophic ecology of southern bluefun tuna larvae in the North-eastern Indian Ocean&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://prezi.com/p/cwcenyucvuiu/inditun-20/&#34;&gt;INDITUN is a collaborative project&lt;/a&gt; funded by the Spanish Ministry of Science and Innovation to compile and synthesize data collected over the past few years on Bluefin Tuna Larvae growth and survival. This project connects naturally with &lt;a href=&#34;https://academic.oup.com/plankt/article/44/5/600/6645206&#34;&gt;BLOOFINZ-GOM&lt;/a&gt; (Gulf of Mexico) and BLOOFINZ-IO (Indian Ocean) conducted between 2017 and 2022.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/inditun/inditun1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;During the BLOOFINZ-GOM project I was a student at Florida State University and was in charge of phytoplankton growth, nutrient utilization, and export production. Then for the BLOOFINZ-IO cruise I was a postdoc working on trace metal distributions and export from the euphotic zone. For the INDITUN project (unfunded collaborator) I’ll facilitate data compilation and provide an oceanographic context for the assessment of larval dynamics, which are often associated with mesoscale features.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Salp blooms drive strong increases in passive carbon export in the Southern Ocean</title>
+      <link>http://localhost:1313/publication/2023decima/</link>
+      <pubDate>Sun, 12 Feb 2023 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2023decima/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automated determination of gallium in seawater using seaFAST pre-concentration and high-resolution inductively-coupled plasma mass spectrometry</title>
@@ -144,9 +179,9 @@
     </item>
     <item>
       <title>Lateral advection supports nitrogen export in the oligotrophic open-ocean Gulf of Mexico</title>
-      <link>http://localhost:1313/publication/kelly2021/</link>
+      <link>http://localhost:1313/publication/2021kelly/</link>
       <pubDate>Thu, 03 Jun 2021 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/kelly2021/</guid>
+      <guid>http://localhost:1313/publication/2021kelly/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary-of-findings&#34;&gt;Summary of Findings&lt;/h2&gt;&#xA;&lt;p&gt;In contrast to its productive coastal margins, the open-ocean Gulf of Mexico (GoM) is notable for highly stratified surface waters with extremely low nutrient and chlorophyll concentrations. Field campaigns in 2017 and 2018 identified low rates of turbulent mixing, which combined with oligotrophic nutrient conditions, give very low estimates for diffusive flux of nitrate into the euphotic zone (&amp;lt; 1 µmol N m&lt;sup&gt;-2&lt;/sup&gt; d&lt;sup&gt;-1&lt;/sup&gt;). Estimates of local N2-fixation were similarly low. In comparison, measured export rates of sinking particulate nitrogen from the euphotic zone were 2 – 3 orders of magnitude higher.&lt;/p&gt;</description>
     </item>
     <item>
@@ -155,6 +190,13 @@
       <pubDate>Wed, 05 May 2021 15:50:58 +0200</pubDate>
       <guid>http://localhost:1313/post/2021-skq202106s/</guid>
       <description>&lt;p&gt;During the cruise 6 deployments of the surface-tethered sediment trap arrays were completed with a target duration of 24h. Deployments were conducted across a representative set of pelagic stations (KOD5, KOD9, MID10, GAK4, GAK8, and GAK15) in order to measure gravitationally settling organic matter quantity and quality. Each array was outfitted with 2-3 cross-frames placed (1) near the base of the euphotic zone at 40 m, (2) 100 m, and 180 m (when water depth permitted). Four collection tubes per depth allowed for replicate sampling for Chl-a (n = 60) and carbon and nitrogen abundance and isotopic composition (n = 90) of sinking matter. Additionally, samples for biogenic silica were collected from one tube per depth (n = 15). Use of a 5m spar buoy, SPOT satellite beacon, and strobe light permitted efficient recovery. Pigment fluxes have been calculated for all sediment trap deployments (Figure 1).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Taxon-specific phytoplankton growth, nutrient utilization and light limitation in the oligotrophic Gulf of Mexico</title>
+      <link>http://localhost:1313/publication/2022yingling/</link>
+      <pubDate>Fri, 30 Apr 2021 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2022yingling/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Thorium</title>
@@ -175,7 +217,7 @@
       <link>http://localhost:1313/member/gwennhennon/</link>
       <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
       <guid>http://localhost:1313/member/gwennhennon/</guid>
-      <description>&lt;p&gt;I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Dr. Gwenn Hennon is an Assistant Professor at the University of Alaska Fairbanks. Gwenn loves the way phytoplankton are both astonishingly beautiful and globally important. She wants to be able to predict phytoplankton community composition in the future ocean and understand how microbial interactions may shift.&lt;/p&gt;&#xA;&lt;p&gt;Her hobbies include cross-country skiing, paddle boarding, and hiking with her husband and two kids.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;The Hennon Lab is based at the University of Alaska Fairbanks where we culture phytoplankton and sequence marine microbes to understand how climate change impacts them. Our field work takes us all over the state of Alaska including Kachemak Bay, Lynn Canal, the Gulf of Alaska and up to the Arctic. We also collect samples in the sub-tropics in places such as Bermuda to understand how phytoplankton in nutrient poor regions will be impacted by ocean acidification.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thomas Bryce Kelly</title>
@@ -185,11 +227,32 @@
       <description>&lt;p&gt;I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Lagrangian studies of marine production: A multimethod assessment of productivity relationships in the California Current Ecosystem upwelling region</title>
+      <link>http://localhost:1313/publication/2020kranz/</link>
+      <pubDate>Sun, 12 Apr 2020 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2020kranz/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-points&#34;&gt;Key Points&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;We employ a Lagrangian observation of diverse productivity measurements in the California Current&lt;/li&gt;&#xA;&lt;li&gt;Temporally highly resolved productivity, based on optical and mass spectrometric methods, was comparable with traditional in situ 24-h assays&lt;/li&gt;&#xA;&lt;li&gt;We suggest that temporally resolved production methods be employed regularly to enhance understanding of physically complex ecosystems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h2&gt;&#xA;&lt;p&gt;The California Current Ecosystem (CCE) is a site of coastal upwelling and is among the most productive ecosystems in the world oceans, supporting fisheries of much of the western United States, while playing a vital role in the economy of coastal communities. Accurately assessing marine productivity in such regions is important for understanding the flux of carbon through the food web and the ocean&amp;rsquo;s ability to sequester carbon dioxide. Productivity assessments are, however, often based on different methodologies relying on distinct cellular or ecosystem assumptions. Each individual method can thus be misleading if its assumptions are not met, while any single method is likely to fall short in terms of explaining ecosystem dynamics. Here, we present a multimethod process-oriented investigation of diverse productivity methods in the CCE Long-Term Ecological Research study region. Traditional 24-h in situ incubation methods were compared with high temporal resolution measurements using advanced optical and mass spectrometric methods. The productivity rates and ecosystem processes resolved presented here can help to further our understanding of the linkages between photosynthesis and respiration or carbon production and sequestration. This approach can also help to improve productivity assessments in complex ecosystems and to resolve the timescales of these processes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lagrangian Studies of Net Community Production: The Effect of Diel and Multiday Nonsteady State Factors and Vertical Fluxes on O2/Ar in a Dynamic Upwelling Region</title>
+      <link>http://localhost:1313/publication/2020wang/</link>
+      <pubDate>Sun, 12 Apr 2020 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2020wang/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h2&gt;&#xA;&lt;p&gt;Marine microbes produce and consume oxygen as a product of a balance between photosynthesis and respiration, thereby causing changes in the concentration of oxygen in the surface ocean. Taking advantage of known relationships between the gas properties of oxygen and argon, researchers can isolate changes in biologically produced oxygen from changes that result from physical processes. This calculation relies on several simplifying assumptions. In this study, we test the importance of these assumptions by tracking changes in biological oxygen while following several water parcels over the course of 2–4 days. We find that accounting for vertical mixing processes and the rate of change in biological oxygen is important when estimating biological oxygen production rates. We also find that daily shifts in oxygen as photosynthesis rises through the day and falls to zero at night can influence measurements based on time of collection.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The transpolar drift as a source of riverine and shelf‐derived trace elements to the central Arctic Ocean</title>
       <link>http://localhost:1313/publication/2020charette/</link>
       <pubDate>Wed, 08 Apr 2020 16:37:31 +0200</pubDate>
       <guid>http://localhost:1313/publication/2020charette/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;key-points&#34;&gt;Key Points&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The Transpolar Drift is a source of shelf- and river-derived elements to the central Arctic Ocean&lt;/li&gt;&#xA;&lt;li&gt;The TPD is rich in dissolved organic matter (DOM), which facilitates long-range transport of trace metals that form complexes with DOM&lt;/li&gt;&#xA;&lt;li&gt;Margin trace element fluxes may increase with future Arctic warming due to DOM release from permafrost thaw and increasing river discharge&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h3&gt;&#xA;&lt;p&gt;A major feature of the Arctic Ocean circulation is the Transpolar Drift (TPD), a surface current that carries ice and continental shelf-derived materials from Siberia across the North Pole to the North Atlantic Ocean. In 2015, an international team of oceanographers conducted a survey of trace elements in the Arctic Ocean, traversing the TPD. Near the North Pole, they observed much higher concentrations of trace elements in surface waters than in regions on either side of the current. These trace elements originated from land, and their journey across the Arctic Ocean is made possible by chemical reactions with dissolved organic matter that originates mainly in Arctic rivers. This study reveals the importance of rivers and shelf processes combined with strong ocean currents in supplying trace elements to the central Arctic Ocean and onward to the Atlantic. These trace element inputs are expected to increase as a result of permafrost thawing and increased river runoff in the Arctic, which is warming at a rate much faster than anywhere else on Earth. Since many of the trace elements are essential building blocks for ocean life, these processes could lead to significant changes in the marine ecosystems and fisheries of the Arctic Ocean.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Satellite estimation of carbon export by sinking particles in the California Current calibrated with sediment trap data</title>
+      <link>http://localhost:1313/publication/2020kahru/</link>
+      <pubDate>Thu, 12 Mar 2020 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2020kahru/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Models predicting export flux (EF) of carbon from satellite-derived estimates of net primary production (NPP) are evaluated&lt;/li&gt;&#xA;&lt;li&gt;Higher slope of EF relative to NPP compared to the Kelly et al. (2018) model provides better agreement&lt;/li&gt;&#xA;&lt;li&gt;The best estimates of EF were obtained when using average NPP during a preceding period of ~7–8 days.&lt;/li&gt;&#xA;&lt;li&gt;Export efficiency (EF/NPP) is negatively correlated with satellite-derived NPP estimates.&lt;/li&gt;&#xA;&lt;li&gt;The choice of the EF model has a strong effect on the dynamic range of the predicted time series&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Vanadium cycling in the Western Arctic Ocean is influenced by shelf-basin connectivity</title>
@@ -200,16 +263,16 @@
     </item>
     <item>
       <title>The importance of mesozooplankton diel vertical migration for sustaining a mesopelagic food web</title>
-      <link>http://localhost:1313/publication/kelly2019/</link>
+      <link>http://localhost:1313/publication/2019kelly/</link>
       <pubDate>Thu, 12 Sep 2019 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/kelly2019/</guid>
+      <guid>http://localhost:1313/publication/2019kelly/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCE II: Spatial and interannual variability in export efficiency and the biological pump in an eastern boundary current upwelling system with substantial lateral advection</title>
-      <link>http://localhost:1313/publication/kelly-2018/</link>
+      <link>http://localhost:1313/publication/2018kelly/</link>
       <pubDate>Fri, 12 Oct 2018 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/kelly-2018/</guid>
+      <guid>http://localhost:1313/publication/2018kelly/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
@@ -252,7 +315,7 @@
       <link>http://localhost:1313/member/caitlinhope/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
       <guid>http://localhost:1313/member/caitlinhope/</guid>
-      <description>&lt;p&gt;I am a geoscience undergraduate with my concentration in geophysics. My academic journey first began in biology, until I discovered my true passion of understanding the Earth through geosciences. I am interested in oceanography research as it excavates insights about processes of the natural world. My goal is to develop my skills of understanding of systems through data analysis and modeling techniques. Outside of my studies, I find inspiration in nature adventures and a good cup of coffee.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I am a geoscience undergraduate concentrating in geophysics, actuated by a passion for understanding Earth&amp;rsquo;s natural systems. My academic journey began in biology and ultimately led me to geosciences. I’m particularly drawn to oceanography research, using computational methods to interpret patterns, systems, and interactions in the natural world. Outside the lab, I find inspiration in outdoor exploration and a good cup of coffee.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hannah Kepner</title>
@@ -266,7 +329,7 @@
       <link>http://localhost:1313/member/jackcook/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
       <guid>http://localhost:1313/member/jackcook/</guid>
-      <description>&lt;p&gt;A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the Arctic Flux Repository. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the &lt;a href=&#34;http://localhost:1313/project/arctic-flux-repository/&#34;&gt;Arctic Flux Repository&lt;/a&gt;. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Laura Whitmore</title>
@@ -322,7 +385,7 @@
       <link>http://localhost:1313/mission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mission/</guid>
-      <description>&lt;h1 id=&#34;auras-queritur-facientes-dixit-venti-sustinui&#34;&gt;Auras queritur facientes dixit venti sustinui&lt;/h1&gt;&#xA;&lt;h2 id=&#34;e-in-mora&#34;&gt;E in mora&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum poenaque nuper destituit silendo quoniam, nec ait consorte&#xA;membra, figuram hanc cum. Manifesta vitae facies exiguumque iunctam dictis.&#xA;Vidit eadem, hanc cum descendit &lt;strong&gt;sinu&lt;/strong&gt; misit quem fecit, positisque pastorve.&#xA;Missus solos &lt;em&gt;potentia in&lt;/em&gt; erant noctem est!&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;if (dvdProcessorVolume &amp;lt; mpegProcess(slashdot, gigahertz)) {&#xA;    transferAnsiBotnet.and(logSoftware, hsfClipboardSubnet.queue_publishing(&#xA;            systemMemory, 5, yahoo));&#xA;} else {&#xA;    swappableIpv -= spoolingAdwareCrossplatform;&#xA;    extranetAppArchitecture(1, dtd_rpc_font(45, 67, development_sli));&#xA;}&#xA;antivirus_ipv = touchscreenFiosGrep.portIcsDrive(zone_vista);&#xA;bootExpression = 2 * sprite_dv + apache;&#xA;if (cifsZone(status) &amp;gt; wddm_cifs) {&#xA;    disk_access_www.halftone_plagiarism = 4;&#xA;} else {&#xA;    domainFat(vectorCdnMalware, -2, hard.smartphone_e_wep(phreaking_memory,&#xA;            5, kerningError));&#xA;    address += troubleshooting;&#xA;    rdramRegistry(printerHoc);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Ipsa namque impetus crinem nefandas, parant inmensum noviens specie vita. Ire&#xA;locus quietis, amata occiderat Achaidas cervum quos pavit dissiluit an&#xA;&lt;a href=&#34;http://artenitido.org/non.html&#34;&gt;loqui&lt;/a&gt; consolantia fontes; &lt;em&gt;tenus quae&lt;/em&gt;. Facit&#xA;verumque per Pindusque paelice inmensi: vino exire, fuisse munera. Quam pars&#xA;quod gravidi pennas: non illa et senex, et Iunone.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;auras-queritur-facientes-dixit-venti-sustinui&#34;&gt;Auras queritur facientes dixit venti sustinui&lt;/h1&gt;&#xA;&lt;h2 id=&#34;e-in-mora&#34;&gt;E in mora&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum poenaque nuper destituit silendo quoniam, nec ait consorte&#xA;membra, figuram hanc cum. Manifesta vitae facies exiguumque iunctam dictis.&#xA;Vidit eadem, hanc cum descendit &lt;strong&gt;sinu&lt;/strong&gt; misit quem fecit, positisque pastorve.&#xA;Missus solos &lt;em&gt;potentia in&lt;/em&gt; erant noctem est!&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;if (dvdProcessorVolume &amp;lt; mpegProcess(slashdot, gigahertz)) {&#xD;&#xA;    transferAnsiBotnet.and(logSoftware, hsfClipboardSubnet.queue_publishing(&#xD;&#xA;            systemMemory, 5, yahoo));&#xD;&#xA;} else {&#xD;&#xA;    swappableIpv -= spoolingAdwareCrossplatform;&#xD;&#xA;    extranetAppArchitecture(1, dtd_rpc_font(45, 67, development_sli));&#xD;&#xA;}&#xD;&#xA;antivirus_ipv = touchscreenFiosGrep.portIcsDrive(zone_vista);&#xD;&#xA;bootExpression = 2 * sprite_dv + apache;&#xD;&#xA;if (cifsZone(status) &amp;gt; wddm_cifs) {&#xD;&#xA;    disk_access_www.halftone_plagiarism = 4;&#xD;&#xA;} else {&#xD;&#xA;    domainFat(vectorCdnMalware, -2, hard.smartphone_e_wep(phreaking_memory,&#xD;&#xA;            5, kerningError));&#xD;&#xA;    address += troubleshooting;&#xD;&#xA;    rdramRegistry(printerHoc);&#xD;&#xA;}&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Ipsa namque impetus crinem nefandas, parant inmensum noviens specie vita. Ire&#xA;locus quietis, amata occiderat Achaidas cervum quos pavit dissiluit an&#xA;&lt;a href=&#34;http://artenitido.org/non.html&#34;&gt;loqui&lt;/a&gt; consolantia fontes; &lt;em&gt;tenus quae&lt;/em&gt;. Facit&#xA;verumque per Pindusque paelice inmensi: vino exire, fuisse munera. Quam pars&#xA;quod gravidi pennas: non illa et senex, et Iunone.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

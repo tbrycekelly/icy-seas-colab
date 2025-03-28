@@ -25,16 +25,44 @@
     </item>
     <item>
       <title>Temporal variability in the relationship between line height absorption and chlorophyll concentration: a case study from the Northern Gulf of Alaska</title>
-      <link>http://localhost:1313/publication/lowin2024/</link>
+      <link>http://localhost:1313/publication/2024lowin/</link>
       <pubDate>Mon, 20 May 2024 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/lowin2024/</guid>
+      <guid>http://localhost:1313/publication/2024lowin/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Relationships between plankton size spectra, net primary production, and the biological carbon pump</title>
+      <link>http://localhost:1313/publication/2024stukel/</link>
+      <pubDate>Fri, 12 Apr 2024 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2024stukel/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-points&#34;&gt;Key Points&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Normalized biomass size spectra (NBSS) slopes spanning bacteria to zooplankton ranged from −1.6 to −1.2 across diverse ocean regions&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Whole community NBSS slope, microbial NBSS slope, and zooplankton:microbe ratio were positively correlated with net primary production&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;NBSS slope was positively correlated with sinking carbon export but was not significantly correlated with export efficiency&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h2&gt;&#xA;&lt;p&gt;Plankton communities in the open ocean are incredibly diverse taxonomically and with respect to size. They include bacteria smaller than 0.5 µm and metazoan zooplankton greater than 10-cm long. Organism size puts strong physiological constraints on many species; hence, changes in the relative sizes of plankton communities are predicted to correlate with important ecosystem functions, including photosynthesis rates, efficiency of food-web energy transfer, and carbon sequestration in the deep ocean by sinking organic particles. However, few studies have quantified the full size spectra of plankton communities across different marine ecosystems and none have concurrently measured photosynthesis and carbon export rates. We compiled plankton size spectra from the tropics to the Southern Ocean using consistent methods for bacteria, protists, and multicellular zooplankton. Size spectra slopes, which compare the relative biomass of large and small organisms, are slightly less than negative one, indicating that larger size classes contain less biomass than smaller ones. Ecosystems with higher photosynthetic rates are dominated by larger organisms and support a stronger biological carbon pump, transporting more carbon to the deep ocean. However, at similar levels of productivity, ecosystems with larger organisms do not transport significantly more carbon to the deep ocean than those dominated by smaller plankton.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Strong and efficient summertime carbon export driven by aggregation processes in a subarctic coastal ecosystem</title>
-      <link>http://localhost:1313/publication/odaly2024/</link>
+      <link>http://localhost:1313/publication/2024odaly/</link>
       <pubDate>Wed, 03 Apr 2024 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/odaly2024/</guid>
+      <guid>http://localhost:1313/publication/2024odaly/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nutrient and arsenic biogeochemistry of Sargassum in the western Atlantic</title>
+      <link>http://localhost:1313/publication/2023mcgillicuddy/</link>
+      <pubDate>Thu, 12 Oct 2023 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2023mcgillicuddy/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carbon sequestration by multiple biological pump pathways in a coastal upwelling biome</title>
+      <link>http://localhost:1313/publication/2023stukel/</link>
+      <pubDate>Wed, 12 Apr 2023 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2023stukel/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Salp blooms drive strong increases in passive carbon export in the Southern Ocean</title>
+      <link>http://localhost:1313/publication/2023decima/</link>
+      <pubDate>Sun, 12 Feb 2023 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2023decima/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
@@ -53,10 +81,17 @@
     </item>
     <item>
       <title>Lateral advection supports nitrogen export in the oligotrophic open-ocean Gulf of Mexico</title>
-      <link>http://localhost:1313/publication/kelly2021/</link>
+      <link>http://localhost:1313/publication/2021kelly/</link>
       <pubDate>Thu, 03 Jun 2021 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/kelly2021/</guid>
+      <guid>http://localhost:1313/publication/2021kelly/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary-of-findings&#34;&gt;Summary of Findings&lt;/h2&gt;&#xA;&lt;p&gt;In contrast to its productive coastal margins, the open-ocean Gulf of Mexico (GoM) is notable for highly stratified surface waters with extremely low nutrient and chlorophyll concentrations. Field campaigns in 2017 and 2018 identified low rates of turbulent mixing, which combined with oligotrophic nutrient conditions, give very low estimates for diffusive flux of nitrate into the euphotic zone (&amp;lt; 1 µmol N m&lt;sup&gt;-2&lt;/sup&gt; d&lt;sup&gt;-1&lt;/sup&gt;). Estimates of local N2-fixation were similarly low. In comparison, measured export rates of sinking particulate nitrogen from the euphotic zone were 2 – 3 orders of magnitude higher.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Taxon-specific phytoplankton growth, nutrient utilization and light limitation in the oligotrophic Gulf of Mexico</title>
+      <link>http://localhost:1313/publication/2022yingling/</link>
+      <pubDate>Fri, 30 Apr 2021 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2022yingling/</guid>
+      <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gallium: A new tracer of Pacific water in the Arctic Ocean</title>
@@ -66,11 +101,32 @@
       <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;key-points&#34;&gt;Key Points&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Dissolved gallium can be used as a tracer to determine the percentage of Pacific- and Atlantic-derived seawater in the Arctic Ocean&lt;/li&gt;&#xA;&lt;li&gt;The deconvolution using gallium predicts greater amounts of Pacific water between roughly 150 and 300 m than a nutrient-based deconvolution&lt;/li&gt;&#xA;&lt;li&gt;Distribution of Pacific waters in the western Arctic is more vertically mixed than previously predicted with nutrient tracers&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h3&gt;&#xA;&lt;p&gt;The Arctic Ocean is a key player in global ocean circulation and climate. The waters of the Arctic Ocean are influenced by a number of sources including seawater from both the Atlantic and Pacific oceans, sea-ice formation and melting, and river input. Unraveling these source waters is important both for deciphering the inflow of nutrients and for other materials to the Arctic Ocean as well as understanding the basin&amp;rsquo;s contribution to oceanic overturning circulation and the impact of ocean heat input to this basin on Arctic sea ice. Finding methods for unraveling these sources and how they may be altered by ongoing environmental change is thus an important research objective. Previous methods for distinguishing Pacific from Atlantic water in the Arctic Ocean have relied on nutrient-based tracers that could be biased by poorly quantified biological processes. Herein, the authors demonstrate that gallium (Ga), a metal that primarily enters the ocean from dust, can be used in place of nutrient-based tracers to yield a potentially more realistic distinction between the two ocean water sources.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Lagrangian studies of marine production: A multimethod assessment of productivity relationships in the California Current Ecosystem upwelling region</title>
+      <link>http://localhost:1313/publication/2020kranz/</link>
+      <pubDate>Sun, 12 Apr 2020 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2020kranz/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-points&#34;&gt;Key Points&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;We employ a Lagrangian observation of diverse productivity measurements in the California Current&lt;/li&gt;&#xA;&lt;li&gt;Temporally highly resolved productivity, based on optical and mass spectrometric methods, was comparable with traditional in situ 24-h assays&lt;/li&gt;&#xA;&lt;li&gt;We suggest that temporally resolved production methods be employed regularly to enhance understanding of physically complex ecosystems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h2&gt;&#xA;&lt;p&gt;The California Current Ecosystem (CCE) is a site of coastal upwelling and is among the most productive ecosystems in the world oceans, supporting fisheries of much of the western United States, while playing a vital role in the economy of coastal communities. Accurately assessing marine productivity in such regions is important for understanding the flux of carbon through the food web and the ocean&amp;rsquo;s ability to sequester carbon dioxide. Productivity assessments are, however, often based on different methodologies relying on distinct cellular or ecosystem assumptions. Each individual method can thus be misleading if its assumptions are not met, while any single method is likely to fall short in terms of explaining ecosystem dynamics. Here, we present a multimethod process-oriented investigation of diverse productivity methods in the CCE Long-Term Ecological Research study region. Traditional 24-h in situ incubation methods were compared with high temporal resolution measurements using advanced optical and mass spectrometric methods. The productivity rates and ecosystem processes resolved presented here can help to further our understanding of the linkages between photosynthesis and respiration or carbon production and sequestration. This approach can also help to improve productivity assessments in complex ecosystems and to resolve the timescales of these processes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lagrangian Studies of Net Community Production: The Effect of Diel and Multiday Nonsteady State Factors and Vertical Fluxes on O2/Ar in a Dynamic Upwelling Region</title>
+      <link>http://localhost:1313/publication/2020wang/</link>
+      <pubDate>Sun, 12 Apr 2020 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2020wang/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h2&gt;&#xA;&lt;p&gt;Marine microbes produce and consume oxygen as a product of a balance between photosynthesis and respiration, thereby causing changes in the concentration of oxygen in the surface ocean. Taking advantage of known relationships between the gas properties of oxygen and argon, researchers can isolate changes in biologically produced oxygen from changes that result from physical processes. This calculation relies on several simplifying assumptions. In this study, we test the importance of these assumptions by tracking changes in biological oxygen while following several water parcels over the course of 2–4 days. We find that accounting for vertical mixing processes and the rate of change in biological oxygen is important when estimating biological oxygen production rates. We also find that daily shifts in oxygen as photosynthesis rises through the day and falls to zero at night can influence measurements based on time of collection.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The transpolar drift as a source of riverine and shelf‐derived trace elements to the central Arctic Ocean</title>
       <link>http://localhost:1313/publication/2020charette/</link>
       <pubDate>Wed, 08 Apr 2020 16:37:31 +0200</pubDate>
       <guid>http://localhost:1313/publication/2020charette/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;key-points&#34;&gt;Key Points&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The Transpolar Drift is a source of shelf- and river-derived elements to the central Arctic Ocean&lt;/li&gt;&#xA;&lt;li&gt;The TPD is rich in dissolved organic matter (DOM), which facilitates long-range transport of trace metals that form complexes with DOM&lt;/li&gt;&#xA;&lt;li&gt;Margin trace element fluxes may increase with future Arctic warming due to DOM release from permafrost thaw and increasing river discharge&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h3&gt;&#xA;&lt;p&gt;A major feature of the Arctic Ocean circulation is the Transpolar Drift (TPD), a surface current that carries ice and continental shelf-derived materials from Siberia across the North Pole to the North Atlantic Ocean. In 2015, an international team of oceanographers conducted a survey of trace elements in the Arctic Ocean, traversing the TPD. Near the North Pole, they observed much higher concentrations of trace elements in surface waters than in regions on either side of the current. These trace elements originated from land, and their journey across the Arctic Ocean is made possible by chemical reactions with dissolved organic matter that originates mainly in Arctic rivers. This study reveals the importance of rivers and shelf processes combined with strong ocean currents in supplying trace elements to the central Arctic Ocean and onward to the Atlantic. These trace element inputs are expected to increase as a result of permafrost thawing and increased river runoff in the Arctic, which is warming at a rate much faster than anywhere else on Earth. Since many of the trace elements are essential building blocks for ocean life, these processes could lead to significant changes in the marine ecosystems and fisheries of the Arctic Ocean.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Satellite estimation of carbon export by sinking particles in the California Current calibrated with sediment trap data</title>
+      <link>http://localhost:1313/publication/2020kahru/</link>
+      <pubDate>Thu, 12 Mar 2020 16:37:31 +0200</pubDate>
+      <guid>http://localhost:1313/publication/2020kahru/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Models predicting export flux (EF) of carbon from satellite-derived estimates of net primary production (NPP) are evaluated&lt;/li&gt;&#xA;&lt;li&gt;Higher slope of EF relative to NPP compared to the Kelly et al. (2018) model provides better agreement&lt;/li&gt;&#xA;&lt;li&gt;The best estimates of EF were obtained when using average NPP during a preceding period of ~7–8 days.&lt;/li&gt;&#xA;&lt;li&gt;Export efficiency (EF/NPP) is negatively correlated with satellite-derived NPP estimates.&lt;/li&gt;&#xA;&lt;li&gt;The choice of the EF model has a strong effect on the dynamic range of the predicted time series&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Vanadium cycling in the Western Arctic Ocean is influenced by shelf-basin connectivity</title>
@@ -81,16 +137,16 @@
     </item>
     <item>
       <title>The importance of mesozooplankton diel vertical migration for sustaining a mesopelagic food web</title>
-      <link>http://localhost:1313/publication/kelly2019/</link>
+      <link>http://localhost:1313/publication/2019kelly/</link>
       <pubDate>Thu, 12 Sep 2019 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/kelly2019/</guid>
+      <guid>http://localhost:1313/publication/2019kelly/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCE II: Spatial and interannual variability in export efficiency and the biological pump in an eastern boundary current upwelling system with substantial lateral advection</title>
-      <link>http://localhost:1313/publication/kelly-2018/</link>
+      <link>http://localhost:1313/publication/2018kelly/</link>
       <pubDate>Fri, 12 Oct 2018 16:37:31 +0200</pubDate>
-      <guid>http://localhost:1313/publication/kelly-2018/</guid>
+      <guid>http://localhost:1313/publication/2018kelly/</guid>
       <description>&lt;p&gt;You can add information in $\LaTeX$ and &lt;em&gt;Markdown&lt;/em&gt; here.&lt;/p&gt;</description>
     </item>
     <item>

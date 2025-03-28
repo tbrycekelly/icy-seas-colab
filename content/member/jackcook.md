@@ -21,4 +21,4 @@ sort_position = 6
 
 +++
 
-A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the Arctic Flux Repository. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.
+A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the [Arctic Flux Repository](/project/arctic-flux-repository/). I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.

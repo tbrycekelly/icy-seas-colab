@@ -2,13 +2,14 @@
 bio = ""
 date = "2020-07-12T15:52:22+02:00"
 id = "Gwenn M. M. Hennon"
-interests = ["Microbial Dynamics", "Genetic Sequencing", "Primary Production"]
+interests = ["ocean acidification", "microbial ecology", "harmful algae", "bioinformatics", "transcriptomics and metatranscriptomics"]
 name = "Gwenn M. M. Hennon"
 portrait = "/avatar/gwennhennon.jpg"
 short_bio = "My short bio. I am Member Member."
 short_name = ""
 title = "Gwenn Hennon"
 sort_position = 4
+external_link = "https://www.hennonlab.com/"
 
 [[social]]
     icon = "envelope"
@@ -46,37 +47,19 @@ sort_position = 4
 
 +++
 
-I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.
+Dr. Gwenn Hennon is an Assistant Professor at the University of Alaska Fairbanks. Gwenn loves the way phytoplankton are both astonishingly beautiful and globally important. She wants to be able to predict phytoplankton community composition in the future ocean and understand how microbial interactions may shift.
 
+Her hobbies include cross-country skiing, paddle boarding, and hiking with her husband and two kids.
 
 ### Research Overview
-I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.
+The Hennon Lab is based at the University of Alaska Fairbanks where we culture phytoplankton and sequence marine microbes to understand how climate change impacts them. Our field work takes us all over the state of Alaska including Kachemak Bay, Lynn Canal, the Gulf of Alaska and up to the Arctic. We also collect samples in the sub-tropics in places such as Bermuda to understand how phytoplankton in nutrient poor regions will be impacted by ocean acidification.
 
-Ultimately I am always interested in learning new approaches and working together to build the next new innovation in earth systems and oceanography.
+Our goal is to uncover how phytoplankton populations will acclimate and adapt to changes in CO2, temperature, and sea ice conditions predicted for future decades. Our work is organism focused but we love to collaborate broadly with biogeochemists and ecological modelers to put our organisms in the broader context.
 
 ### Advising
 
-- Hannah Kepner, M.S.
-- Megan Brauner, Ph.D.
-- Sarah Hendricks, M.S.
-- Stephanie O’Daly (2021-2024) Ph.D.
+- Kyle Dilliplaine
+- Megan Brauner
+- Jake Cohen
+- Stephanie O'Daly
 
-
----
-
-### Contact Information
-*Physical Address*
-
-**Mailing:**
-2150 Koyukuk Drive
-O’Neill Bulding 245
-Fairbanks AK, 99775
-
-**Office:** O’Neill Building room 127
-**Lab:** Irving II room 239
-
-*Digital Address*
-
-**EMail:** tbkelly@alaska.edu
-**Website:** https://tkelly.org/
-**Github:** https://github.com/tbrycekelly
