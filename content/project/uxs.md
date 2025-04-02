@@ -8,9 +8,9 @@ short_description = "A NOAA funded project to demonstrate utility of in situ gli
 title = "UxS Glider Program"
 
 [[participants]]
-    name = "tbkelly"
+    name = "Thomas Bryce Kelly"
     is_member = true
-    id = "tbkelly"
+    id = "Thomas Bryce Kelly"
 
 +++
 

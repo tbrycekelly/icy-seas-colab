@@ -10,7 +10,7 @@ title = "Northern Gulf of Alaska LTER"
 [[participants]]
     name = "Thomas Bryce Kelly"
     is_member = true
-    id = "tbkelly"
+    id = "Thomas Bryce Kelly"
     
 [[participants]]
     name = "Russel Hopcroft"

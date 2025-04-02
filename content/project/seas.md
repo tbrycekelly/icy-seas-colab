@@ -8,9 +8,9 @@ short_description = "SEAS is a synthesis project bringing together observations 
 title = "SEAS the Change"
 
 [[participants]]
-    name = "tbkelly"
+    name = "Thomas Bryce Kelly"
     is_member = true
-    id = "tbkelly"
+    id = "Thomas Bryce Kelly"
 
 +++
 

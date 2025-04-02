@@ -8,9 +8,9 @@ short_description = "Alaska Science Stories is an outreach program seeking to un
 title = "Alaska Science Stories"
 
 [[participants]]
-    name = "tbkelly"
+    name = "Thomas Bryce Kelly"
     is_member = true
-    id = "tbkelly"
+    id = "Thomas Bryce Kelly"
 
 +++
 

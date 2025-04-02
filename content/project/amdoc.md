@@ -8,9 +8,9 @@ short_description = "A combined education-science project investigating optical 
 title = "Alaskan Marine Dynamics from Ocean Color"
 
 [[participants]]
-    name = "tbkelly"
+    name = "Thomas Bryce Kelly"
     is_member = true
-    id = "tbkelly"
+    id = "Thomas Bryce Kelly"
 
 +++
 
