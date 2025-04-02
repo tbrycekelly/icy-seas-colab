@@ -7,10 +7,6 @@ noctisque cubile? Iacit coetus, vastatoremque dedit; Vidi magna, recurvatis
 copia. Quod sit; per cingo tamen Hyperionis si vacat **inclitus** instabat
 curaque arma saxea, naturaeque pondere quaeque aer!
 
-1. Agros apertum aliis dominaeque rapidus
-2. Prima nulla est
-3. Hortatibus voto
-
 ## Where did we come from
 
 Quaque coeptis lumina mea nuda dentes semine agitavit, caesique voluptas. Proque
