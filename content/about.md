@@ -1,45 +1,47 @@
-# About the Icy Seas Co-Lab
+# About Icy Seas Co-Laboratory LLC
 
-## What we do
+## Who We Are
+Icy Seas Co-Laboratory LLC is a scientific consultancy based in Fairbanks, Alaska.  
+We bring together expertise in oceanography, data science, and technical computing to help researchers, communities, and organizations better understand and respond to environmental change.  
 
-Lorem markdownum finemque prunaque longe et sunt. Sed super aulaea in Paridis
-noctisque cubile? Iacit coetus, vastatoremque dedit; Vidi magna, recurvatis
-copia. Quod sit; per cingo tamen Hyperionis si vacat **inclitus** instabat
-curaque arma saxea, naturaeque pondere quaeque aer!
+Our work emphasizes:
+- **Oceanographic research** – from field observations to modeling.
+- **Data-driven solutions** – analysis, visualization, and reproducible workflows.
+- **Collaboration** – supporting Indigenous research centers, academic partners, and public stakeholders.
+- **Communication** – making science approachable through outreach, education, and storytelling.
 
-## Where did we come from
+We believe science works best when it is transparent, accessible, and collaborative.
 
-Quaque coeptis lumina mea nuda dentes semine agitavit, caesique voluptas. Proque
-priori vultus est colle fuit manet manibusque Liber vulnus famulosque memorante
-dari. Aut quod ergo, oris simulasse. Ministros cogeret momordit aut tibi, posita
-non inhaesit sede vulnera sontes Phoebeos, faenilibus non rursus.
+---
 
-- Nec nulli et gravidae dumque tempore et
-- Vituli adunca
-- Modo venit
-- Dixit virgineos vim non
-- Sed ferventi est tamen ut lumine fatorum
-- Latos in dare
+## Mission
+Our mission is to connect advanced research with practical solutions, supporting sustainable decision-making in a rapidly changing Arctic.
 
-## Our approach
+---
 
-Puppibus solo fecitque ardet quoniam **humanas**. *Nec* penates magno;
-Andromedan *in* cantus Dircen triste: diu volatu medicamen spectans mactatae non
-fraude. In taedia et parvoque movere.
+## Vision
+We envision a future where Arctic science and technology are integrated with community knowledge, ensuring resilient ecosystems and societies.
 
-[Vix non ut](http://nona.net/quaerebatque-sanguis.html) inanes *extremo viribus
-sum* noctes et quibus senili [muros](http://www.tenuit.net/glandesvult.php).
-Concubitus pater et turba esse *pictam ad tellus* praevisos tulit fulvo, est
-rictu [Charybdis visa](http://saturnia.net/dea-inmanis), dat adventu pars. Per
-primo palluerat locorum volui insidiis quid; aeno pulvis infelix luna.
-Aequoribus Arcas exierat cremata nympha difficilis fugacem velit et putat,
-tonitruque per gratata abesse simul; si. Nam
-[unco](http://litem.org/confertquetimor.html) vultu, indignatus quid coronis
-ungula, passura iuvenem vultus qui divae?
+---
 
-Forte esse ferentem ardua locus impete, sunt est et nescit quid Echion age
-aliquem? Insonat ardet temptat tonitruque Tartessia Nini adstupet cortice, et
-facibus merui muneris commissas quae **dum**. Honorem *avidus felicior* et nec
-agitatis officium grave positamque, umeris hanc dum Eurystheus, *mentem*,
-classem metuendus, sub. Membris saepe omnia; haec excipitur posita fusus
-obstantia boum confessis.
+## Policies
+
+Icy Seas Co-Laboratory LLC is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:
+
+- **Equal Employment Opportunity (EEO):**  
+  We provide equal employment opportunities without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, or veteran status.  
+
+- **Non-Discrimination:**  
+  We do not discriminate in any program, service, or activity. We are committed to providing a welcoming, inclusive, and respectful environment for all collaborators, clients, and employees.  
+
+- **Affirmative Action:**  
+  We follow federal requirements to promote affirmative action in recruitment, hiring, training, and advancement.  
+
+- **Compliance Documentation:**  
+  We maintain all necessary certifications and documentation required for federal contracts, including but not limited to:
+  - EEO and Non-Discrimination Statements
+  - Affirmative Action Plan
+  - Federal Acquisition Regulation (FAR) compliance statements
+  - Business license, EIN, and SAM.gov registration  
+
+Copies of relevant policies and compliance documentation are available upon request.

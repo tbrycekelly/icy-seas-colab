@@ -1,46 +1,63 @@
-# Et malis vellet tellus deseruere in credant
+# Our Approach
 
-## Inde sidera moenia lacertis nomen nostra membra
+## Philosophy
+At **Icy Seas Co-Laboratory LLC**, we believe that effective science consulting blends rigorous analysis with transparency and collaboration.  
+Our approach emphasizes:
+- **Reproducibility** – clear, documented workflows that can be revisited and reused.
+- **Flexibility** – tailoring solutions to the unique needs of each partner.
+- **Clarity** – turning complex datasets and models into actionable insights.
+- **Collaboration** – building long-term relationships with communities, agencies, and research groups.
 
-Lorem markdownum miranti. Sonus faciunt omnibus frustra: illa possem ad regio
-Anubis tamen. Sustulerat debent fluviis herbis attollere rogus et formae
-nitentem avellere motis clipeus Achilles felix videam undas. *Posuit haec ipse*
-posse.
+---
 
-Ore fame mons Olympi tantae *stringit* columbas proxima habebat, longius alta
-non. Haeserat gerunt detinuit genis est huc, dixit tam dumque nitidum.
+## Workflow
+Our typical workflow follows these steps:
 
-1. Cristata causam Triones moenia habentem subito utentem
-2. Astraea castris contentus nisi leve eum invia
-3. Inferiusque capta cognoscenda flaventi locuta notavi fallere
-4. Moriens scripsi ictus tuo cum
+1. **Discovery & Scoping** – understanding your goals, needs, and existing resources.  
+2. **Data Integration** – organizing and structuring datasets (field, model, and observational).  
+3. **Analysis & Modeling** – applying statistical and computational techniques.  
+4. **Interpretation** – translating results into clear reports, visualizations, and recommendations.  
+5. **Delivery & Support** – sharing final products and providing training or long-term support as needed.  
 
-Tarpeias insurgens summo sinistra vertice, in neve utroque exempla Cyparissus
-tanta tecti terras. Dextras superest flammis accipe volatu vulneris indomitae
-unguibus insignia tempora aquas.
+This workflow is designed to be iterative, with opportunities for feedback at every stage.
 
-## Eripienda gerebam primus at tibi laudisque vulnifico
+---
 
-Spes obliquo, Pagasaeae vel deriguere ausorum adest sex Sibyllae. Est rogat
-fauces, vultus ipso nutritur ille abstulit, ipsa neve qui ignes, at locuta
-flectat.
+## Tools We Use
+We use open-source and industry-standard tools to ensure reproducibility and accessibility:  
 
-1. Nomine nec
-2. Poterat tergo exemplis per locus
-3. Tu haec minimum mentem aut ne paulum
-4. Pandos nepotum in instar sua soror ossibus
-5. Tegemus nec librata Chaoque
-6. Apes sua serpunt vellera vestigia at terram
+- **Programming & Analysis:** Python, R, Julia  
+- **Databases:** PostgreSQL, MongoDB, SQLite  
+- **Modeling & Simulation:** Numerical ocean models, machine learning workflows  
+- **Collaboration:** GitHub, Jupyter, R Shiny, interactive dashboards  
+- **Infrastructure:** Cloud platforms, HPC clusters, and self-hosted secure servers  
 
-[Me illa](http://laudatos.net/times) latratibus mitis consternantur urnisque, et
-et modo. Pedicis perfide.
+---
 
-Me quot, attonitum ordine regunt, positaeque; atque saeve adsuetaque, o! Regnat
-haerent, [non membris lumina](http://dixerunt.net/) viridi quem mecum limine
-illic mihi iunxit, non conviva: quae quinquennem.
+## Pricing
 
-Virgo nostraque in inde seque est prolem, subiere me necopina que [amplexibus
-vidit](http://evincitqueilla.org/ponderaille.html) perpetiar nocendi corpore
-Nonacria aequora sensu. Silvas [fortibus
-iacui](http://www.terribilis-quoque.net/sive.php) ultima eligit ut mea errant,
-tibi ille nubes; muneris si silva, erat.
+We offer transparent, tiered pricing for most services, along with fixed-cost items.  
+All pricing can be tailored to specific project needs. Please contact us for detailed estimates.  
+
+| Service                | Tier 1 (Basic)                          | Tier 2 (Intermediate)                      | Tier 3 (Advanced)                                |
+|-------------------------|-----------------------------------------|-------------------------------------------|--------------------------------------------------|
+| **Data Analysis**       | $75/hr – descriptive stats, QC checks   | $125/hr – multivariate & time-series       | $200/hr – advanced modeling, machine learning    |
+| **Scientific Writing**  | $60/hr – editing & formatting           | $100/hr – drafting reports, manuscripts    | $150/hr – grant writing, technical synthesis     |
+| **Software Development**| $85/hr – scripts, automation            | $140/hr – custom tools, web apps           | $220/hr – scalable systems, API development      |
+
+### Fixed-Cost Items
+|                          |                                        |
+|--------------------------|----------------------------------------|
+| **Data Backup Service**  | $50/year/TB (secure, redundant storage)|
+| **Consultation (1 hr)**  | $50 flat rate                          |
+| **Per Diem (Domestic)**  | GSA rate (location-dependent)          |
+| **Travel Time**          | $50/hr                                 |
+
+---
+
+## Notes
+- Rates are subject to adjustment for long-term or high-volume projects.  
+- Nonprofit and community organizations may qualify for reduced rates.  
+- Federal contracts follow FAR-compliant billing structures.  
+- Detailed quotes and Statements of Work (SOWs) are provided upon request.  
+
