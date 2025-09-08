@@ -13,7 +13,7 @@ sort_position = 1
 [[social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:tbkelly@alaska.edu"
+    link = "mailto:tkelly@icyseascolab.io"
 
 [[social]]
     icon = "google-scholar"
@@ -41,20 +41,20 @@ sort_position = 1
     year = 2014
 
 [[organizations]]
-    name = "University of Alaska fairbanks"
-    role = "Research Assistant Professor"
+    name = "Icy Seas Co-Laboratory"
+    role = "Founder"
 
 +++
 
-I’m an oceanographer and a Research Assistant Professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.
+I’m an oceanographer and founder of Icy Seas Co-Laboratory. I am also Affiliate Professor at the International Arctic Research Center. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail. Read my CV here.
 
 
 ### Research Overview
-I’m an oceanographer and a research professor at the University of Alaska Fairbanks. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment using state of the art tools including machine learning and biogeochemical models. My research is first and foremost observational, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.
+My research is first and foremost synthetic, using physical samples and experiments at sea to ground both the hypotheses and tools I use. I then construct models of the marine system to learn more about how my data connects to other components of the ocean, such as the food web, and then to explore how the system works.
 
 Ultimately I am always interested in learning new approaches and working together to build the next new innovation in earth systems and oceanography.
 
-### Advising
+### Student Advising
 
 - Hannah Kepner, M.S.
 - Megan Brauner, Ph.D.
@@ -67,14 +67,6 @@ Ultimately I am always interested in learning new approaches and working togethe
 ### Contact Information
 
 **Mailing:**
+762 Lancaster Drive
+Fairbanks AK, 99775
 
->2150 Koyukuk Drive
->
->O’Neill Bulding 245
->
->Fairbanks AK, 99775
-
-
-**Office:** O’Neill Building room 127
-
-**Lab:** Irving II room 239

@@ -1,3 +1,4 @@
+{{ if gt .Site.Params.publications.count 0 }}
 {{ $pubs_len := len (where .Site.RegularPages "Type" "publication") }}
 {{ if gt $pubs_len 0 }}
 <section id="publications" class="home-section">
@@ -25,4 +26,5 @@
         </div>
     </div>
 </section>
+{{ end }}
 {{ end }}

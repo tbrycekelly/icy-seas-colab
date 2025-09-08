@@ -1,41 +1,43 @@
-# Modo est
++++
+title = "Research"
++++
 
-## Non sub haedum tenet
+# Mission
 
-Lorem markdownum esse diversa quoque vocavit, quam! Vires tibi axis dum spolium
-*vaticinor fulminis*, a dixere attrahit generisque tamen?
+At Icy Seas Co-Laboratory LLC, our mission is to bridge science, technology, and community to advance understanding of our changing oceans. We combine rigorous research, innovative data tools, and collaborative partnerships to transform complex information into actionable knowledge. By making science transparent, reproducible, and accessible, we empower decision-makers, support Indigenous and local communities, and contribute to resilient ecosystems in the Arctic and beyond.
 
-- Petit invergens iram praetendat iam
-- Mecum res curva iunctura silvis hoc leonum
-- Iacent gemitum quos
+---
 
-## Non est duram mitis sonat proculcat tumulos
+### Philosophy
+At **Icy Seas Co-Laboratory LLC**, we believe that effective science consulting blends rigorous analysis with transparency and collaboration.  
+Our approach emphasizes:
+- **Reproducibility** – clear, documented workflows that can be revisited and reused.
+- **Flexibility** – tailoring solutions to the unique needs of each partner.
+- **Clarity** – turning complex datasets and models into actionable insights.
+- **Collaboration** – building long-term relationships with communities, agencies, and research groups.
 
-Alce bimembres Dauni, cur ex voces referam adunco in sors. Manibusque poples
-prodidit lata tantum quem suos ratae Aeginae sederunt degenerat Bacchus
-descendere, patriisque ieiunia.
+---
 
-## Harenas sanguine pennas fui
+### Workflow
+Our typical workflow follows these steps:
 
-Gentes aeris, sua mors dictis torvo colorem regione fugit principio Panopeusque
-regni florentis vidisse. [Profusis](http://motu-tutus.io/exerceor-vestigia.php)
-unda regnat ultima habitus cava tympana sudem et Aesonides fecit. Pondere visa
-stant comitavit, et parente umida contentis divumque *sospes non* facinus arma
-sed quamvis vectus. Fera nec uno erat, poterat censu nitebat, cognita simulacra?
-Fumis patuisset tantum et tanta ad matris enodisque vestros exigui.
+1. **Discovery & Scoping** – understanding your goals, needs, and existing resources.  
+2. **Data Integration** – organizing and structuring datasets (field, model, and observational).  
+3. **Analysis & Modeling** – applying statistical and computational techniques.  
+4. **Interpretation** – translating results into clear reports, visualizations, and recommendations.  
+5. **Delivery & Support** – sharing final products and providing training or long-term support as needed.  
 
-> Tamen coniectum sumpserat comites dura, amore exanimes iussit At? Cuncta
-> tellus ad turbine lupos. Querentes Ulixes rivus Thetis fraternaque adimunt,
-> sex vivacem, excepit potuit meruique, at tutos.
+This workflow is designed to be iterative, with opportunities for feedback at every stage.
 
-## Diversaque Medusae probatur sequens
+---
 
-Ea pruinosas verba lapidem, sustulit. Una quicquam nymphis adultera
-[maturus](http://www.corripuere.net/toto) fuimusve lumina occidimus subiti
-demoliturque pelagi.
+### Tools We Use
+We use open-source and industry-standard tools to ensure reproducibility and accessibility:  
 
-Satis omni hunc et quondam non, non curat adlabimur? Vocem oves curvum aptumque.
-Addendum tamen; parensque multi locum palmas tenent dubites sacra! Autem de quem
-autumnum cornu Echione Esse colebatur quodsi dextera perdidit rescierit coniuge,
-conata, manent omnia. Illa est fecerat nubila vix semel tetigere sit sine
-inguina.
+- **Programming & Analysis:** Python, R, Julia  
+- **Databases:** PostgreSQL, MongoDB, SQLite  
+- **Modeling & Simulation:** Numerical ocean models, machine learning workflows  
+- **Collaboration:** GitHub, Jupyter, R Shiny, interactive dashboards  
+- **Infrastructure:** Cloud platforms, HPC clusters, and self-hosted secure servers  
+
+Learn more about our [tools here](/docs/tools).

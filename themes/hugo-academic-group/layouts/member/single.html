@@ -108,29 +108,11 @@
            {{ .Scratch.Add "found" false }}
             {{ $member_id:= .Params.id }}
             {{ $projects:= where .Site.Pages "Section" "project" }}
-            {{ range $projects }}
-                {{ $current_project := . }}
-                {{ range .Params.participants }}
-                    {{ if eq .id $member_id }}
-                    {{ if not ($.Scratch.Get "found") }}
-                        <div class="row">
-                        <div class="col-sm-12">
-                            <h3>Projects</h3>
-                            <ul>
-                        {{ $.Scratch.Set "found" true }}
-                    {{ end }}
-                    <li>
-                        <a href="{{$current_project.Permalink}}">{{ $current_project.Title }}</a>
-                    </li>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
+            
             {{ if (.Scratch.Get "found") }}
-                </ul>
-                </div>
-            </div>
             {{ end }}
             {{ .Scratch.Delete "found" }}
+            
         <div class="row">
             <div class="col-sm-12">
                 <h3>Biography</h3>
@@ -161,7 +143,7 @@
                             {{ end }}
                         {{ end }}
                         {{ if $found }}
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                             {{ partial "publication_li_detailed" . }}
                             </div>
                         {{ end }}

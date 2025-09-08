@@ -184,15 +184,19 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/approach/</loc>
-  </url><url>
-    <loc>http://localhost:1313/mission/</loc>
-  </url><url>
     <loc>http://localhost:1313/research/</loc>
   </url><url>
     <loc>http://localhost:1313/vacancy/vacancy1/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/mission/</loc>
+  </url><url>
+    <loc>http://localhost:1313/approach/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/services/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>

@@ -1,3 +1,0 @@
-# Mission
-
-At Icy Seas Co-Laboratory LLC, our mission is to bridge science, technology, and community to advance understanding of our changing oceans. We combine rigorous research, innovative data tools, and collaborative partnerships to transform complex information into actionable knowledge. By making science transparent, reproducible, and accessible, we empower decision-makers, support Indigenous and local communities, and contribute to resilient ecosystems in the Arctic and beyond.

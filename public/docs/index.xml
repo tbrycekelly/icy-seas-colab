@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Icy Seas Co-Lab</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Docs on Icy Seas Co-Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Business Policies</title>
+      <link>http://localhost:1313/docs/business_policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/business_policies/</guid>
+      <description>&lt;h2 id=&#34;policies&#34;&gt;Policies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt; is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;intellectual-property&#34;&gt;Intellectual Property&lt;/h3&gt;&#xA;&lt;p&gt;Unless explicitly stated in the &lt;em&gt;statement of work (SOM)&lt;/em&gt;, &lt;em&gt;subaward agreement&lt;/em&gt;, or otherwise required by law; Icy Seas Co-Laboratory LLC will retain non-exclusive rights to all data and products generated. Right retained include, but are not limited to, distribution and reuse. Contracting party is assumed to retain the same non-exclusive rights unless otherwise agreed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Products &amp; Services</title>
+      <link>http://localhost:1313/docs/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/services/</guid>
+      <description>&lt;p&gt;A non-exhaustive list of services offered include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data Analysis&lt;/li&gt;&#xA;&lt;li&gt;Scientific Writing&lt;/li&gt;&#xA;&lt;li&gt;Software Development&lt;/li&gt;&#xA;&lt;li&gt;Laboratory Design Consultation&lt;/li&gt;&#xA;&lt;li&gt;Project Design Consultation&lt;/li&gt;&#xA;&lt;li&gt;Data Management Services&lt;/li&gt;&#xA;&lt;li&gt;Guest Lectures and Seminars&lt;/li&gt;&#xA;&lt;li&gt;Software and Project Reviews&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;We offer transparent, tiered pricing for most services, along with fixed-cost items.&lt;br&gt;&#xA;All pricing can be tailored to specific project needs. Please contact us for detailed estimates.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;Tier 1 (Basic)&lt;/th&gt;&#xA;          &lt;th&gt;Tier 2 (Intermediate)&lt;/th&gt;&#xA;          &lt;th&gt;Tier 3 (Advanced)&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Data Analysis&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;$75/hr – descriptive stats, QC checks&lt;/td&gt;&#xA;          &lt;td&gt;$125/hr – multivariate &amp;amp; time-series&lt;/td&gt;&#xA;          &lt;td&gt;$200/hr – advanced modeling, machine learning&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Scientific Writing&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;$60/hr – editing &amp;amp; formatting&lt;/td&gt;&#xA;          &lt;td&gt;$100/hr – drafting reports, manuscripts&lt;/td&gt;&#xA;          &lt;td&gt;$150/hr – grant writing, technical synthesis&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Software Development&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;$85/hr – scripts, automation&lt;/td&gt;&#xA;          &lt;td&gt;$140/hr – custom tools, web apps&lt;/td&gt;&#xA;          &lt;td&gt;$220/hr – scalable systems, API development&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;In addition to hourly services, we offer a comprehensive set of specialized services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research Tools</title>
+      <link>http://localhost:1313/docs/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tools/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Programming &amp;amp; Analysis:&lt;/strong&gt; Python, R, Julia&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Databases:&lt;/strong&gt; PostgreSQL, MongoDB, SQLite&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modeling &amp;amp; Simulation:&lt;/strong&gt; Numerical ocean models, machine learning workflows&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Collaboration:&lt;/strong&gt; GitHub, Jupyter, R Shiny, interactive dashboards&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Cloud platforms, HPC clusters, and self-hosted secure servers&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -119,7 +119,7 @@ h6,
 
 h1 {
     margin-bottom: 21px;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 h3 {
@@ -130,6 +130,18 @@ h3 {
 h4 {
     font-weight: 700;
 }
+
+/* Desktop/tablet defaults */
+
+
+/* Make headings smaller on mobile */
+@media (max-width: 640px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 1.1rem; }
+}
+
 
 a, a:visited,
 h3.article-title a:hover {
@@ -804,6 +816,10 @@ nav#navbar-main li {
     text-decoration: none;
 }
 
+.nav-with-drop {
+    margin-right: -15px;
+}
+
 @media screen and (max-width: 1000px) {
     .navbar {
         min-height: 50px !important;
@@ -862,6 +878,9 @@ nav#navbar-main li {
         height: 40px;
         display:inline;
     }
+    li.dropdown {
+        left: 30px;
+    }
 }
 
 
@@ -875,6 +894,35 @@ table {
     margin-bottom: 1rem;
     font-size: 0.93rem;
 }
+
+table {
+  border-collapse: collapse;
+  width: auto;
+  border-collapse: separate;
+  border-spacing: 0;         /* removes gaps between cells */
+  border: 0px solid #ccc;    /* outline border */
+  border-radius: 10px;       /* rounded corners */
+  overflow: hidden;          /* keeps child cells inside the curve */
+}
+
+table th {
+  background-color: #eee;
+  color: #006199;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 8px;
+}
+
+/* Banding: every even row */
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Optional: header styling */
+
+
 
 table > thead > tr > th,
 table > tbody > tr > th,

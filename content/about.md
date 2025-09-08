@@ -1,3 +1,7 @@
++++
+title = "About"
++++
+
 # About Icy Seas Co-Laboratory LLC
 
 ## Who We Are
@@ -44,4 +48,4 @@ Icy Seas Co-Laboratory LLC is committed to maintaining the highest professional 
   - Federal Acquisition Regulation (FAR) compliance statements
   - Business license, EIN, and SAM.gov registration  
 
-Copies of relevant policies and compliance documentation are available upon request.
+See a full directory of our policies [here](/docs/policies). Copies of specific policies and compliance documentation are available upon request.
