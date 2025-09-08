@@ -8,9 +8,6 @@
                 {{.Site.Params.slogan | safeHTML}}
             </h1>
             <!-- <hr> -->
-            <p class="slogan-text">
-                {{.Site.Params.slogan_text}}
-            </p>
             <div class="container-fluid">
                 <div class="row">
                     {{range .Site.Params.slogan_columns}}
@@ -27,7 +24,10 @@
                     </div>
                     {{end}}
                 </div>
-        </div>
+            </div>
+            <p class="slogan-text">
+                {{.Site.Params.slogan_text}}
+            </p>
         </div>
     </div>
 </header>

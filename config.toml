@@ -10,6 +10,7 @@ math = true
 copyright = "&copy; Thomas Bryce Kelly, 2025 "
 pygmentsOptions = "linenos=table"
 
+
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -20,6 +21,10 @@ tag = "tags"
   author = "Thomas Bryce Kelly"
   email = "tkelly@icyseascolab.io"
   address = ""
+
+  [[params.logo]]
+    image = "favicon.png"
+    link = "/"
 
   slogan = "Icy Seas Co-Laboratory LLC"
   slogan_text = "Oceanographic Research"

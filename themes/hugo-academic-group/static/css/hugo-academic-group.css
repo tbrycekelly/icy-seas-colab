@@ -131,9 +131,6 @@ h4 {
     font-weight: 700;
 }
 
-/* Desktop/tablet defaults */
-
-
 /* Make headings smaller on mobile */
 @media (max-width: 640px) {
   h1 { font-size: 1.5rem; }
