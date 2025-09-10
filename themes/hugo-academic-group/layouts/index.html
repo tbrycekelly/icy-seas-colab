@@ -2,6 +2,8 @@
 {{ partial "navbar.html" . }}
 {{ partial "slogan.html" . }}
 
+{{ partial "index/panels.html" (dict "ctx" . "group" "cta" "title" "" "cols" 1) }}
+
 <!-- Projects Section -->
 {{ partial "index/projects.html" . }}
 
@@ -15,7 +17,11 @@
 <!--{{ partial "index/members.html" . }}-->
 
 <!-- Vacancies -->
-{{ partial "index/open_projects.html" . }}
+<!--{{ partial "index/open_projects.html" . }}-->
+
+{{ partial "index/panels.html" (dict "ctx" . "group" "testimonials" "title" "What Clients Say" "cols" 3) }}
+{{ partial "index/panels.html" (dict "ctx" . "group" "services" "title" "" "cols" 2) }}
+{{ partial "index/panels.html" (dict "ctx" . "group" "features" "title" "Why Work With Us" "cols" 2) }}
 
 <!-- Contact Section -->
 {{ if .Site.Params.contact.enable }}

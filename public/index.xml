@@ -10,6 +10,76 @@
     <lastBuildDate>Wed, 26 Feb 2025 16:37:31 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Data Analysis</title>
+      <link>http://localhost:1313/home/panels/service-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/service-analysis/</guid>
+      <description>&lt;h4 id=&#34;data-analysis&#34;&gt;Data Analysis&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Exploratory Data Insights&lt;/li&gt;&#xA;&lt;li&gt;Statistical Modeling &amp;amp; Forecasting&lt;/li&gt;&#xA;&lt;li&gt;Time Series &amp;amp; Spatial Analysis&lt;/li&gt;&#xA;&lt;li&gt;Interactive Reporting &amp;amp; Dashboards&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/home/panels/co-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/co-lab/</guid>
+      <description>&lt;h2 id=&#34;the-co-laboratory-concept&#34;&gt;The Co-Laboratory Concept&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Co-Laboratory&lt;/strong&gt; is built on the idea that science thrives when it’s shared. Rather than working in isolation, we create a collaborative space where researchers, students, and community partners can pool expertise, data, and tools to tackle complex environmental challenges.&lt;/p&gt;&#xA;&lt;p&gt;By blending rigorous analysis with open exchange, the &lt;strong&gt;Co-Lab&lt;/strong&gt; turns individual projects into collective progress—helping us generate insights that are broader, deeper, and more impactful than any single effort could achieve alone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Analysis</title>
+      <link>http://localhost:1313/home/panels/service-software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/service-software/</guid>
+      <description>&lt;h4 id=&#34;software-development&#34;&gt;Software Development&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Custom Data Processing Pipelines&lt;/li&gt;&#xA;&lt;li&gt;Interactive Dashboards &amp;amp; Web Apps&lt;/li&gt;&#xA;&lt;li&gt;Database Design &amp;amp; API Integration&lt;/li&gt;&#xA;&lt;li&gt;Workflow Automation &amp;amp; Reproducibility&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Great support</title>
+      <link>http://localhost:1313/home/panels/feature_adaptable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/feature_adaptable/</guid>
+      <description>&lt;h4 id=&#34;adaptable--nimble&#34;&gt;Adaptable &amp;amp; Nimble&lt;/h4&gt;&#xA;&lt;p&gt;From running a laboratory, leading interdisciplinary proposals, and training the next generation of scientists; we know what it takes to succeed. We can be &lt;strong&gt;&lt;em&gt;your partner&lt;/em&gt;&lt;/strong&gt; in facilitating cutting edge research and data-driven science.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Great support</title>
+      <link>http://localhost:1313/home/panels/testimonial-1-copy-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/testimonial-1-copy-2/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Icy Seas Co-Lab transformed our workflow. — &lt;strong&gt;A. Researcher&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Great support</title>
+      <link>http://localhost:1313/home/panels/testimonial-1-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/testimonial-1-copy/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Icy Seas Co-Lab transformed our workflow. — &lt;strong&gt;A. Researcher&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Great support</title>
+      <link>http://localhost:1313/home/panels/testimonial-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/testimonial-1/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Icy Seas Co-Lab transformed our workflow. — &lt;strong&gt;A. Researcher&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Transparent</title>
+      <link>http://localhost:1313/home/panels/feature_transparent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/feature_transparent/</guid>
+      <description>&lt;h4 id=&#34;transparent&#34;&gt;Transparent&lt;/h4&gt;&#xA;&lt;p&gt;Open-source, transparent philosophy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technical Writing</title>
+      <link>http://localhost:1313/home/panels/service-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/service-writing/</guid>
+      <description>&lt;h4 id=&#34;technical-writing&#34;&gt;Technical Writing&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Grant Proposals &amp;amp; White Papers&lt;/li&gt;&#xA;&lt;li&gt;Manuscript Preparation &amp;amp; Editing&lt;/li&gt;&#xA;&lt;li&gt;Software &amp;amp; Methods Documentation&lt;/li&gt;&#xA;&lt;li&gt;Educational &amp;amp; Outreach Materials&lt;/li&gt;&#xA;&lt;li&gt;Scientific Literature Synthesis&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Advising</title>
+      <link>http://localhost:1313/home/panels/service-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/panels/service-management/</guid>
+      <description>&lt;h4 id=&#34;scientific-advising&#34;&gt;Scientific Advising&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Design &amp;amp; Methodology Guidance&lt;/li&gt;&#xA;&lt;li&gt;Data Management &amp;amp; Open Science Practices&lt;/li&gt;&#xA;&lt;li&gt;Independent Research Plan Evaluation&lt;/li&gt;&#xA;&lt;li&gt;Policy &amp;amp; Stakeholder Communication&lt;/li&gt;&#xA;&lt;li&gt;Mentorship &amp;amp; Quantitative Training&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Spatial distributions of iron and manganese in surface waters of the Arctic&#39;s Laptev and East Siberian seas</title>
       <link>http://localhost:1313/publication/2025kanna/</link>
       <pubDate>Wed, 26 Feb 2025 16:37:31 +0200</pubDate>

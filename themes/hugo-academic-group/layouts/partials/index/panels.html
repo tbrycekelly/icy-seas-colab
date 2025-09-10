@@ -1,0 +1,58 @@
+{{- $group := .group -}}
+{{- $title := .title | default "" -}}
+{{- $cols  := .cols  | default 3 -}}
+
+{{/* Get the branch bundle at /home/panels */}}
+{{- $bundle := site.GetPage "/home/panels" -}}
+{{- if not $bundle -}}
+  {{- errorf "Panels bundle not found at /home/panels. Check that content/home/panels/_index.md exists." -}}
+{{- end -}}
+
+{{/* DEBUG: log what the bundle looks like */}}
+{{- warnf "panels: kind=%s path=%s pages=%d resources=%d"
+    $bundle.Kind $bundle.File.Path (len $bundle.Pages) (len $bundle.Resources) -}}
+{{- range $bundle.Pages -}}
+  {{- warnf "panels: child page → %s (title=%q, group=%v, weight=%v, draft=%v)"
+      .File.Path .Title .Params.group .Params.weight .Draft -}}
+{{- end -}}
+
+{{/* Collect child pages in this branch section (NOT Resources) */}}
+{{- $all := $bundle.RegularPages -}} {{/* excludes drafts unless buildDrafts is on */}}
+{{- $items := where $all "Params.group" $group -}}
+
+{{/* Fallback: site-wide scan limited to this directory, in case something is odd */}}
+{{- if eq (len $items) 0 -}}
+  {{- warnf "panels: group %q returned 0 items from bundle.Pages; trying site-wide fallback" $group -}}
+  {{- $inDir := where site.RegularPages "File.Dir" "eq" "home/panels/" -}}
+  {{- $items  = where $inDir "Params.group" $group -}}
+  {{- warnf "panels: fallback found %d pages under home/panels/" (len $items) -}}
+{{- end -}}
+
+{{- if gt (len $items) 0 -}}
+<section class="home-section" id="panels-{{ $group }}">
+  <div class="container">
+    {{- if $title }}
+    <div class="row">
+      <div class="col-xs-12 section-heading">
+        <h2>{{ $title }}</h2>
+      </div>
+    </div>
+    {{- end }}
+
+    {{- $classFor := dict "1" "col-md-12" "2" "col-md-6" "3" "col-md-4" "4" "col-md-3" -}}
+    <div class="row">
+      {{- range $i, $p := $items -}}
+        {{- $useCols := cond (isset $p.Params "cols") (index $p.Params "cols") $cols -}}
+        {{- $md := index $classFor (printf "%d" $useCols) | default "col-md-4" -}}
+        <div class="col-xs-12 {{ $md }} mb-4">
+          <div class="panel panel-default p-3">
+            {{ $p.Content | safeHTML }}
+          </div>
+        </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- else -}}
+  {{- warnf "panels: no items to render for group %q" $group -}}
+{{- end -}}
