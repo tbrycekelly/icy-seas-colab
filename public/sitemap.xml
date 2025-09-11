@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/home/panels/service-analysis/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/co-lab/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/service-software/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/feature_adaptable/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/testimonial-1-copy-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/testimonial-1-copy/</loc>
+  </url><url>
     <loc>http://localhost:1313/home/panels/testimonial-1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/feature_transparent/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/service-writing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/service-management/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-26T16:37:31+02:00</lastmod>

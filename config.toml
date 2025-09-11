@@ -20,7 +20,8 @@ tag = "tags"
   description = "Icy Seas Co-Laboratory LLC"
   author = "Thomas Bryce Kelly"
   email = "tkelly@icyseascolab.io"
-  address = ""
+  address = "762 Lancaster Drive, Fairbanks, AK 99712"
+  phone = "(844) ICY-SEAS"
 
   [[params.logo]]
     image = "favicon.png"
