@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
-    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 15:50:58 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Founding Icy Seas Co-Lab</title>
+      <link>http://localhost:1313/post/2025-founding-icyseas/</link>
+      <pubDate>Wed, 10 Sep 2025 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2025-founding-icyseas/</guid>
+      <description>&lt;p&gt;Although &lt;strong&gt;Icy Seas Co-Lab&lt;/strong&gt; has been around in one form or another for the past couple of years, just recently we decided to take the full step of incorporating into &lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt;. We did this for two reasons:&lt;/p&gt;&#xA;&lt;p&gt;As a research consultancy, we strive to be a leading model for university-private partnerships.&lt;/p&gt;&#xA;&lt;h2 id=&#34;examples-of-partnerships&#34;&gt;Examples of partnerships&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Development of a data product.&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Subaward for model analysis.&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Co-investigator on NSF project.&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data management for project.&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This list is far from an exhaustive listing of the types of collaborations and partnerships that Icy Seas Co-Lab can maintain with university researchers but it is a starting point.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Retrieving data from the bottom of the ocean: OCR for ROV</title>
       <link>http://localhost:1313/post/2024-ocr/</link>

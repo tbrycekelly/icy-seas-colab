@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
-    <lastBuildDate>Wed, 26 Feb 2025 16:37:31 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 15:50:58 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Analysis</title>
@@ -78,6 +78,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/home/panels/service-management/</guid>
       <description>&lt;h4 id=&#34;scientific-advising&#34;&gt;Scientific Advising&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Design &amp;amp; Methodology Guidance&lt;/li&gt;&#xA;&lt;li&gt;Data Management &amp;amp; Open Science Practices&lt;/li&gt;&#xA;&lt;li&gt;Independent Research Plan Evaluation&lt;/li&gt;&#xA;&lt;li&gt;Policy &amp;amp; Stakeholder Communication&lt;/li&gt;&#xA;&lt;li&gt;Mentorship &amp;amp; Quantitative Training&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Founding Icy Seas Co-Lab</title>
+      <link>http://localhost:1313/post/2025-founding-icyseas/</link>
+      <pubDate>Wed, 10 Sep 2025 15:50:58 +0200</pubDate>
+      <guid>http://localhost:1313/post/2025-founding-icyseas/</guid>
+      <description>&lt;p&gt;Although &lt;strong&gt;Icy Seas Co-Lab&lt;/strong&gt; has been around in one form or another for the past couple of years, just recently we decided to take the full step of incorporating into &lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt;. We did this for two reasons:&lt;/p&gt;&#xA;&lt;p&gt;As a research consultancy, we strive to be a leading model for university-private partnerships.&lt;/p&gt;&#xA;&lt;h2 id=&#34;examples-of-partnerships&#34;&gt;Examples of partnerships&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Development of a data product.&lt;/strong&gt; University researcher has generated datasets through sponsored research activities and needs to generate a final data product. They contract &lt;em&gt;Icy Seas Co-Lab&lt;/em&gt; as a contractor to develop and supply a data product.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Subaward for model analysis.&lt;/strong&gt; Icy Seas Co-Lab provides a university researcher with a statement of work (SOW) and provides required paperwork to the university&amp;rsquo;s grants development office. Icy Seas Co-Lab collaborates with the university researchers for the duration of the project.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Co-investigator on NSF project.&lt;/strong&gt; For a collaborative, multi-institute proposal, Icy Seas Co-Lab submits a proposal along with university researchers. Either institute could be prime. &lt;em&gt;(Not all RFPs allow for for-profit corporations to respond, but many do.)&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data management for project.&lt;/strong&gt; University researchers need a modern and functional data management pipeline for their project. Icy Seas Co-Lab is contracted to provide a data integration platform, to facilitate data submission, and to work with researchers throughout the process.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This list is far from an exhaustive listing of the types of collaborations and partnerships that Icy Seas Co-Lab can maintain with university researchers but it is a starting point.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spatial distributions of iron and manganese in surface waters of the Arctic&#39;s Laptev and East Siberian seas</title>
@@ -291,9 +298,9 @@
     </item>
     <item>
       <title>Gwenn Hennon</title>
-      <link>http://localhost:1313/member/gwennhennon/</link>
+      <link>http://localhost:1313/not-yet/gwennhennon/</link>
       <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/member/gwennhennon/</guid>
+      <guid>http://localhost:1313/not-yet/gwennhennon/</guid>
       <description>&lt;p&gt;Dr. Gwenn Hennon is an Assistant Professor at the University of Alaska Fairbanks. Gwenn loves the way phytoplankton are both astonishingly beautiful and globally important. She wants to be able to predict phytoplankton community composition in the future ocean and understand how microbial interactions may shift.&lt;/p&gt;&#xA;&lt;p&gt;Her hobbies include cross-country skiing, paddle boarding, and hiking with her husband and two kids.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;The Hennon Lab is based at the University of Alaska Fairbanks where we culture phytoplankton and sequence marine microbes to understand how climate change impacts them. Our field work takes us all over the state of Alaska including Kachemak Bay, Lynn Canal, the Gulf of Alaska and up to the Arctic. We also collect samples in the sub-tropics in places such as Bermuda to understand how phytoplankton in nutrient poor regions will be impacted by ocean acidification.&lt;/p&gt;</description>
     </item>
     <item>
@@ -354,58 +361,58 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/alumni/stephanieodaly/</link>
+      <link>http://localhost:1313/not-yet/alumni/stephanieodaly/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/alumni/stephanieodaly/</guid>
+      <guid>http://localhost:1313/not-yet/alumni/stephanieodaly/</guid>
       <description>&lt;p&gt;TBD&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/guests/sarahhendricks/</link>
+      <link>http://localhost:1313/not-yet/guests/sarahhendricks/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/guests/sarahhendricks/</guid>
+      <guid>http://localhost:1313/not-yet/guests/sarahhendricks/</guid>
       <description>&lt;p&gt;fg&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/member/tylerhennon/</link>
+      <link>http://localhost:1313/not-yet/tylerhennon/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/member/tylerhennon/</guid>
+      <guid>http://localhost:1313/not-yet/tylerhennon/</guid>
       <description></description>
     </item>
     <item>
       <title>Amelia England</title>
-      <link>http://localhost:1313/alumni/ameliaengland/</link>
+      <link>http://localhost:1313/not-yet/alumni/ameliaengland/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/alumni/ameliaengland/</guid>
+      <guid>http://localhost:1313/not-yet/alumni/ameliaengland/</guid>
       <description>&lt;p&gt;A chemical engineering undergraduate at UAF, and now gone on to continue her degree at Georgia Tech, Amelia was a valued member of the lab. She focused on processing sediment trap samples for carbon and nitrogen analysis, as well as engaging local middle school and high school students via Alaska Science Stories.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Amy Lauren</title>
-      <link>http://localhost:1313/member/amylauren/</link>
+      <link>http://localhost:1313/not-yet/amylauren/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/member/amylauren/</guid>
+      <guid>http://localhost:1313/not-yet/amylauren/</guid>
       <description>&lt;p&gt;Amy Lauren is an award-winning filmmaker/artist working at the nexus between research, education and artistic practice. She specializes in immersive storytelling using virtual reality.&lt;/p&gt;&#xA;&lt;p&gt;Learn more about her work &lt;a href=&#34;https://www.amylauren.net/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>caitlinhope</title>
-      <link>http://localhost:1313/member/caitlinhope/</link>
+      <link>http://localhost:1313/not-yet/caitlinhope/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/member/caitlinhope/</guid>
+      <guid>http://localhost:1313/not-yet/caitlinhope/</guid>
       <description>&lt;p&gt;I am a geoscience undergraduate concentrating in geophysics, actuated by a passion for understanding Earth&amp;rsquo;s natural systems. My academic journey began in biology and ultimately led me to geosciences. I’m particularly drawn to oceanography research, using computational methods to interpret patterns, systems, and interactions in the natural world. Outside the lab, I find inspiration in outdoor exploration and a good cup of coffee.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hannah Kepner</title>
-      <link>http://localhost:1313/alumni/hannahkepner/</link>
+      <link>http://localhost:1313/not-yet/alumni/hannahkepner/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/alumni/hannahkepner/</guid>
+      <guid>http://localhost:1313/not-yet/alumni/hannahkepner/</guid>
       <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jack Cook</title>
-      <link>http://localhost:1313/member/jackcook/</link>
+      <link>http://localhost:1313/not-yet/jackcook/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/member/jackcook/</guid>
+      <guid>http://localhost:1313/not-yet/jackcook/</guid>
       <description>&lt;p&gt;A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the &lt;a href=&#34;http://localhost:1313/project/arctic-flux-repository/&#34;&gt;Arctic Flux Repository&lt;/a&gt;. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.&lt;/p&gt;</description>
     </item>
     <item>
@@ -417,16 +424,16 @@
     </item>
     <item>
       <title>Megan Brauner</title>
-      <link>http://localhost:1313/guests/meganbrauner/</link>
+      <link>http://localhost:1313/not-yet/guests/meganbrauner/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/guests/meganbrauner/</guid>
+      <guid>http://localhost:1313/not-yet/guests/meganbrauner/</guid>
       <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Xavier Warren</title>
-      <link>http://localhost:1313/alumni/xavierwarren/</link>
+      <link>http://localhost:1313/not-yet/alumni/xavierwarren/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/alumni/xavierwarren/</guid>
+      <guid>http://localhost:1313/not-yet/alumni/xavierwarren/</guid>
       <description>&lt;p&gt;Residing in the Bay Area, California and former computer science student turned geoscientist. I am highly interested in the plethora of applications that computer science has within the field of oceanography. I am currently working on two projects (1) a universally implemented production model for the Gulf of Alaska, and (2) a machine-learning approach to identifying and quantifying morphological features and ornamentation in ammonoid shells. When not working on research and studying, I enjoy going to the gym, hikes, and weekend golf games.&lt;/p&gt;</description>
     </item>
     <item>
