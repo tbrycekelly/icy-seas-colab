@@ -67,6 +67,9 @@
 
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.png" type="image/x-icon">
     <link rel="canonical" href="{{ .Permalink }}">
+    {{- with .OutputFormats.Get "RSS" -}}
+    <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+    {{- end -}}
 
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 

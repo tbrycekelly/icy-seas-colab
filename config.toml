@@ -9,7 +9,7 @@ title = "Icy Seas Co-Lab"
 math = true
 copyright = "&copy; Thomas Bryce Kelly, 2025 "
 pygmentsOptions = "linenos=table"
-
+rssURI = "index.xml"
 
 [taxonomies]
 category = "categories"
@@ -150,3 +150,9 @@ tag = "tags"
       name = "Documentation"
       url = "/docs"
       weight = 6
+
+[outputs]
+home = ["HTML", "RSS"]           # site-wide feed at /index.xml
+section = ["HTML", "RSS"]        # per-section feeds like /posts/index.xml
+taxonomy = ["HTML", "RSS"]       # tag/category feeds like /tags/oceanography/index.xml
+term = ["HTML", "RSS"]
