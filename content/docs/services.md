@@ -24,7 +24,7 @@ All pricing can be tailored to specific project needs. Please contact us for det
 | **Scientific Writing**  | $60/hr – editing & formatting           | $100/hr – drafting reports, manuscripts    | $150/hr – grant writing, technical synthesis     |
 | **Software Development**| $85/hr – scripts, automation            | $140/hr – custom tools, web apps           | $220/hr – scalable systems, API development      |
 | **Data Management**     | $80/hr – dataset compilation & submission  | $120/hr – data curation &  meetings     | $180/hr – data leadership, coordination meetings |
-| **Field Services^**     |                                         | $120/hr – standard field methods           | $200/hr – advanced & intensive operations        |
+| **Field Services^**     |         none                              | $120/hr – standard field methods           | $200/hr – advanced & intensive operations        |
 
 
 In addition to hourly services, we offer a comprehensive set of specialized services.
