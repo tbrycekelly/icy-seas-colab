@@ -10,11 +10,11 @@
   </url><url>
     <loc>http://localhost:1313/home/panels/feature_adaptable/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/panels/testimonial-1-copy-2/</loc>
-  </url><url>
     <loc>http://localhost:1313/home/panels/testimonial-1-copy/</loc>
   </url><url>
     <loc>http://localhost:1313/home/panels/testimonial-1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/home/panels/testimonial-mentorship/</loc>
   </url><url>
     <loc>http://localhost:1313/home/panels/feature_transparent/</loc>
   </url><url>
@@ -187,6 +187,8 @@
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/field-services/</loc>
   </url><url>
     <loc>http://localhost:1313/home/</loc>
   </url><url>

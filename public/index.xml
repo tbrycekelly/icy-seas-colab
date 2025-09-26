@@ -52,7 +52,7 @@
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Icy Seas Co-Lab transformed our workflow. — &lt;strong&gt;NSF-funded program&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
-      <title>Great support</title>
+      <title>Mentorship</title>
       <link>http://localhost:1313/home/panels/testimonial-mentorship/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/home/panels/testimonial-mentorship/</guid>
@@ -413,14 +413,14 @@
       <link>http://localhost:1313/docs/business_policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/business_policies/</guid>
-      <description>&lt;h2 id=&#34;policies&#34;&gt;Policies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt; is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;intellectual-property&#34;&gt;Intellectual Property&lt;/h3&gt;&#xA;&lt;p&gt;Unless explicitly stated in the &lt;em&gt;statement of work (SOM)&lt;/em&gt;, &lt;em&gt;subaward agreement&lt;/em&gt;, or otherwise required by law; Icy Seas Co-Laboratory LLC will retain non-exclusive rights to all data and products generated. Right retained include, but are not limited to, distribution and reuse. Contracting party is assumed to retain the same non-exclusive rights unless otherwise agreed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;{{ .TableOfContents }}&lt;/p&gt;&#xA;&lt;h2 id=&#34;policies&#34;&gt;Policies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt; is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;intellectual-property&#34;&gt;Intellectual Property&lt;/h3&gt;&#xA;&lt;p&gt;Unless explicitly stated in the &lt;em&gt;statement of work (SOM)&lt;/em&gt;, &lt;em&gt;subaward agreement&lt;/em&gt;, or otherwise required by law; Icy Seas Co-Laboratory LLC will retain non-exclusive rights to all data and products generated. Right retained include, but are not limited to, distribution and reuse. Contracting party is assumed to retain the same non-exclusive rights unless otherwise agreed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Field Services</title>
       <link>http://localhost:1313/docs/field-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/field-services/</guid>
-      <description>&lt;p&gt;Field services are provided directly by Icy Seas Co-Lab founder, Dr. Thomas Kelly. Dr. Kelly has over 500 days of field work experience across five oceans. He has&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;water-sampling&#34;&gt;Water Sampling&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Chlorophyll&lt;/strong&gt;: discrete sampling and extracted chlorophyll-&lt;em&gt;a&lt;/em&gt; processing.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Macronutrient Concentrations&lt;/strong&gt;: discrete samples. Analysis performed at the &lt;em&gt;International Arctic Research Center&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dissolved Trace Element &amp;amp; Metal Concentrations&lt;/strong&gt;: discrete samples. Analysis performed at the &lt;em&gt;International Arctic Research Center&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dissolved Oxygen Concentrations&lt;/strong&gt;: discrete samples and on-site Winkler titrations.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Field services are provided directly by Icy Seas Co-Lab founder, Dr. Thomas Kelly. Dr. Kelly has over 500 days of field work experience across five oceans. Dr. Kelly has led and supported expeditions from the poles to the tropics, working aboard research vessels, small boats, and autonomous platforms. He has conducted numerous biological incubations, lead high resolution sensor deployments, and managed teams under challenging circumstances.&lt;/p&gt;&#xA;&lt;p&gt;This combination of technical skill, leadership, and cross-disciplinary experience allows &lt;strong&gt;Icy Seas Co-Lab&lt;/strong&gt; to offer reliable, adaptable field support for projects in challenging marine environments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Products &amp; Services</title>
