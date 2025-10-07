@@ -34,3 +34,13 @@ We follow federal requirements to promote affirmative action in recruitment, hir
   - Affirmative Action Plan
   - Federal Acquisition Regulation (FAR) compliance statements
   - Business license, EIN, and SAM.gov registration  
+
+  ---
+
+  ### Privacy Policy
+  **Data Sharing**
+- Customer data is not shared with 3rd parties for promotional or marketing purposes.
+- Mobile opt-in and consent are never shared with anyone for any purpose. Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data.
+
+**Messaging Terms and Conditions**
+- By providing your phone number and agreeing to receive texts, you consent to receive text messages from Icy Seas Co-Laboratory LLC, from 7742380779 regarding account notifications, customer care, delivery notifications. Consent is not a condition of purchase. Message frequency varies. Message & data rates may apply. You can reply STOP to unsubscribe at any time or HELP for assistance. You can also contact us at 7742380779 or tkelly@icyseascolab.io. Mobile opt-in information is never shared with third parties.
