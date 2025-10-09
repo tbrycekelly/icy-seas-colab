@@ -56,7 +56,7 @@
       <link>http://localhost:1313/home/panels/testimonial-mentorship/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/home/panels/testimonial-mentorship/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;You provided me with gentle guidance and mentorship &amp;hellip; I am beyond thankful for that — &lt;strong&gt;K.C. (student)&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;You provided me with gentle guidance and mentorship &amp;hellip; I am beyond thankful for that — &lt;strong&gt;student&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Transparent</title>
@@ -413,7 +413,7 @@
       <link>http://localhost:1313/docs/business_policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/business_policies/</guid>
-      <description>&lt;p&gt;{{ .TableOfContents }}&lt;/p&gt;&#xA;&lt;h2 id=&#34;policies&#34;&gt;Policies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt; is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;intellectual-property&#34;&gt;Intellectual Property&lt;/h3&gt;&#xA;&lt;p&gt;Unless explicitly stated in the &lt;em&gt;statement of work (SOM)&lt;/em&gt;, &lt;em&gt;subaward agreement&lt;/em&gt;, or otherwise required by law; Icy Seas Co-Laboratory LLC will retain non-exclusive rights to all data and products generated. Right retained include, but are not limited to, distribution and reuse. Contracting party is assumed to retain the same non-exclusive rights unless otherwise agreed.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;policies&#34;&gt;Policies&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Icy Seas Co-Laboratory LLC&lt;/em&gt; is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;intellectual-property&#34;&gt;Intellectual Property&lt;/h3&gt;&#xA;&lt;p&gt;Unless explicitly stated in the &lt;em&gt;statement of work (SOM)&lt;/em&gt;, &lt;em&gt;subaward agreement&lt;/em&gt;, or otherwise required by law; Icy Seas Co-Laboratory LLC will retain non-exclusive rights to all data and products generated. Right retained include, but are not limited to, distribution and reuse. Contracting party is assumed to retain the same non-exclusive rights unless otherwise agreed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Field Services</title>

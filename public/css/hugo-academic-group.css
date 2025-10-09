@@ -24,7 +24,7 @@ header{
     text-align: center;
     color: #025;
     background-position: center;
-    /* min-height: 100%;  */
+    min-height: 400px;
 }
 
 .header-content {
