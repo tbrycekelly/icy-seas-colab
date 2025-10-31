@@ -1,12 +1,31 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
+<style>
+      div.splitbox {width:100%; overflow:auto;}
+
+      div.splitbox div.column-left {
+                    width:48%;
+                    float:left;}
+      div.splitbox div.column-right {
+                    width:48%;
+                    float:right;}
+
+      @media only screen and (max-width: 600px) {
+      div.splitbox div.column-left {
+                    width:100%;
+                    float:left;}
+      div.splitbox div.column-right {
+                    width:100%;
+                    float:left;}
+      }
+  </style>
 
 <div class="container">
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <div class="col-xs-12 col-md-4">
         <div id="profile">
 
-            <div class="portrait" itemprop="image" style="background-image: url('{{ .Site.BaseURL }}/img/{{ .Params.portrait }}');"></div>
+            <div class="portrait" itemprop="image" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.portrait }}');"></div>
 
             <div class="portrait-title">
                 <h2 itemprop="name">{{ .Params.name }}</h2>
@@ -53,32 +72,47 @@
 
     <div class="visible-sm visible-xs"></div>
     <div class="col-xs-12 col-md-8" itemprop="description">
-        {{ .Scratch.Add "found" false }}
-            {{ $member_id:= .Params.id }}
-            {{ $projects:= where .Site.Pages "Section" "project" }}
-            {{ range $projects }}
-                {{ $current_project := . }}
-                {{ range .Params.participants }}
-                    {{ if eq .id $member_id }}
-                    {{ if not ($.Scratch.Get "found") }}
-                        <div class="row">
-                        <div class="col-sm-12">
-                            <h3>Projects</h3>
-                            <ul>
-                        {{ $.Scratch.Set "found" true }}
+        <div class="row">
+
+            {{ if isset .Params "interests" }}
+            <div class="col-sm-5">
+                <h3>Interests</h3>
+                <ul>
+                    {{ range .Params.interests }}
+                    <li>{{ . }}</li>
                     {{ end }}
-                    <li>
-                        <a href="{{$current_project.Permalink}}">{{ $current_project.Title }}</a>
-                    </li>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-            {{ if (.Scratch.Get "found") }}
                 </ul>
-                </div>
             </div>
             {{ end }}
+
+
+            {{ if isset .Params "education" }}
+            <div class="col-sm-7">
+                <h3>Education</h3>
+                <ul class="ul-edu fa-ul">
+                    {{ range .Params.education }}
+                    <li>
+                        <i class="fa-li fa fa-graduation-cap"></i>
+                        <div class="description">
+                            <p class="course">{{ .course }}, {{ .year }}</p>
+                            <p class="institution">{{ .institution }}</p>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+        </div>
+
+           {{ .Scratch.Add "found" false }}
+            {{ $member_id:= .Params.id }}
+            {{ $projects:= where .Site.Pages "Section" "project" }}
+            
+            {{ if (.Scratch.Get "found") }}
+            {{ end }}
             {{ .Scratch.Delete "found" }}
+            
         <div class="row">
             <div class="col-sm-12">
                 <h3>Biography</h3>
@@ -88,6 +122,42 @@
 
     </div>
 </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr />
+                <h3>Publications</h3>
+                {{ $publications := where .Site.RegularPages "Type" "publication" }}
+                
+                {{- $.Page.Scratch.Add "column_count" 1 -}} 
+                
+                    {{ range $publications }}
+                
+                        {{ $found := false }}
+                        {{ range .Params.authors }}
+                            {{ $author_id := trim (printf "%s" .name) " " }}
+                            {{ $member_id := trim $member_id " " }}
+
+                            {{ if eq $author_id $member_id }}
+                                {{ $found = true }}
+                                {{ break }}
+                            {{ end }}
+                        {{ end }}
+                        {{ if $found }}
+                            <div class="col-sm-12">
+                            {{ partial "publication_li_detailed" . }}
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                    </div>
+                    <div style="clear:both"></div>
+                    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
 </div>
+
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}

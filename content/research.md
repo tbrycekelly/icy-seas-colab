@@ -41,3 +41,16 @@ We use open-source and industry-standard tools to ensure reproducibility and acc
 - **Infrastructure:** Cloud platforms, HPC clusters, and self-hosted secure servers  
 
 Learn more about our [tools here](/docs/tools).
+
+---
+# Contributions to Science
+
+As a team of professional scientists, we have contributed to more than 100 peer-reviewed scientific publications within our various disciplines. Here are several projects of which we are particularly proud.
+
+1. [Nature Communications (Kelly et al. 2021)](/publication/2021kelly/): analyzing ocean circulation, biological rates, and carbon export to determine the source and fate of nutrients in the Gulf of Mexico.
+
+2. [Journal of Geophysical Research (Whitmore et al. 2022)](/publication/2022whitmore/): a comprehensive study of metals within the Arctic Ocean's Pacific-sector. 
+
+3. [Nature Communications (McGillicuddy et al. 2023)](/publication/2023mcgillicuddy/): exploring how and why Sargassum is enriched in Arsenic.
+
+_See a full list of our publications [here](/publication/)._

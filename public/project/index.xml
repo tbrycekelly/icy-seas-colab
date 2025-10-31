@@ -7,13 +7,27 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
-    <lastBuildDate>Fri, 12 Jul 2024 16:10:22 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 10 Oct 2025 16:10:22 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Data Science Products</title>
+      <link>http://localhost:1313/project/other/</link>
+      <pubDate>Fri, 10 Oct 2025 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/other/</guid>
+      <description>&lt;h2 id=&#34;simple-mapper&#34;&gt;Simple Mapper&lt;/h2&gt;&#xA;&lt;p&gt;A Simple mapping library for R. This library is self contained with some optional linkages to other libraries/datasets.&lt;/p&gt;&#xA;&lt;p&gt;Inspiration for this project originated back in 2017 when we were first exploring options for mapping and visualizing spatial data in the R universe. What we found, and largely still find, was an ecosystem of GIS-centric libraries with far more horse-power than we needed.&lt;/p&gt;&#xA;&lt;p&gt;Power is great, except when it comes with a learning curve and inflexibility. Finding the then-current libraries were unable to reliably spit out a map of our data points with clear cause-and-effect structures (e.g., do this to add an arrow or do this to add a label), we decided to build our own library suited to the task of making maps simpler.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FixPoint</title>
+      <link>http://localhost:1313/project/fixpoint/</link>
+      <pubDate>Fri, 10 Oct 2025 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/fixpoint/</guid>
+      <description>&lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;&#xA;&lt;p&gt;FixPoint requires the following R packages to be installed:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;library(shiny)&#xA;library(shinyWidgets)&#xA;library(jsonlite)&#xA;library(data.table)&#xA;library(DT)&#xA;library(serial)&#xA;library(openxlsx)&#xA;library(shinyalert)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Once these dependancies are met, then starting the log is as easy as running the app. I recommend opening the project in RStudio and then running &lt;code&gt;app.R&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;source(&#39;config.R&#39;)&#xA;source(&#39;functions.R&#39;)&#xA;shiny::runApp(host = &#39;0.0.0.0&#39;, port = 80)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The app should look something like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;figures/Screenshot%20Init.png&#34; alt=&#34;Blank FixPoint session.&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;But before you do that, you should take a look at the &lt;code&gt;config.R&lt;/code&gt; file where all the preferences and cruise details are located. The &lt;code&gt;config.R&lt;/code&gt; file is broadly organized into three parts: (1) settings, (2) instruments and actions, and (3) cruise participants. Starting with the &lt;em&gt;settings&lt;/em&gt; list, here is an example:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Northern Gulf of Alaska LTER</title>
-      <link>http://localhost:1313/project/ngalter/</link>
+      <link>http://localhost:1313/project/archive/ngalter/</link>
       <pubDate>Fri, 12 Jul 2024 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/ngalter/</guid>
+      <guid>http://localhost:1313/project/archive/ngalter/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OVERVIEW&lt;/h2&gt;&#xA;&lt;p&gt;The Northern Gulf of Alaska (NGA) is a highly productive subarctic marine ecosystem sustaining one of the world’s largest fisheries, iconic high latitude species, ecotourism, cultural continuity, and food security for coastal communities. The NGA LTER overarching conceptual framework is that intense environmental variability – both temporally and spatially – has yielded a highly resilient ecosystem through species adaptation and community organization. Building off 25 years of multidisciplinary observations along the Seward Line in LTER’s five core areas, NGA Phase-II seeks improved mechanistic understanding of this biome’s key communities, ecological processes, and responses to climate change. The NGA biome comprises a mosaic of habitats postulated to underlie the high productivity and resilience of the ecosystem. Phase-II studies and associated broader impacts will focus on growing and interpreting long-term data sets; studying functional redundancy in the context of disturbance and long-term change, as well as relationships between redundancy and resilience; and investigating oceanographic fronts, associated ecotones, and their combined role in supporting key ecosystem properties that generate resilience. We propose to tackle each element with a combination of observational methodologies, process studies, and modeling.&lt;/p&gt;</description>
     </item>
     <item>
@@ -25,48 +39,48 @@
     </item>
     <item>
       <title>Collaboration: DOC in Coastal Alaska</title>
-      <link>http://localhost:1313/project/doc/</link>
+      <link>http://localhost:1313/project/archive/doc/</link>
       <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/doc/</guid>
+      <guid>http://localhost:1313/project/archive/doc/</guid>
       <description>&lt;p&gt;Here we propose a new study of the NGA in conjunction with the Northern Gulf of Alaska LTER program to assess carbon cycling&#xA;dynamics from coastal margins to the open ocean. To complete this, samples will be collected by Dr. Tom&#xA;Kelly (co-PI, NGA LTER) and undergraduate student Ryan Owens who have frequently participated in&#xA;research cruises in the region. This established relationship will ensure that shipboard time is available&#xA;and will build future collaborations for the continuation of this long-term study of DOM cycling in the&#xA;NGA. Laboratory analyses will be conducted by Ryan Owens and Dr. Johnston to characterize DOM. The&#xA;methods proposed will be conducted with instrumentation available at UAF using established protocols.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Siberian DBO</title>
-      <link>http://localhost:1313/project/sdbo/</link>
+      <link>http://localhost:1313/project/archive/sdbo/</link>
       <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/sdbo/</guid>
+      <guid>http://localhost:1313/project/archive/sdbo/</guid>
       <description>&lt;p&gt;The Siberian sector of the Arctic Ocean (henceforth, “Siberian sector”) is influenced by the presence of both Pacific and Atlantic origin waters. Here, freshwater discharge from the major Siberian rivers starts its journey into the lower-latitude basins. Climatic changes in the Siberian Sector are among the strongest in the Arctic, yet biological observations in the region are scarce and insufficient for meaningful interpretation of these complex changes. We intend to leverage an existing cruises in the Siberian sector to increase ecosystem and biogeochemical observation in the region. This is pilot phase for what is envisioned as a long-term observational system within the larger pan-Arctic distributed biological observatory network. We aim to improve observational capacity for ecosystem level measurements by leveraging international and multidisciplinary teamwork. Motivated by regional idiosyncrasies, observations in the S-DBO region will be tailored for pan-Arctic synthesis in collaboration with other regional DBOs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UxS Glider Program</title>
-      <link>http://localhost:1313/project/uxs/</link>
+      <link>http://localhost:1313/project/archive/uxs/</link>
       <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/uxs/</guid>
+      <guid>http://localhost:1313/project/archive/uxs/</guid>
       <description>&lt;p&gt;sdfsd&#xA;sdf&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arctic Flux Repository</title>
-      <link>http://localhost:1313/project/arctic-flux-repository/</link>
+      <link>http://localhost:1313/project/archive/arctic-flux-repository/</link>
       <pubDate>Tue, 06 Jun 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/arctic-flux-repository/</guid>
+      <guid>http://localhost:1313/project/archive/arctic-flux-repository/</guid>
       <description>&lt;p&gt;The Arctic Flux Repository (AFR) is a shared resource for the research community to promote long-term and shared discovery about Arctic biogeochemical cycles. What sets this program apart from other biogeochemical surveys of the marine environment is the collection and distribution of physical sample material.&lt;/p&gt;&#xA;&lt;h3 id=&#34;locations-of-interest&#34;&gt;Locations of Interest&lt;/h3&gt;&#xA;&lt;p&gt;This project proposes to establish standard operating procedures (SOP) for the collection, preservation, and sharing of sedimentation samples collected in the Arctic marine system. As such, initial efforts will leverage established time series in the Pacific Arctic (i.e. Bering Sea, Chukchi Sea, Beaufort Sea, and Siberian Sea; Figure 2). While no long term Arctic progams have included gravitational flux as priority measurements, several programs have opportunistically deployed sediment traps. The Nansen and Amundsen Basin observational system (NABOS) successfully deployed a moored sediment trap in XXXX, the first and only sediment trap of their 20 year history. Similarly, the distributed biological observational system (DBO) has operated in the Bering and Chukchi Seas for XX years and has recently added moored sediment traps to several study sites (Figure 2).&lt;/p&gt;</description>
     </item>
     <item>
       <title>SEAS the Change</title>
-      <link>http://localhost:1313/project/seas/</link>
+      <link>http://localhost:1313/project/archive/seas/</link>
       <pubDate>Tue, 12 Jul 2022 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/seas/</guid>
+      <guid>http://localhost:1313/project/archive/seas/</guid>
       <description>&lt;p&gt;fsdfds&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alaskan Marine Dynamics from Ocean Color</title>
-      <link>http://localhost:1313/project/amdoc/</link>
+      <link>http://localhost:1313/project/archive/amdoc/</link>
       <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/amdoc/</guid>
+      <guid>http://localhost:1313/project/archive/amdoc/</guid>
       <description>&lt;p&gt;sfds&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Pelagic Imagaing and Machine Learning</title>
+      <title>Pelagic Imaging and Machine Learning</title>
       <link>http://localhost:1313/project/deeplearning/</link>
       <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
       <guid>http://localhost:1313/project/deeplearning/</guid>

@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
-    <lastBuildDate>Wed, 10 Sep 2025 15:50:58 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 12:25:00 -1000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Analysis</title>
@@ -80,6 +80,27 @@
       <description>&lt;h4 id=&#34;scientific-advising&#34;&gt;Scientific Advising&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Design &amp;amp; Methodology Guidance&lt;/li&gt;&#xA;&lt;li&gt;Data Management &amp;amp; Open Science Practices&lt;/li&gt;&#xA;&lt;li&gt;Independent Research Plan Evaluation&lt;/li&gt;&#xA;&lt;li&gt;Policy &amp;amp; Stakeholder Communication&lt;/li&gt;&#xA;&lt;li&gt;Mentorship &amp;amp; Quantitative Training&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>Common Image Formats Explained</title>
+      <link>http://localhost:1313/post/2025-image-formats/</link>
+      <pubDate>Tue, 28 Oct 2025 12:25:00 -1000</pubDate>
+      <guid>http://localhost:1313/post/2025-image-formats/</guid>
+      <description>&lt;p&gt;After a recent conversation with a friend about photography and digital images, there seems to be many unanswered questions out there regarding the wide variety of image formats which have become commonplace in our lives. A few months ago I wrote a short article on HDR Photography (link) since so many people were asking questions about that setting on their iPhone. In a similar vein, I hope to build a practical foundation so you know when and why you would like the image to be saved as png, jpg, pdf etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Science Products</title>
+      <link>http://localhost:1313/project/other/</link>
+      <pubDate>Fri, 10 Oct 2025 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/other/</guid>
+      <description>&lt;h2 id=&#34;simple-mapper&#34;&gt;Simple Mapper&lt;/h2&gt;&#xA;&lt;p&gt;A Simple mapping library for R. This library is self contained with some optional linkages to other libraries/datasets.&lt;/p&gt;&#xA;&lt;p&gt;Inspiration for this project originated back in 2017 when we were first exploring options for mapping and visualizing spatial data in the R universe. What we found, and largely still find, was an ecosystem of GIS-centric libraries with far more horse-power than we needed.&lt;/p&gt;&#xA;&lt;p&gt;Power is great, except when it comes with a learning curve and inflexibility. Finding the then-current libraries were unable to reliably spit out a map of our data points with clear cause-and-effect structures (e.g., do this to add an arrow or do this to add a label), we decided to build our own library suited to the task of making maps simpler.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FixPoint</title>
+      <link>http://localhost:1313/project/fixpoint/</link>
+      <pubDate>Fri, 10 Oct 2025 16:10:22 +0200</pubDate>
+      <guid>http://localhost:1313/project/fixpoint/</guid>
+      <description>&lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;&#xA;&lt;p&gt;FixPoint requires the following R packages to be installed:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;library(shiny)&#xA;library(shinyWidgets)&#xA;library(jsonlite)&#xA;library(data.table)&#xA;library(DT)&#xA;library(serial)&#xA;library(openxlsx)&#xA;library(shinyalert)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Once these dependancies are met, then starting the log is as easy as running the app. I recommend opening the project in RStudio and then running &lt;code&gt;app.R&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;source(&#39;config.R&#39;)&#xA;source(&#39;functions.R&#39;)&#xA;shiny::runApp(host = &#39;0.0.0.0&#39;, port = 80)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The app should look something like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;figures/Screenshot%20Init.png&#34; alt=&#34;Blank FixPoint session.&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;But before you do that, you should take a look at the &lt;code&gt;config.R&lt;/code&gt; file where all the preferences and cruise details are located. The &lt;code&gt;config.R&lt;/code&gt; file is broadly organized into three parts: (1) settings, (2) instruments and actions, and (3) cruise participants. Starting with the &lt;em&gt;settings&lt;/em&gt; list, here is an example:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Founding Icy Seas Co-Lab</title>
       <link>http://localhost:1313/post/2025-founding-icyseas/</link>
       <pubDate>Wed, 10 Sep 2025 15:50:58 +0200</pubDate>
@@ -102,9 +123,9 @@
     </item>
     <item>
       <title>Northern Gulf of Alaska LTER</title>
-      <link>http://localhost:1313/project/ngalter/</link>
+      <link>http://localhost:1313/project/archive/ngalter/</link>
       <pubDate>Fri, 12 Jul 2024 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/ngalter/</guid>
+      <guid>http://localhost:1313/project/archive/ngalter/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;OVERVIEW&lt;/h2&gt;&#xA;&lt;p&gt;The Northern Gulf of Alaska (NGA) is a highly productive subarctic marine ecosystem sustaining one of the world’s largest fisheries, iconic high latitude species, ecotourism, cultural continuity, and food security for coastal communities. The NGA LTER overarching conceptual framework is that intense environmental variability – both temporally and spatially – has yielded a highly resilient ecosystem through species adaptation and community organization. Building off 25 years of multidisciplinary observations along the Seward Line in LTER’s five core areas, NGA Phase-II seeks improved mechanistic understanding of this biome’s key communities, ecological processes, and responses to climate change. The NGA biome comprises a mosaic of habitats postulated to underlie the high productivity and resilience of the ecosystem. Phase-II studies and associated broader impacts will focus on growing and interpreting long-term data sets; studying functional redundancy in the context of disturbance and long-term change, as well as relationships between redundancy and resilience; and investigating oceanographic fronts, associated ecotones, and their combined role in supporting key ecosystem properties that generate resilience. We propose to tackle each element with a combination of observational methodologies, process studies, and modeling.&lt;/p&gt;</description>
     </item>
     <item>
@@ -144,9 +165,9 @@
     </item>
     <item>
       <title>Collaboration: DOC in Coastal Alaska</title>
-      <link>http://localhost:1313/project/doc/</link>
+      <link>http://localhost:1313/project/archive/doc/</link>
       <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/doc/</guid>
+      <guid>http://localhost:1313/project/archive/doc/</guid>
       <description>&lt;p&gt;Here we propose a new study of the NGA in conjunction with the Northern Gulf of Alaska LTER program to assess carbon cycling&#xA;dynamics from coastal margins to the open ocean. To complete this, samples will be collected by Dr. Tom&#xA;Kelly (co-PI, NGA LTER) and undergraduate student Ryan Owens who have frequently participated in&#xA;research cruises in the region. This established relationship will ensure that shipboard time is available&#xA;and will build future collaborations for the continuation of this long-term study of DOM cycling in the&#xA;NGA. Laboratory analyses will be conducted by Ryan Owens and Dr. Johnston to characterize DOM. The&#xA;methods proposed will be conducted with instrumentation available at UAF using established protocols.&lt;/p&gt;</description>
     </item>
     <item>
@@ -158,23 +179,23 @@
     </item>
     <item>
       <title>Siberian DBO</title>
-      <link>http://localhost:1313/project/sdbo/</link>
+      <link>http://localhost:1313/project/archive/sdbo/</link>
       <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/sdbo/</guid>
+      <guid>http://localhost:1313/project/archive/sdbo/</guid>
       <description>&lt;p&gt;The Siberian sector of the Arctic Ocean (henceforth, “Siberian sector”) is influenced by the presence of both Pacific and Atlantic origin waters. Here, freshwater discharge from the major Siberian rivers starts its journey into the lower-latitude basins. Climatic changes in the Siberian Sector are among the strongest in the Arctic, yet biological observations in the region are scarce and insufficient for meaningful interpretation of these complex changes. We intend to leverage an existing cruises in the Siberian sector to increase ecosystem and biogeochemical observation in the region. This is pilot phase for what is envisioned as a long-term observational system within the larger pan-Arctic distributed biological observatory network. We aim to improve observational capacity for ecosystem level measurements by leveraging international and multidisciplinary teamwork. Motivated by regional idiosyncrasies, observations in the S-DBO region will be tailored for pan-Arctic synthesis in collaboration with other regional DBOs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UxS Glider Program</title>
-      <link>http://localhost:1313/project/uxs/</link>
+      <link>http://localhost:1313/project/archive/uxs/</link>
       <pubDate>Wed, 12 Jul 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/uxs/</guid>
+      <guid>http://localhost:1313/project/archive/uxs/</guid>
       <description>&lt;p&gt;sdfsd&#xA;sdf&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arctic Flux Repository</title>
-      <link>http://localhost:1313/project/arctic-flux-repository/</link>
+      <link>http://localhost:1313/project/archive/arctic-flux-repository/</link>
       <pubDate>Tue, 06 Jun 2023 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/arctic-flux-repository/</guid>
+      <guid>http://localhost:1313/project/archive/arctic-flux-repository/</guid>
       <description>&lt;p&gt;The Arctic Flux Repository (AFR) is a shared resource for the research community to promote long-term and shared discovery about Arctic biogeochemical cycles. What sets this program apart from other biogeochemical surveys of the marine environment is the collection and distribution of physical sample material.&lt;/p&gt;&#xA;&lt;h3 id=&#34;locations-of-interest&#34;&gt;Locations of Interest&lt;/h3&gt;&#xA;&lt;p&gt;This project proposes to establish standard operating procedures (SOP) for the collection, preservation, and sharing of sedimentation samples collected in the Arctic marine system. As such, initial efforts will leverage established time series in the Pacific Arctic (i.e. Bering Sea, Chukchi Sea, Beaufort Sea, and Siberian Sea; Figure 2). While no long term Arctic progams have included gravitational flux as priority measurements, several programs have opportunistically deployed sediment traps. The Nansen and Amundsen Basin observational system (NABOS) successfully deployed a moored sediment trap in XXXX, the first and only sediment trap of their 20 year history. Similarly, the distributed biological observational system (DBO) has operated in the Bering and Chukchi Seas for XX years and has recently added moored sediment traps to several study sites (Figure 2).&lt;/p&gt;</description>
     </item>
     <item>
@@ -200,9 +221,9 @@
     </item>
     <item>
       <title>SEAS the Change</title>
-      <link>http://localhost:1313/project/seas/</link>
+      <link>http://localhost:1313/project/archive/seas/</link>
       <pubDate>Tue, 12 Jul 2022 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/seas/</guid>
+      <guid>http://localhost:1313/project/archive/seas/</guid>
       <description>&lt;p&gt;fsdfds&lt;/p&gt;</description>
     </item>
     <item>
@@ -214,13 +235,13 @@
     </item>
     <item>
       <title>Alaskan Marine Dynamics from Ocean Color</title>
-      <link>http://localhost:1313/project/amdoc/</link>
+      <link>http://localhost:1313/project/archive/amdoc/</link>
       <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
-      <guid>http://localhost:1313/project/amdoc/</guid>
+      <guid>http://localhost:1313/project/archive/amdoc/</guid>
       <description>&lt;p&gt;sfds&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Pelagic Imagaing and Machine Learning</title>
+      <title>Pelagic Imaging and Machine Learning</title>
       <link>http://localhost:1313/project/deeplearning/</link>
       <pubDate>Mon, 12 Jul 2021 16:10:22 +0200</pubDate>
       <guid>http://localhost:1313/project/deeplearning/</guid>
@@ -248,11 +269,25 @@
       <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;key-points&#34;&gt;Key Points&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Dissolved gallium can be used as a tracer to determine the percentage of Pacific- and Atlantic-derived seawater in the Arctic Ocean&lt;/li&gt;&#xA;&lt;li&gt;The deconvolution using gallium predicts greater amounts of Pacific water between roughly 150 and 300 m than a nutrient-based deconvolution&lt;/li&gt;&#xA;&lt;li&gt;Distribution of Pacific waters in the western Arctic is more vertically mixed than previously predicted with nutrient tracers&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;plain-language-summary&#34;&gt;Plain Language Summary&lt;/h3&gt;&#xA;&lt;p&gt;The Arctic Ocean is a key player in global ocean circulation and climate. The waters of the Arctic Ocean are influenced by a number of sources including seawater from both the Atlantic and Pacific oceans, sea-ice formation and melting, and river input. Unraveling these source waters is important both for deciphering the inflow of nutrients and for other materials to the Arctic Ocean as well as understanding the basin&amp;rsquo;s contribution to oceanic overturning circulation and the impact of ocean heat input to this basin on Arctic sea ice. Finding methods for unraveling these sources and how they may be altered by ongoing environmental change is thus an important research objective. Previous methods for distinguishing Pacific from Atlantic water in the Arctic Ocean have relied on nutrient-based tracers that could be biased by poorly quantified biological processes. Herein, the authors demonstrate that gallium (Ga), a metal that primarily enters the ocean from dust, can be used in place of nutrient-based tracers to yield a potentially more realistic distinction between the two ocean water sources.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Christian Fender</title>
+      <link>http://localhost:1313/guests/christianfender/</link>
+      <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/christianfender/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Gwenn Hennon</title>
       <link>http://localhost:1313/not-yet/gwennhennon/</link>
       <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
       <guid>http://localhost:1313/not-yet/gwennhennon/</guid>
       <description>&lt;p&gt;Dr. Gwenn Hennon is an Assistant Professor at the University of Alaska Fairbanks. Gwenn loves the way phytoplankton are both astonishingly beautiful and globally important. She wants to be able to predict phytoplankton community composition in the future ocean and understand how microbial interactions may shift.&lt;/p&gt;&#xA;&lt;p&gt;Her hobbies include cross-country skiing, paddle boarding, and hiking with her husband and two kids.&lt;/p&gt;&#xA;&lt;h3 id=&#34;research-overview&#34;&gt;Research Overview&lt;/h3&gt;&#xA;&lt;p&gt;The Hennon Lab is based at the University of Alaska Fairbanks where we culture phytoplankton and sequence marine microbes to understand how climate change impacts them. Our field work takes us all over the state of Alaska including Kachemak Bay, Lynn Canal, the Gulf of Alaska and up to the Arctic. We also collect samples in the sub-tropics in places such as Bermuda to understand how phytoplankton in nutrient poor regions will be impacted by ocean acidification.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hisatomo Waga</title>
+      <link>http://localhost:1313/guests/hisatomowaga/</link>
+      <pubDate>Sun, 12 Jul 2020 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/hisatomowaga/</guid>
+      <description>&lt;p&gt;Reliable evidence of changes in the marine environment have been reported in the Arctic Ocean during the last several&#xA;decades. Recent reductions in Arctic sea-ice cover have been most pronounced in the continental shelf region of the&#xA;Pacific Arctic, accompanied by increased ocean temperature, freshwater content, and Pacific Water inflow. These&#xA;variations influence on the phytoplankton community and subsequently, on the higher trophic levels.&lt;/p&gt;&#xA;&lt;p&gt;My research interests lie at the impact of these environmental changes on polar marine ecosystems. In particular, my&#xA;research uses satellite remote sensing to explore topics related to:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thomas Bryce Kelly</title>
@@ -441,7 +476,7 @@
       <link>http://localhost:1313/docs/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/tools/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Programming &amp;amp; Analysis:&lt;/strong&gt; Python, R, Julia&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Databases:&lt;/strong&gt; PostgreSQL, MongoDB, SQLite&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modeling &amp;amp; Simulation:&lt;/strong&gt; Numerical ocean models, machine learning workflows&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Collaboration:&lt;/strong&gt; GitHub, Jupyter, R Shiny, interactive dashboards&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Infrastructure:&lt;/strong&gt; Cloud platforms, HPC clusters, and self-hosted secure servers&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;programming--analysis&#34;&gt;Programming &amp;amp; Analysis&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs/tools/python-logo.png&#34; width=&#34;200px&#34;&gt;&lt;/img&gt;&#xA;&lt;img src=&#34;http://localhost:1313/docs/tools/r-logo.png&#34; width=&#34;200px&#34;&gt;&lt;/img&gt;&#xA;&lt;img src=&#34;http://localhost:1313/docs/tools/julia-logo.svg&#34; width=&#34;200px&#34;&gt;&lt;/img&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;databases&#34;&gt;Databases&lt;/h3&gt;&#xA;&lt;p&gt;PostgreSQL, MongoDB, SQLite&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;modeling--simulation&#34;&gt;Modeling &amp;amp; Simulation&lt;/h3&gt;&#xA;&lt;p&gt;Numerical ocean models, machine learning workflows&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;collaboration&#34;&gt;Collaboration&lt;/h3&gt;&#xA;&lt;p&gt;GitHub, Jupyter, R Shiny, interactive dashboards&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;&#xA;&lt;p&gt;Cloud platforms, HPC clusters, and self-hosted secure servers&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

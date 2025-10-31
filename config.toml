@@ -22,6 +22,8 @@ tag = "tags"
   [markup.goldmark]
     [markup.goldmark.parser]
       attribute = true
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   description = "Icy Seas Co-Laboratory LLC"
@@ -137,13 +139,13 @@ tag = "tags"
 
   [[menu.main]]
       name = "FixPoint"
-      url = "/project/ngalter"
+      url = "/project/fixpoint"
       weight = 3
       parent = "sales"
 
   [[menu.main]]
       name = "Other"
-      url = "/project/ngalter"
+      url = "/project/other"
       weight = 3
       parent = "sales"
 

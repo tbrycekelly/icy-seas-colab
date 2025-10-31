@@ -22,13 +22,22 @@
   </url><url>
     <loc>http://localhost:1313/home/panels/service-management/</loc>
   </url><url>
-    <loc>http://localhost:1313/post/2025-founding-icyseas/</loc>
-    <lastmod>2025-09-10T15:50:58+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-10T15:50:58+02:00</lastmod>
+    <lastmod>2025-10-29T12:25:00-10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-10-29T12:25:00-10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/project/other/</loc>
+    <lastmod>2025-10-10T16:10:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/project/fixpoint/</loc>
+    <lastmod>2025-10-10T16:10:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/project/</loc>
+    <lastmod>2025-10-10T16:10:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-founding-icyseas/</loc>
     <lastmod>2025-09-10T15:50:58+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publication/</loc>
@@ -40,10 +49,7 @@
     <loc>http://localhost:1313/publication/2025polyakov/</loc>
     <lastmod>2025-02-21T16:37:31+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/ngalter/</loc>
-    <lastmod>2024-07-12T16:10:22+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/project/</loc>
+    <loc>http://localhost:1313/project/archive/ngalter/</loc>
     <lastmod>2024-07-12T16:10:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publication/2024lowin/</loc>
@@ -61,7 +67,7 @@
     <loc>http://localhost:1313/project/akss/</loc>
     <lastmod>2023-07-12T16:10:22+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/doc/</loc>
+    <loc>http://localhost:1313/project/archive/doc/</loc>
     <lastmod>2023-07-12T16:10:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/open_projects/doc/</loc>
@@ -70,13 +76,13 @@
     <loc>http://localhost:1313/open_projects/</loc>
     <lastmod>2023-07-12T16:10:22+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/sdbo/</loc>
+    <loc>http://localhost:1313/project/archive/sdbo/</loc>
     <lastmod>2023-07-12T16:10:22+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/uxs/</loc>
+    <loc>http://localhost:1313/project/archive/uxs/</loc>
     <lastmod>2023-07-12T16:10:22+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/arctic-flux-repository/</loc>
+    <loc>http://localhost:1313/project/archive/arctic-flux-repository/</loc>
     <lastmod>2023-06-06T16:10:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publication/2023stukel/</loc>
@@ -88,13 +94,13 @@
     <loc>http://localhost:1313/publication/2024gilbert/</loc>
     <lastmod>2023-02-03T16:37:31+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/seas/</loc>
+    <loc>http://localhost:1313/project/archive/seas/</loc>
     <lastmod>2022-07-12T16:10:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publication/2022whitmore/</loc>
     <lastmod>2022-03-22T16:37:31+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/amdoc/</loc>
+    <loc>http://localhost:1313/project/archive/amdoc/</loc>
     <lastmod>2021-07-12T16:10:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/project/deeplearning/</loc>
@@ -109,7 +115,16 @@
     <loc>http://localhost:1313/publication/2020whitmore/</loc>
     <lastmod>2020-07-12T16:37:31+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/guests/christianfender/</loc>
+    <lastmod>2020-07-12T15:52:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/guests/</loc>
+    <lastmod>2020-07-12T15:52:22+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/not-yet/gwennhennon/</loc>
+    <lastmod>2020-07-12T15:52:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/guests/hisatomowaga/</loc>
     <lastmod>2020-07-12T15:52:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/member/</loc>
