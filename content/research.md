@@ -47,10 +47,26 @@ Learn more about our [tools here](/docs/tools).
 
 As a team of professional scientists, we have contributed to more than 100 peer-reviewed scientific publications within our various disciplines. Here are several projects of which we are particularly proud.
 
-1. [Nature Communications (Kelly et al. 2021)](/publication/2021kelly/): analyzing ocean circulation, biological rates, and carbon export to determine the source and fate of nutrients in the Gulf of Mexico.
+<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; width: 30%;">
+  <a href="/publication/2021kelly/"><img src="/research/kelly-2021.png" width="250px" alt="cover page of kelly et al. 2021." style="border: 2px solid #444; border-radius: 8px;"></a>
+  <figcaption style="font-size: 0.9em; color: #666; max-width: 250px;">
+    Analyzing ocean circulation, biological rates, and carbon export to determine the source and fate of nutrients in the Gulf of Mexico.
+  </figcaption>
+</figure>
 
-2. [Journal of Geophysical Research (Whitmore et al. 2022)](/publication/2022whitmore/): a comprehensive study of metals within the Arctic Ocean's Pacific-sector. 
+<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; width: 30%;" >
+  <a href="/publication/2022whitmore/"><img src="/research/whitmore-2022.png" width="250px" alt="cover page of kelly et al. 2021." style="border: 2px solid #444; border-radius: 8px;"></a>
+  <figcaption style="font-size: 0.9em; color: #666; max-width: 250px;">
+    A comprehensive study of metals within the Arctic Ocean's Pacific-sector. 
+  </figcaption>
+</figure>
 
-3. [Nature Communications (McGillicuddy et al. 2023)](/publication/2023mcgillicuddy/): exploring how and why Sargassum is enriched in Arsenic.
+<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; width: 30%;">
+  <a href="/publication/2023mcgillicuddy/"><img src="/research/mcgillicuddy-2023.png" width="250px" alt="cover page of kelly et al. 2021." style="border: 2px solid #444; border-radius: 8px;"></a>
+  <figcaption style="font-size: 0.9em; color: #666; max-width: 250px;">
+    Exploring how and why Sargassum is enriched in Arsenic.
+  </figcaption>
+</figure>
 
 _See a full list of our publications [here](/publication/)._
+

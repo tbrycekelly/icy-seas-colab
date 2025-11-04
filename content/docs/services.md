@@ -2,6 +2,7 @@
 title = "Products & Services"
 +++
 
+
 A non-exhaustive list of services offered include:
 - Data Analysis
 - Scientific Writing
@@ -27,6 +28,8 @@ All pricing can be tailored to specific project needs. Please contact us for det
 | **Field Services^**     |         none                              | $120/hr – standard field methods           | $200/hr – advanced & intensive operations        |
 
 
+<div style="margin-top: 75px;"></div>
+
 In addition to hourly services, we offer a comprehensive set of specialized services.
 
 |            Service       |            Standard Rate               |
@@ -38,10 +41,11 @@ In addition to hourly services, we offer a comprehensive set of specialized serv
 | **Custom Data Portal**   | $10,000/yr                             |
 
 ---
+<div style="margin-top: 75px;"></div>
 
 ## Notes
 - Rates are subject to adjustment for long-term or high-volume projects.  
-- Nonprofit and community organizations may qualify for reduced rates.  
+- __Nonprofit and community organizations may qualify for reduced rates.__ 
 - Federal contracts follow FAR-compliant billing structures.  
 - Detailed quotes and Statements of Work (SOWs) are provided upon request.  
 - ^ Field services are charged in blocks with a daily minimum of 4 hours and a maximum of 12 hours.

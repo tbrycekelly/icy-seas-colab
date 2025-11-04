@@ -1,0 +1,5 @@
+I started Icy Seas Co-Laboratory because I wanted to do science differently. After years in academic research, I realized that the most exciting and meaningful progress happens when barriers—between disciplines, institutions, and people—start to fade. I wanted to build a space where we could merge rigorous ocean science with open-source technology, creative data visualization, and genuine collaboration across communities.
+
+The Arctic is changing faster than almost anywhere else on Earth, and understanding those changes requires not just new data, but new ways of thinking and working together. Icy Seas Co-Lab grew out of that idea: that we can use tools like Python, R, and open databases to make science more transparent; that we can connect researchers, students, and local observers in shared discovery; and that the process of doing science can be just as collaborative and inspiring as the results themselves.
+
+My hope is that Icy Seas becomes more than a lab—it’s a co-laboratory in the truest sense: a place where ideas, data, and people come together to explore, learn, and build something lasting for the Arctic and beyond.

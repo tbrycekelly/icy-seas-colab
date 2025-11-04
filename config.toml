@@ -10,6 +10,7 @@ math = true
 copyright = "&copy; Thomas Bryce Kelly, 2025 "
 pygmentsOptions = "linenos=table"
 rssURI = "index.xml"
+ignoreFiles = ["\\.psd$"]
 
 [taxonomies]
 category = "categories"
