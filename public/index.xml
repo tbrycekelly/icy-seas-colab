@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Thomas Bryce Kelly, 2025 </copyright>
-    <lastBuildDate>Tue, 28 Oct 2025 12:25:00 -1000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Analysis</title>
@@ -78,6 +78,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/home/panels/service-management/</guid>
       <description>&lt;h4 id=&#34;scientific-advising&#34;&gt;Scientific Advising&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Design &amp;amp; Methodology Guidance&lt;/li&gt;&#xA;&lt;li&gt;Data Management &amp;amp; Open Science Practices&lt;/li&gt;&#xA;&lt;li&gt;Independent Research Plan Evaluation&lt;/li&gt;&#xA;&lt;li&gt;Policy &amp;amp; Stakeholder Communication&lt;/li&gt;&#xA;&lt;li&gt;Mentorship &amp;amp; Quantitative Training&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h1&gt;&#xA;&lt;p&gt;We welcome questions, collaborations, and new ideas. Whether you&amp;rsquo;re interested in partnering on Arctic research, exploring open-source data solutions, or learning more about our outreach work, we’d love to hear from you.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;general-inquiries&#34;&gt;General Inquiries&lt;/h2&gt;&#xA;&lt;p&gt;For general questions about projects, data systems, or collaborations, email us at:&lt;br&gt;&#xA;📬  &lt;strong&gt;&lt;a href=&#34;mailto:tkelly@icyseascolab.io&#34;&gt;tkelly@icyseascolab.io&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;collaboration-and-research&#34;&gt;Collaboration and Research&lt;/h2&gt;&#xA;&lt;p&gt;If you’re a researcher, educator, or community partner interested in joining or initiating a project with us, please contact:&lt;br&gt;&#xA;&lt;strong&gt;&lt;a href=&#34;mailto:tkelly@icyseascolab.io&#34;&gt;tkelly@icyseascolab.io&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Employment Opportunities</title>
+      <link>http://localhost:1313/opportunities/</link>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/opportunities/</guid>
+      <description>&lt;h1 id=&#34;employment-opportunities&#34;&gt;Employment Opportunities&lt;/h1&gt;&#xA;&lt;p&gt;Icy Seas Co-Laboratory is a small but growing collective of scientists, developers, and educators dedicated to advancing open, Arctic-focused science. Our work blends data analysis, ocean modeling, visualization, and outreach—rooted in open-source tools and community collaboration.&lt;/p&gt;&#xA;&lt;p&gt;We seek people who are curious, self-motivated, and committed to transparent, reproducible research. Whether you’re a data scientist fluent in Python or Julia, an R developer, a visualization specialist, or an Arctic researcher eager to bridge field data with digital tools, we’d love to hear from you.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Common Image Formats Explained</title>
@@ -476,14 +490,14 @@
       <link>http://localhost:1313/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/</guid>
-      <description>&lt;h1 id=&#34;mission&#34;&gt;Mission&lt;/h1&gt;&#xA;&lt;p&gt;At Icy Seas Co-Laboratory LLC, our mission is to bridge science, technology, and community to advance understanding of our changing oceans. We combine rigorous research, innovative data tools, and collaborative partnerships to transform complex information into actionable knowledge. By making science transparent, reproducible, and accessible, we empower decision-makers, support Indigenous and local communities, and contribute to resilient ecosystems in the Arctic and beyond.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;philosophy&#34;&gt;Philosophy&lt;/h3&gt;&#xA;&lt;p&gt;At &lt;strong&gt;Icy Seas Co-Laboratory LLC&lt;/strong&gt;, we believe that effective science consulting blends rigorous analysis with transparency and collaboration.&lt;br&gt;&#xA;Our approach emphasizes:&lt;/p&gt;</description>
+      <description>&lt;figure style=&#34;float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 25%; min-width: 200px;&#34; &gt;&#xA;  &lt;img src=&#34;http://localhost:1313/assets/arctic.jpg&#34; alt=&#34;&#34; style=&#34;border: 2px solid #444; border-radius: 8px;&#34;&gt;&#xA;  &lt;figcaption style=&#34;font-size: 0.9em; color: #666;&#34;&gt;&#xA;    We work globally and have the experience to prove it. &#xA;  &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h1 id=&#34;mission&#34;&gt;Mission&lt;/h1&gt;&#xA;&lt;p&gt;At Icy Seas Co-Laboratory LLC, our mission is to bridge science, technology, and community to advance understanding of our changing oceans. We combine rigorous research, innovative data tools, and collaborative partnerships to transform complex information into actionable knowledge. By making science transparent, reproducible, and accessible, we empower decision-makers, support Indigenous and local communities, and contribute to resilient ecosystems in the Arctic and beyond.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research Tools</title>
       <link>http://localhost:1313/docs/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/tools/</guid>
-      <description>&lt;h3 id=&#34;programming--analysis&#34;&gt;Programming &amp;amp; Analysis&lt;/h3&gt;&#xA;&lt;figure style=&#34;float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 50%&#34; &gt;&#xA;  &lt;img src=&#34;http://localhost:1313/docs/tools/languages.png&#34; alt=&#34;&#34; style=&#34;border: 2px solid #444; border-radius: 8px;&#34;&gt;&#xA;  &lt;figcaption style=&#34;font-size: 0.9em; color: #666;&#34;&gt;&#xA;    We believe strongly in the power and value of open-source languages. &#xA;  &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;At Icy Seas Co-Laboratory, we embrace open-source programming languages because they align closely with our core values of transparency, reproducibility and accessibility. By working in &lt;strong&gt;R&lt;/strong&gt;, &lt;strong&gt;Python&lt;/strong&gt;, and &lt;strong&gt;Julia&lt;/strong&gt;, we ensure that our analytical workflows remain fully inspectable, shareable, and adaptable by our partners&amp;ndash;including Indigenous and local communities.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;programming--analysis&#34;&gt;Programming &amp;amp; Analysis&lt;/h3&gt;&#xA;&lt;figure style=&#34;float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 50%; min-width: 250px;&#34; &gt;&#xA;  &lt;img src=&#34;http://localhost:1313/docs/tools/languages.png&#34; alt=&#34;&#34; style=&#34;border: 2px solid #444; border-radius: 8px;&#34;&gt;&#xA;  &lt;figcaption style=&#34;font-size: 0.9em; color: #666;&#34;&gt;&#xA;    We believe strongly in the power and value of open-source languages. &#xA;  &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;At Icy Seas Co-Laboratory, we embrace open-source programming languages because they align closely with our core values of transparency, reproducibility and accessibility. By working in &lt;strong&gt;R&lt;/strong&gt;, &lt;strong&gt;Python&lt;/strong&gt;, and &lt;strong&gt;Julia&lt;/strong&gt;, we ensure that our analytical workflows remain fully inspectable, shareable, and adaptable by our partners&amp;ndash;including Indigenous and local communities.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
