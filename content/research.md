@@ -2,6 +2,13 @@
 title = "Research"
 +++
 
+<figure style="float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 25%; min-width: 200px;" >
+  <img src="/assets/arctic.jpg" alt="" style="border: 2px solid #444; border-radius: 8px;">
+  <figcaption style="font-size: 0.9em; color: #666;">
+    We work globally and have the experience to prove it. 
+  </figcaption>
+</figure>
+
 # Mission
 
 At Icy Seas Co-Laboratory LLC, our mission is to bridge science, technology, and community to advance understanding of our changing oceans. We combine rigorous research, innovative data tools, and collaborative partnerships to transform complex information into actionable knowledge. By making science transparent, reproducible, and accessible, we empower decision-makers, support Indigenous and local communities, and contribute to resilient ecosystems in the Arctic and beyond.

@@ -6,7 +6,7 @@ title = "Research Tools"
 
 ### Programming & Analysis
 
-<figure style="float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 50%" >
+<figure style="float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 50%; min-width: 250px;" >
   <img src="/docs/tools/languages.png" alt="" style="border: 2px solid #444; border-radius: 8px;">
   <figcaption style="font-size: 0.9em; color: #666;">
     We believe strongly in the power and value of open-source languages. 
@@ -37,7 +37,7 @@ Collaboration is at the heart of Icy Seas Co-Laboratory. We work across discipli
 ---
 ### Infrastructure
 
-<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; max-width: 30%" >
+<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; max-width: 30%; min-width: 250px;" >
   <img src="/assets/hero.png" alt="" style="border: 2px solid #444; border-radius: 8px;">
   <figcaption style="font-size: 0.9em; color: #666;">
     Contact us to inquire about specific technology or security concerns you may have. 
