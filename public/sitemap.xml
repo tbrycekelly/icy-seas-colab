@@ -190,7 +190,10 @@
     <loc>http://localhost:1313/not-yet/jackcook/</loc>
     <lastmod>2016-07-12T15:52:22+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/member/laurawhitmore/</loc>
+    <loc>http://localhost:1313/guests/laramiejensen/</loc>
+    <lastmod>2016-07-12T15:52:22+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/guests/laurawhitmore/</loc>
     <lastmod>2016-07-12T15:52:22+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/not-yet/guests/meganbrauner/</loc>
@@ -218,11 +221,15 @@
   </url><url>
     <loc>http://localhost:1313/home/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/onboarding/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/services/</loc>
   </url><url>
     <loc>http://localhost:1313/research/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/tools/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/setup/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>

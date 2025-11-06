@@ -112,7 +112,7 @@
       <link>http://localhost:1313/project/fixpoint/</link>
       <pubDate>Fri, 10 Oct 2025 16:10:22 +0200</pubDate>
       <guid>http://localhost:1313/project/fixpoint/</guid>
-      <description>&lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;&#xA;&lt;p&gt;FixPoint requires the following R packages to be installed:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;library(shiny)&#xA;library(shinyWidgets)&#xA;library(jsonlite)&#xA;library(data.table)&#xA;library(DT)&#xA;library(serial)&#xA;library(openxlsx)&#xA;library(shinyalert)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Once these dependancies are met, then starting the log is as easy as running the app. I recommend opening the project in RStudio and then running &lt;code&gt;app.R&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;source(&#39;config.R&#39;)&#xA;source(&#39;functions.R&#39;)&#xA;shiny::runApp(host = &#39;0.0.0.0&#39;, port = 80)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The app should look something like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;figures/Screenshot%20Init.png&#34; alt=&#34;Blank FixPoint session.&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;But before you do that, you should take a look at the &lt;code&gt;config.R&lt;/code&gt; file where all the preferences and cruise details are located. The &lt;code&gt;config.R&lt;/code&gt; file is broadly organized into three parts: (1) settings, (2) instruments and actions, and (3) cruise participants. Starting with the &lt;em&gt;settings&lt;/em&gt; list, here is an example:&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;&#xA;&lt;p&gt;FixPoint requires the following R packages to be installed:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;library(shiny)&#xA;library(shinyWidgets)&#xA;library(jsonlite)&#xA;library(data.table)&#xA;library(DT)&#xA;library(serial)&#xA;library(openxlsx)&#xA;library(shinyalert)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Once these dependencies are met, then starting the log is as easy as running the app. I recommend opening the project in RStudio and then running &lt;code&gt;app.R&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;source(&#39;config.R&#39;)&#xA;source(&#39;functions.R&#39;)&#xA;shiny::runApp(host = &#39;0.0.0.0&#39;, port = 80)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The app should look something like this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;figures/Screenshot%20Init.png&#34; alt=&#34;Blank FixPoint session.&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;But before you do that, you should take a look at the &lt;code&gt;config.R&lt;/code&gt; file where all the preferences and cruise details are located. The &lt;code&gt;config.R&lt;/code&gt; file is broadly organized into three parts: (1) settings, (2) instruments and actions, and (3) cruise participants. Starting with the &lt;em&gt;settings&lt;/em&gt; list, here is an example:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Founding Icy Seas Co-Lab</title>
@@ -416,10 +416,17 @@
       <description>&lt;p&gt;A geoscience undergraduate, I am interested in the ocean for its physical and chemical properties and currently leads the &lt;a href=&#34;http://localhost:1313/project/arctic-flux-repository/&#34;&gt;Arctic Flux Repository&lt;/a&gt;. I hope to shed light on the state of oceans in the arctic through my work in the logistical and procedural handling of large volumes of sediment samples to better aid in our understanding of the world around us.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Laura Whitmore</title>
-      <link>http://localhost:1313/member/laurawhitmore/</link>
+      <title>Laramie Jensen</title>
+      <link>http://localhost:1313/guests/laramiejensen/</link>
       <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
-      <guid>http://localhost:1313/member/laurawhitmore/</guid>
+      <guid>http://localhost:1313/guests/laramiejensen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Laura Whitmore</title>
+      <link>http://localhost:1313/guests/laurawhitmore/</link>
+      <pubDate>Tue, 12 Jul 2016 15:52:22 +0200</pubDate>
+      <guid>http://localhost:1313/guests/laurawhitmore/</guid>
       <description>&lt;p&gt;Centered on Arctic Ocean dynamics, I study several trace elements to assess their utility as indicators of circulation and biogeochemical processes. At the University of Alaska Fairbanks, I research biogeochemical cycling of nutrients, tracers of water mass mixing, and the connectivity between the sea ice system and the water column. I’m further interested in how the broad Arctic Ocean continental margins influence oceanographic biogeochemical cycles and the connectivity of the land-sea interface.&lt;/p&gt;</description>
     </item>
     <item>
