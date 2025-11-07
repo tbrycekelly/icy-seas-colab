@@ -1,5 +1,5 @@
-/public/
-/resources/_gen/
-/hugo_stats.json
+public/
+resources/_gen/
+hugo_stats.json
 .hugo_build.lock
-public/.DS_Store
+.DS_Store
