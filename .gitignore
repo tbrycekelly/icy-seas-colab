@@ -1,5 +1,58 @@
-public/
-resources/_gen/
-hugo_stats.json
-.hugo_build.lock
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Hugo cache directory (speed optimization)
+.hugo_cache/
+.cache/
+
+# OS junk
 .DS_Store
+Thumbs.db
+
+# IDE / editor junk
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Node.js assets (if themes or pipelines use npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnpm-store/
+
+# Python virtual environments (if you use scripts)
+venv/
+.venv/
+__pycache__/
+
+# Go module files (if using Hugo modules)
+go.sum
+go.work
+go.work.sum
+
+# Hugo module cache
+.hugo_build.lock
+
+# Environment / credentials
+.env
+.env.*
+
+# Build artifacts from pipelines (SCSS, PostCSS, etc.)
+/assets/generated/
+/static/dist/
+
+# Temporary files
+tmp/
+*.tmp
+*.bak
+
+# Deployment artifacts
+public.zip
+deploy/
