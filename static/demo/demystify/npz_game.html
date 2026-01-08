@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modeling Portal – Game 2: NPZD Ecosystem Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="brand">
+        <div class="brand-mark">
+          <div class="brand-wave"></div>
+        </div>
+        <div class="brand-text">
+          <h1>Modeling Play Portal</h1>
+          <p>Game 2 · NPZD Ecosystem Challenge</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="header-badge-dot"></span>
+        <span>Match the phytoplankton curve</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-panel">
+        <h2>Module 2: “Teach Your Plankton to Behave”</h2>
+        <p>
+          Now your model is not just a line — it’s a tiny <strong>ecosystem in a box</strong>:
+        </p>
+        <p class="tip-box">
+          <strong>NPZD</strong> = Nutrients (N), Phytoplankton (P), Zooplankton (Z), and Detritus (D).
+        </p>
+
+        <p>
+          We run a simple 1-box NPZD model over time. Somewhere in the background, a “true”
+          set of parameters generates a <strong>target phytoplankton time series</strong>.
+          Your job is to adjust the model parameters so that your simulated P(t) matches that target.
+        </p>
+
+        <div class="pill-row">
+          <div class="pill"><strong>μ<sub>max</sub></strong> – max phytoplankton growth rate</div>
+          <div class="pill"><strong>g</strong> – grazing rate (Z eating P)</div>
+          <div class="pill"><strong>Score</strong> – RMSE between your P(t) and target P(t)</div>
+        </div>
+
+        <p>How to play:</p>
+        <ol class="step-list">
+          <li>Look at the <strong>target P(t)</strong> (dashed gray line).</li>
+          <li>Use the sliders to change <code>μ<sub>max</sub></code> and <code>g</code>.</li>
+          <li>Each time you move a slider, the NPZD model is re-simulated.</li>
+          <li>Your P(t) (green/orange line) updates and the RMSE is recomputed.</li>
+          <li>Try to <strong>minimize the RMSE</strong> and get under the target threshold.</li>
+        </ol>
+
+        <div class="tip-box">
+          <strong>Concept hint:</strong>
+          This is a toy example of <em>parameter estimation</em> in ecosystem models.
+          The physics and biology are heavily simplified, but the idea – tuning parameters so
+          that the model reproduces observed time series – is very real.
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <div class="game-header">
+          <div>
+            <h3>
+              NPZD Ecosystem Match
+              <span class="game-tag">Simulation</span>
+            </h3>
+            <p class="game-subtitle">
+              Adjust growth and grazing to reproduce the target phytoplankton bloom.
+            </p>
+          </div>
+        </div>
+
+        <div class="plot-card">
+          <div class="plot-header-row">
+            <div class="plot-title">Phytoplankton P(t): Target vs Your Model</div>
+            <div class="metric-badge">RMSE: <span id="rmseDisplay">–</span></div>
+          </div>
+          <div class="plot-wrapper">
+            <svg id="npzdPlot" viewBox="0 0 500 320"
+                 role="img"
+                 aria-label="Target and model phytoplankton time series">
+              <!-- axes, grid, and paths added by JS -->
+            </svg>
+          </div>
+
+          <div class="controls-card">
+            <div class="slider-group">
+              <div class="slider-row">
+                <div class="slider-label">
+                  Max growth μ<sub>max</sub> (day⁻¹)
+                </div>
+                <input id="muSlider" type="range" min="0.1" max="1.5" step="0.02" value="0.8" />
+                <div class="slider-value"><span id="muValue">0.80</span></div>
+              </div>
+              <div class="slider-row">
+                <div class="slider-label">
+                  Nutrient affinity (μM)
+                </div>
+                <input id="kSlider" type="range" min="0.1" max="1.2" step="0.02" value="0.8" />
+                <div class="slider-value"><span id="kValue">0.80</span></div>
+              </div>
+              <div class="slider-row">
+                <div class="slider-label">
+                  Grazing rate g (m³ mmol⁻¹ day⁻¹)
+                </div>
+                <input id="gSlider" type="range" min="0.0" max="0.9" step="0.02" value="0.4" />
+                <div class="slider-value"><span id="gValue">0.40</span></div>
+              </div>
+            </div>
+
+            <div class="game-status">
+              <div class="status-line">
+                <span class="status-label">Fit quality</span>
+                <span id="fitStatus" class="status-value">
+                  Move the sliders to run the model…
+                </span>
+              </div>
+              <div class="status-line">
+                <span class="status-label">Target</span>
+                <span class="status-value ok">
+                  RMSE &lt; <span id="rmseTarget">0.06</span>
+                </span>
+              </div>
+              <p class="goal-text">
+                <strong>Goal:</strong> Bring your model P(t) close to the target bloom shape.
+                Watch how changing μ<sub>max</sub> and g affects the timing and height of the bloom.
+              </p>
+              <div id="successBanner" class="success-banner">
+                <div class="success-badge">✓</div>
+                <div>
+                  <strong>Nice work!</strong> You’ve tuned a simple NPZD model to match a target
+                  phytoplankton time series. This is the heart of data-model “hand-shaking”.
+                
+                    <a href="vertical.html"><span class="game-link">Arctic Module 2</span></a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        Model: 1-box NPZD with Monod growth, linear grazing, and simple recycling.
+      </span>
+      <button type="button" id="newTargetButton">New target ecosystem</button>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const svg = document.getElementById("npzdPlot");
+      const width = 500;
+      const height = 320;
+      const padding = { left: 52, right: 16, top: 16, bottom: 38 };
+
+      const muSlider = document.getElementById("muSlider");
+      const gSlider = document.getElementById("gSlider");
+      const muValue = document.getElementById("muValue");
+      const gValue = document.getElementById("gValue");
+      const kSlider = document.getElementById("kSlider");
+      const kValue = document.getElementById("kValue");
+      const rmseDisplay = document.getElementById("rmseDisplay");
+      const fitStatus = document.getElementById("fitStatus");
+      const successBanner = document.getElementById("successBanner");
+      const newTargetButton = document.getElementById("newTargetButton");
+      const rmseTargetSpan = document.getElementById("rmseTarget");
+
+      const ns = "http://www.w3.org/2000/svg";
+
+      const DAYS = 60;
+      const DT = 0.1; // days
+      const STEPS = Math.round(DAYS / DT);
+
+      // Target parameter set (hidden from player)
+      let trueParams;
+      let targetP; // sampled daily
+      let timeDays; // 0..DAYS
+      let bounds; // for y-scaling
+
+      const RMSE_TARGET = 0.06; // threshold for "good" fit
+
+      function randUniform(min, max) {
+        return min + Math.random() * (max - min);
+      }
+
+      function generateTrueParams() {
+        // True μmax and g drawn from reasonable ranges
+        // Others fixed or mildly randomized
+        trueParams = {
+          muMax: randUniform(0.4, 1.1),     // per day
+          kN: 0.5,        // nutrient half-sat
+          g: randUniform(0.2, 0.7),         // grazing
+          mP: 0.04,                         // phy mortality
+          mZ: 0.03,                         // zoo mortality
+          e: 0.3,                           // assimilation efficiency
+          r: 0.26                           // remineralization of D to N
+        };
+      }
+
+      function simulateNPZD(params) {
+        // Simple 1-box NPZD model
+        let N = 2.0;
+        let P = 0.1;
+        let Z = 0.1;
+        let D = 0.0;
+
+        const outP = [];
+        const outT = [];
+
+        let t = 0;
+        let step = 0;
+        let nextSampleTime = 0;
+
+        while (step <= STEPS) {
+          // sample once per day
+          if (t >= nextSampleTime - 1e-9) {
+            outP.push(P);
+            outT.push(nextSampleTime);
+            nextSampleTime += 1.0;
+          }
+
+          const { muMax, kN, g, mP, mZ, e, r } = params;
+
+          const mu = muMax * (N / (kN + N));   // Monod growth
+          const uptake = mu * P;               // N -> P
+          const grazing = g * Z * P;           // P -> Z/D
+          const mortP = mP * P;                // P -> D
+          const mortZ = mZ * Z;                // Z -> D;
+          const remin = r * D;                 // D -> N
+
+          // Euler step
+          const dN = -uptake + remin;
+          const dP = uptake - grazing - mortP;
+          const dZ = e * grazing - mortZ;
+          const dD = (1 - e) * grazing + mortP + mortZ - remin;
+
+          N += dN * DT;
+          P += dP * DT;
+          Z += dZ * DT;
+          D += dD * DT;
+
+          // clamp to non-negative
+          N = Math.max(N, 0);
+          P = Math.max(P, 0);
+          Z = Math.max(Z, 0);
+          D = Math.max(D, 0);
+
+          t += DT;
+          step++;
+        }
+
+        return { t: outT, P: outP };
+      }
+
+      function generateTargetSeries() {
+        generateTrueParams();
+        const sim = simulateNPZD(trueParams);
+        timeDays = sim.t;
+
+        // Add small observational noise for "data feeling"
+        const noisyP = sim.P.map((v) => Math.max(0, v + randn_bm() * 0.01));
+        targetP = noisyP;
+
+        // y-bounds for plotting: based on both target and likely model range
+        const maxP = Math.max(...targetP);
+        const yMax = maxP * 1.4 + 0.05;
+        const yMin = 0.0;
+        bounds = { yMin, yMax };
+      }
+
+      // Gaussian-ish random
+      function randn_bm() {
+        let u = 0, v = 0;
+        while (u === 0) u = Math.random();
+        while (v === 0) v = Math.random();
+        return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+      }
+
+      function clearSVG() {
+        while (svg.firstChild) {
+          svg.removeChild(svg.firstChild);
+        }
+      }
+
+      function xScale(t) {
+        return (
+          padding.left +
+          (t / DAYS) * (width - padding.left - padding.right)
+        );
+      }
+
+      function yScale(P) {
+        const { yMin, yMax } = bounds;
+        return (
+          height -
+          padding.bottom -
+          ((P - yMin) / (yMax - yMin)) * (height - padding.top - padding.bottom)
+        );
+      }
+
+      function drawAxesAndGrid() {
+        const xAxis = document.createElementNS(ns, "line");
+        xAxis.setAttribute("x1", padding.left);
+        xAxis.setAttribute("y1", height - padding.bottom);
+        xAxis.setAttribute("x2", width - padding.right);
+        xAxis.setAttribute("y2", height - padding.bottom);
+        xAxis.setAttribute("class", "axis");
+        svg.appendChild(xAxis);
+
+        const yAxis = document.createElementNS(ns, "line");
+        yAxis.setAttribute("x1", padding.left);
+        yAxis.setAttribute("y1", padding.top);
+        yAxis.setAttribute("x2", padding.left);
+        yAxis.setAttribute("y2", height - padding.bottom);
+        yAxis.setAttribute("class", "axis");
+        svg.appendChild(yAxis);
+
+        const ticks = 4;
+        for (let i = 1; i <= ticks; i++) {
+          const t = i / (ticks + 1);
+
+          const x = padding.left + t * (width - padding.left - padding.right);
+          const vLine = document.createElementNS(ns, "line");
+          vLine.setAttribute("x1", x);
+          vLine.setAttribute("y1", padding.top + 2);
+          vLine.setAttribute("x2", x);
+          vLine.setAttribute("y2", height - padding.bottom - 2);
+          vLine.setAttribute("class", "grid-line");
+          svg.appendChild(vLine);
+
+          const y = padding.top + t * (height - padding.top - padding.bottom);
+          const hLine = document.createElementNS(ns, "line");
+          hLine.setAttribute("x1", padding.left + 2);
+          hLine.setAttribute("y1", y);
+          hLine.setAttribute("x2", width - padding.right - 2);
+          hLine.setAttribute("y2", y);
+          hLine.setAttribute("class", "grid-line");
+          svg.appendChild(hLine);
+        }
+
+        const xLabel = document.createElementNS(ns, "text");
+        xLabel.textContent = "time (days)";
+        xLabel.setAttribute("x", width - padding.right - 4);
+        xLabel.setAttribute("y", height - padding.bottom + 24);
+        xLabel.setAttribute("class", "axis-label");
+        svg.appendChild(xLabel);
+
+        const yLabel = document.createElementNS(ns, "text");
+        yLabel.textContent = "P (mmol N m⁻³)";
+        yLabel.setAttribute("x", padding.left - 4);
+        yLabel.setAttribute("y", padding.top + 10);
+        yLabel.setAttribute("class", "axis-label");
+        svg.appendChild(yLabel);
+      }
+
+      function pathFromSeries(tArr, PArr) {
+        if (!tArr.length) return "";
+        let d = "";
+        for (let i = 0; i < tArr.length; i++) {
+          const x = xScale(tArr[i]);
+          const y = yScale(PArr[i]);
+          d += (i === 0 ? "M" : "L") + x + "," + y + " ";
+        }
+        return d;
+      }
+
+      function drawTargetCurve() {
+        const path = document.createElementNS(ns, "path");
+        path.setAttribute("class", "line-target");
+        path.setAttribute("d", pathFromSeries(timeDays, targetP));
+        path.setAttribute("id", "targetLine");
+        svg.appendChild(path);
+      }
+
+      function createModelCurve() {
+        const path = document.createElementNS(ns, "path");
+        path.setAttribute("class", "line-model bad");
+        path.setAttribute("id", "modelLine");
+        svg.appendChild(path);
+        return path;
+      }
+
+      function simulateModelForSliders() {
+        const mu = parseFloat(muSlider.value);
+        const g = parseFloat(gSlider.value);
+        const k = parseFloat(kSlider.value);
+        const params = {
+          muMax: mu,
+          kN: k,
+          g: g,
+          mP: trueParams.mP,
+          mZ: trueParams.mZ,
+          e: trueParams.e,
+          r: trueParams.r
+        };
+        return simulateNPZD(params);
+      }
+
+      function computeRMSE(modelP, targetP) {
+        let sum = 0;
+        const n = Math.min(modelP.length, targetP.length);
+        for (let i = 0; i < n; i++) {
+          const diff = modelP[i] - targetP[i];
+          sum += diff * diff;
+        }
+        return Math.sqrt(sum / n);
+      }
+
+      function updateStatus(rmse, modelPathEl) {
+        rmseDisplay.textContent = rmse.toFixed(3);
+
+        let text = "";
+        let qualityClass = "";
+
+        if (rmse < RMSE_TARGET) {
+          text = "Excellent ecosystem match!";
+          qualityClass = "good";
+          modelPathEl.classList.remove("bad");
+          modelPathEl.classList.add("good");
+          successBanner.classList.add("visible");
+        } else if (rmse < RMSE_TARGET * 2.5) {
+          text = "Getting close – tune the bloom timing and height.";
+          qualityClass = "ok";
+          modelPathEl.classList.add("bad");
+          modelPathEl.classList.remove("good");
+          successBanner.classList.remove("visible");
+        } else {
+          text = "Model is far from target; adjust μ and g further.";
+          qualityClass = "bad";
+          modelPathEl.classList.add("bad");
+          modelPathEl.classList.remove("good");
+          successBanner.classList.remove("visible");
+        }
+
+        fitStatus.textContent = text;
+        fitStatus.classList.remove("good", "ok", "bad");
+        if (qualityClass) fitStatus.classList.add(qualityClass);
+      }
+
+      function updateFromSliders(modelPathEl) {
+        const mu = parseFloat(muSlider.value);
+        const g = parseFloat(gSlider.value);
+        const k = parseFloat(kSlider.value);
+        muValue.textContent = mu.toFixed(2);
+        gValue.textContent = g.toFixed(2);
+        kValue.textContent = k.toFixed(2);
+
+        const sim = simulateModelForSliders();
+        const modelP = sim.P;
+
+        modelPathEl.setAttribute("d", pathFromSeries(timeDays, modelP));
+        const rmse = computeRMSE(modelP, targetP);
+        updateStatus(rmse, modelPathEl);
+      }
+
+      function init() {
+        generateTargetSeries();
+        clearSVG();
+        drawAxesAndGrid();
+        drawTargetCurve();
+        const modelPathEl = createModelCurve();
+
+        rmseTargetSpan.textContent = RMSE_TARGET.toFixed(2);
+        successBanner.classList.remove("visible");
+
+        muValue.textContent = parseFloat(muSlider.value).toFixed(2);
+        gValue.textContent = parseFloat(gSlider.value).toFixed(2);
+        kValue.textContent = parseFloat(kSlider.value).toFixed(2);
+
+        updateFromSliders(modelPathEl);
+
+        muSlider.addEventListener("input", () => updateFromSliders(modelPathEl));
+        gSlider.addEventListener("input", () => updateFromSliders(modelPathEl));
+        kSlider.addEventListener("input", () => updateFromSliders(modelPathEl));
+
+        newTargetButton.addEventListener("click", () => {
+          generateTargetSeries();
+          clearSVG();
+          drawAxesAndGrid();
+          drawTargetCurve();
+          const newModelPathEl = createModelCurve();
+          successBanner.classList.remove("visible");
+          updateFromSliders(newModelPathEl);
+        });
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>

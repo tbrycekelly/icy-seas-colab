@@ -1,6 +1,6 @@
 +++
 date = "2021-07-12T16:10:22+02:00"
-description = "Observing the planktonic environment in a fundamentally new way. The first deep-ocean capabile ISIIS DPI vehicle, capable of imaging 240 L of ocean per second with over a dozen additional data streams from ocean color to acoustics."
+description = "Observing the planktonic environment in a fundamentally new way. The first deep-ocean capable ISIIS DPI vehicle, capable of imaging 240 L of ocean per second with over a dozen additional data streams from ocean color to acoustics."
 external_link = ""
 image = ""
 project_id = ""
@@ -15,4 +15,4 @@ title = "Pelagic Imaging and Machine Learning"
 +++
 
 
-fsfdsfs
+

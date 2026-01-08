@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arctic Water Column – Physics + NPZD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="brand">
+        <div class="brand-mark">
+          <div class="brand-wave"></div>
+        </div>
+        <div class="brand-text">
+          <h1>Arctic Water Column Explorer</h1>
+          <p>Physics + NPZD: when does the bloom happen?</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="header-badge-dot"></span>
+        <span>Coupled seasonal demo</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-panel">
+        <h2>From Physics to Bloom: A Simple Coupled Model</h2>
+        <p>
+          We now place a tiny <strong>NPZD ecosystem</strong> in the mixed layer of our Arctic water column.
+          The same seasonal physics you saw before (ice, light, mixing) now control
+          <strong>when phytoplankton can bloom</strong>.
+        </p>
+        <p>
+          The model here is deliberately simple: a single mixed-layer NPZD box that:
+        </p>
+        <ul class="step-list">
+          <li>Feels the evolving <strong>light</strong> and <strong>mixed layer depth</strong>,</li>
+          <li>Gets nutrient “kicks” when the mixed layer deepens,</li>
+          <li>Lets phytoplankton grow, get grazed, and die into detritus.</li>
+        </ul>
+
+        <div class="pill-row">
+          <div class="pill"><strong>P(z, t)</strong> – phytoplankton in the mixed layer (shown in green).</div>
+          <div class="pill"><strong>P<sub>surf</sub>(t)</strong> – surface phytoplankton concentration.</div>
+          <div class="pill"><strong>∫P dz</strong> – vertically integrated phytoplankton (column inventory).</div>
+        </div>
+
+        <div class="tip-box">
+          <strong>Bridge to “real” models:</strong>
+          The code here is tiny compared to a full Arctic ecosystem model,
+          but the logic is the same: physics sets the stage, biology responds,
+          and we often judge a model by how well it reproduces
+          <em>P(t)</em> and <em>∫P dz</em> in time.
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <div class="game-header">
+          <div>
+            <h3>
+              Seasonal Water Column + NPZD
+              <span class="game-tag">Arctic year</span>
+            </h3>
+            <p class="game-subtitle">
+              Drag the slider to see how ice, light, mixing, and phytoplankton co-evolve.
+            </p>
+          </div>
+        </div>
+
+        <div class="column-card">
+          <div>
+            <div class="column-visual-wrapper">
+              <svg id="columnSvg" viewBox="0 0 200 260"
+                   aria-label="Cartoon of Arctic water column with ice, mixed layer, and phytoplankton">
+                <!-- Filled by JS -->
+              </svg>
+              <div class="column-caption">
+                Water column (0–80 m). Ice, mixed layer, and a stylized phytoplankton layer (green) evolve with time.
+              </div>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <div class="time-row">
+              <div>
+                <div class="time-label">Day of year</div>
+                <div class="time-value">
+                  <span id="dayLabel">Day 1</span> · <span id="dateLabel">Early winter</span>
+                </div>
+              </div>
+              <div class="time-season" id="seasonLabel">Polar winter</div>
+            </div>
+
+            <input type="range" id="daySlider" min="0" max="364" value="0" />
+
+            <div class="stat-line">
+              <span class="stat-label">Sea ice cover</span>
+              <span class="stat-value-ice" id="iceStat">—</span>
+            </div>
+            <div class="stat-line">
+              <span class="stat-label">Surface light index</span>
+              <span class="stat-value-light" id="lightStat">—</span>
+            </div>
+            <div class="stat-line">
+              <span class="stat-label">Mixed layer depth</span>
+              <span class="stat-value-mld" id="mldStat">—</span>
+            </div>
+            <div class="stat-line">
+              <span class="stat-label">Surface P</span>
+              <span class="stat-value-Psurf" id="PsurfStat">—</span>
+            </div>
+            <div class="stat-line">
+              <span class="stat-label">∫P dz (0–MLD)</span>
+              <span class="stat-value-Pint" id="PintStat">—</span>
+            </div>
+
+            <div class="narrative-box" id="narrativeBox">
+              <strong>What’s happening:</strong>
+              In mid-winter, ice cover is high, light is low, and the water column is deeply mixed. Phytoplankton stay near background levels.
+            </div>
+          </div>
+        </div>
+
+        <div class="series-card">
+          <div class="series-header">
+            <span>Seasonal physics: ice, light, and mixed layer depth</span>
+            <div class="legend">
+              <span class="legend-item">
+                <span class="legend-swatch swatch-ice"></span> Ice cover
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-light"></span> Light index
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-mld"></span> MLD (m)
+              </span>
+            </div>
+          </div>
+          <svg id="timeSeriesSvg" viewBox="0 0 500 150"
+               aria-label="Ice, light, and mixed layer depth over the year">
+            <!-- Filled by JS -->
+          </svg>
+        </div>
+
+        <div class="series-card">
+          <div class="series-header">
+            <span>Phytoplankton response: surface and column inventory</span>
+            <div class="legend">
+              <span class="legend-item">
+                <span class="legend-swatch swatch-Psurf"></span> Surface P
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-Pint"></span> ∫P dz
+              </span>
+            </div>
+          </div>
+          <svg id="npzdSeriesSvg" viewBox="0 0 500 150"
+               aria-label="Surface and vertically integrated phytoplankton over the year">
+            <!-- Filled by JS -->
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        Toy NPZD-mixed-layer model: Monod growth with light & nutrients, simple grazing and recycling,
+        plus entrainment-driven nutrient pulses when the mixed layer deepens.
+      </span>
+      <span>Next game idea: let players tweak μ, grazing, or N<sub>deep</sub> and see how the bloom shifts.</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const YEAR_DAYS = 365;
+
+      // DOM elements
+      const daySlider = document.getElementById("daySlider");
+      const dayLabel = document.getElementById("dayLabel");
+      const dateLabel = document.getElementById("dateLabel");
+      const seasonLabel = document.getElementById("seasonLabel");
+      const iceStat = document.getElementById("iceStat");
+      const lightStat = document.getElementById("lightStat");
+      const mldStat = document.getElementById("mldStat");
+      const PsurfStat = document.getElementById("PsurfStat");
+      const PintStat = document.getElementById("PintStat");
+      const narrativeBox = document.getElementById("narrativeBox");
+
+      const columnSvg = document.getElementById("columnSvg");
+      const tsSvg = document.getElementById("timeSeriesSvg");
+      const npzdSvg = document.getElementById("npzdSeriesSvg");
+      const ns = "http://www.w3.org/2000/svg";
+
+      // Column geometry
+      const columnWidth = 200;
+      const columnHeight = 260;
+      const waterTopY = 40;
+      const waterBottomY = 240;
+      const waterHeight = waterBottomY - waterTopY;
+      const maxDepth = 80; // m
+
+      // Time-series geometry
+      const tsWidth = 500;
+      const tsHeight = 150;
+      const tsPad = { left: 40, right: 18, top: 12, bottom: 26 };
+
+      let days = [];
+      let iceSeries = [];
+      let lightSeries = [];
+      let mldSeries = [];
+      let physState = [];
+
+      // Ecosystem series
+      let PsurfSeries = [];
+      let PintSeries = [];
+      let maxPsurf = 1;
+      let maxPint = 1;
+
+      function seasonState(day) {
+        // Map day (0..364) to a "seasonal angle"
+        const t = (day + 15) / YEAR_DAYS; // slight shift
+        const angle = Math.PI * t;
+
+        // Light: peak around midsummer (day ~180), essentially 0 in winter
+        let light = Math.max(0, Math.sin(angle));
+        light = Math.pow(light, 1.4); // sharpen peak a bit
+
+        // Ice fraction: high in winter, low in summer (cosine)
+        let ice = 0.2 + 0.8 * Math.cos(angle*2 - 0.5);
+        ice = Math.min(1, Math.max(0, ice));
+        ice = Math.pow(ice+0.1, 2)
+        ice = Math.min(1, Math.max(0, ice));
+
+        // Mixed layer depth: deep in winter, shallow in summer
+        const maxMLD = 5;
+        const minMLD = 60;
+        let mld = minMLD + (maxMLD - minMLD) * 0.5 * (1 + Math.cos(2*angle + 2));
+        // Slightly shallower exactly at peak light (rough tweak)
+        //mld = 0.75 * mld + 0.25 * (maxMLD - (maxMLD - minMLD) * light);
+
+
+        return { ice, light, mld };
+      }
+
+      function seasonName(day) {
+        if (day < 60 || day >= 330) return "Polar winter";
+        if (day >= 60 && day < 140) return "Spring melt & shoaling";
+        if (day >= 140 && day < 240) return "Open-water summer";
+        if (day >= 240 && day < 330) return "Autumn re-freezing";
+        return "Season transition";
+      }
+
+      function seasonalNarrative(day, state, Psurf) {
+        const { ice, light, mld } = state;
+        const bloom = Psurf > 0.8 * maxPsurf;
+
+        if (ice > 0.8 && light < 0.2) {
+          return "<strong>What’s happening:</strong> Deep winter. Thick sea ice and very low light keep the surface ocean cold and well-mixed. Phytoplankton remain near background concentrations.";
+        } else if (ice > 0.3 && light > 0.2 && light < 0.6 && !bloom) {
+          return "<strong>What’s happening:</strong> Spring transition. Ice is thinning and breaking up, light is increasing, and the mixed layer is starting to shoal, setting the stage for a bloom.";
+        } else if (light > 0.5 && mld < 30 && Psurf > 0.3 * maxPsurf) {
+          return "<strong>What’s happening:</strong> Spring–early summer bloom period. Light is strong, the mixed layer is shallow, and nutrients mixed up earlier are being consumed by phytoplankton.";
+        } else if (ice < 0.2 && light > 0.7 && mld < 25 && bloom) {
+          return "<strong>What’s happening:</strong> Peak bloom conditions. High light and a stratified surface ocean support elevated phytoplankton, though nutrients may now be getting depleted.";
+        } else if (ice > 0.3 && light < 0.4 && mld > 35) {
+          return "<strong>What’s happening:</strong> Autumn re-freeze. Cooling and storms deepen the mixed layer again, re-mixing any remaining phytoplankton and detritus, while new ice starts to form.";
+        } else {
+          return "<strong>What’s happening:</strong> A transition phase between seasons. Ice, light, mixing, and phytoplankton are all adjusting to the changing physical environment.";
+        }
+      }
+
+      // --- Precompute physics ---
+      function buildTimeSeries() {
+        days = [];
+        iceSeries = [];
+        lightSeries = [];
+        mldSeries = [];
+        physState = [];
+
+        for (let d = 0; d < YEAR_DAYS; d++) {
+          const s = seasonState(d);
+          days.push(d);
+          iceSeries.push(s.ice);
+          lightSeries.push(s.light);
+          mldSeries.push(s.mld);
+          physState.push(s);
+        }
+      }
+
+      // --- Toy NPZD mixed-layer model forced by physics ---
+
+      function simulateNPZD() {
+        // Single mixed-layer NPZD box, forced by daily light & MLD.
+        let N = 1.0;   // mmol N m^-3
+        let P = 0.1;
+        let Z = 0.15;
+        let D = 0.1;
+
+        const Ndeep = 8.0;      // deep reservoir nutrient
+        const muMax = 0.4;       // day^-1
+        const kN    = 0.5;       // nutrient half-sat
+        const g     = 0.4;       // grazing rate
+        const mP    = 0.05;      // phyt mortality
+        const mZ    = 0.03;      // zoo mortality
+        const e     = 0.3;       // grazing assimilation efficiency
+        const r     = 0.1;      // remineralization of detritus
+
+        const dtSub = 0.1;       // sub-daily timestep (days)
+
+        PsurfSeries = [];
+        PintSeries = [];
+
+        let prevMLD = physState[0].mld;
+
+        for (let day = 0; day < YEAR_DAYS; day++) {
+          const { light, mld } = physState[day];
+
+          // Vertical entrainment when mixed layer deepens:
+          if (mld > prevMLD + 0.005) {
+            const f = (mld - prevMLD) / mld; // fraction of new deep water
+            // Deep water: high N, almost no P/Z/D
+            N = (1 - f) * N + f * Ndeep;
+            P = (1 - f) * P;
+            Z = (1 - f) * Z;
+            D = (1 - f) * D;
+          }
+          prevMLD = mld;
+
+          // Integrate NPZD over one day with substeps
+          let t = 0;
+          while (t < 1 - 1e-9) {
+            const dt = dtSub;
+            const mu = muMax * light * (N / (kN + N)); // light & N limited
+
+            const uptake = mu * P;
+            const grazing = g * Z * P;
+            const mortP = mP * P;
+            const mortZ = mZ * Z;
+            const remin = r * D;
+
+            const dN = -uptake + remin;
+            const dP = uptake - grazing - mortP;
+            const dZ = e * grazing - mortZ;
+            const dD = (1 - e) * grazing + mortP + mortZ - remin;
+
+            N = Math.max(0.001, N + dN * dt);
+            P = Math.max(0.001, P + dP * dt);
+            Z = Math.max(0.001, Z + dZ * dt);
+            D = Math.max(0.001, D + dD * dt);
+
+            t += dt;
+          }
+
+          // Store surface P (mixed-layer concentration) and column inventory
+          PsurfSeries.push(P);
+
+          // Vertically integrated P: approximate as uniform P in [0, MLD]
+          const Pint = P * mld; // mmol N m^-2
+          PintSeries.push(Pint);
+        }
+
+        maxPsurf = Math.max(...PsurfSeries);
+        maxPint = Math.max(...PintSeries);
+        if (maxPsurf <= 0) maxPsurf = 1;
+        if (maxPint <= 0) maxPint = 1;
+      }
+
+      // --- SVG helpers ---
+
+      function clearSvg(svg) {
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+      }
+
+      function drawColumnStatic() {
+        clearSvg(columnSvg);
+
+        // Define gradients
+        const defs = document.createElementNS(ns, "defs");
+
+        const waterGrad = document.createElementNS(ns, "linearGradient");
+        waterGrad.setAttribute("id", "waterGradient");
+        waterGrad.setAttribute("x1", "0%");
+        waterGrad.setAttribute("y1", "0%");
+        waterGrad.setAttribute("x2", "0%");
+        waterGrad.setAttribute("y2", "100%");
+        const wgStop1 = document.createElementNS(ns, "stop");
+        wgStop1.setAttribute("offset", "0%");
+        wgStop1.setAttribute("stop-color", "#0ea5e9");
+        const wgStop2 = document.createElementNS(ns, "stop");
+        wgStop2.setAttribute("offset", "100%");
+        wgStop2.setAttribute("stop-color", "#020617");
+        waterGrad.appendChild(wgStop1);
+        waterGrad.appendChild(wgStop2);
+
+        const iceGrad = document.createElementNS(ns, "linearGradient");
+        iceGrad.setAttribute("id", "iceGradient");
+        iceGrad.setAttribute("x1", "0%");
+        iceGrad.setAttribute("y1", "0%");
+        iceGrad.setAttribute("x2", "0%");
+        iceGrad.setAttribute("y2", "100%");
+        const igStop1 = document.createElementNS(ns, "stop");
+        igStop1.setAttribute("offset", "0%");
+        igStop1.setAttribute("stop-color", "#e5f2ff");
+        const igStop2 = document.createElementNS(ns, "stop");
+        igStop2.setAttribute("offset", "100%");
+        igStop2.setAttribute("stop-color", "#cbd5f5");
+        iceGrad.appendChild(igStop1);
+        iceGrad.appendChild(igStop2);
+
+        const phytoGrad = document.createElementNS(ns, "linearGradient");
+        phytoGrad.setAttribute("id", "phytoGradient");
+        phytoGrad.setAttribute("x1", "0%");
+        phytoGrad.setAttribute("y1", "0%");
+        phytoGrad.setAttribute("x2", "0%");
+        phytoGrad.setAttribute("y2", "100%");
+        const pgStop1 = document.createElementNS(ns, "stop");
+        pgStop1.setAttribute("offset", "0%");
+        pgStop1.setAttribute("stop-color", "#bbf7d0");
+        const pgStop2 = document.createElementNS(ns, "stop");
+        pgStop2.setAttribute("offset", "100%");
+        pgStop2.setAttribute("stop-color", "#22c55e");
+        phytoGrad.appendChild(pgStop1);
+        phytoGrad.appendChild(pgStop2);
+
+        defs.appendChild(waterGrad);
+        defs.appendChild(iceGrad);
+        defs.appendChild(phytoGrad);
+        columnSvg.appendChild(defs);
+
+        // Background ocean rectangle
+        const waterRect = document.createElementNS(ns, "rect");
+        waterRect.setAttribute("x", 40);
+        waterRect.setAttribute("y", waterTopY);
+        waterRect.setAttribute("width", 120);
+        waterRect.setAttribute("height", waterHeight);
+        waterRect.setAttribute("fill", "url(#waterGradient)");
+        waterRect.setAttribute("stroke", "rgba(148, 163, 184, 0.8)");
+        waterRect.setAttribute("stroke-width", "1.2");
+        columnSvg.appendChild(waterRect);
+
+        // Depth labels
+        const depths = [0, 20, 40, 60, 80];
+        depths.forEach((z) => {
+          const y = waterTopY + (z / maxDepth) * waterHeight;
+          const tick = document.createElementNS(ns, "line");
+          tick.setAttribute("x1", 38);
+          tick.setAttribute("y1", y);
+          tick.setAttribute("x2", 35);
+          tick.setAttribute("y2", y);
+          tick.setAttribute("stroke", "#9ca3af");
+          tick.setAttribute("stroke-width", "0.6");
+          columnSvg.appendChild(tick);
+
+          const label = document.createElementNS(ns, "text");
+          label.textContent = z === 0 ? "0 m" : z;
+          label.setAttribute("x", 30);
+          label.setAttribute("y", y + 3);
+          label.setAttribute("fill", "#9ca3af");
+          label.setAttribute("font-size", "8");
+          label.setAttribute("font-family", "system-ui, sans-serif");
+          label.setAttribute("text-anchor", "end");
+          columnSvg.appendChild(label);
+        });
+
+        // Surface line
+        const surf = document.createElementNS(ns, "line");
+        surf.setAttribute("x1", 40);
+        surf.setAttribute("y1", waterTopY);
+        surf.setAttribute("x2", 160);
+        surf.setAttribute("y2", waterTopY);
+        surf.setAttribute("stroke", "rgba(248, 250, 252, 0.8)");
+        surf.setAttribute("stroke-width", "1.2");
+        columnSvg.appendChild(surf);
+      }
+
+      function drawColumnDynamic(day) {
+        // Remove previous dynamic elements
+        const toRemove = [];
+        columnSvg.childNodes.forEach((node) => {
+          if (node.getAttribute && node.getAttribute("data-dynamic") === "1") {
+            toRemove.push(node);
+          }
+        });
+        toRemove.forEach((n) => columnSvg.removeChild(n));
+
+        const state = physState[day];
+        const { ice, light, mld } = state;
+        const Psurf = PsurfSeries[day];
+
+        // Ice represented as a white bar across the top
+        if (ice > 0.02) {
+          const iceWidth = 120 * (0.2 + 0.8 * ice);
+          const iceRect = document.createElementNS(ns, "rect");
+          iceRect.setAttribute("x", 40 + (120 - iceWidth) / 2);
+          iceRect.setAttribute("y", 18);
+          iceRect.setAttribute("width", iceWidth);
+          iceRect.setAttribute("height", 18);
+          iceRect.setAttribute("fill", "url(#iceGradient)");
+          iceRect.setAttribute("stroke", "#e5f2ff");
+          iceRect.setAttribute("stroke-width", "0.8");
+          iceRect.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(iceRect);
+
+          const iceLabel = document.createElementNS(ns, "text");
+          iceLabel.textContent = "Sea ice";
+          iceLabel.setAttribute("x", 100);
+          iceLabel.setAttribute("y", 14);
+          iceLabel.setAttribute("fill", "#e5f2ff");
+          iceLabel.setAttribute("font-size", "8");
+          iceLabel.setAttribute("font-family", "system-ui, sans-serif");
+          iceLabel.setAttribute("text-anchor", "middle");
+          iceLabel.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(iceLabel);
+        }
+
+        // Mixed layer
+        const mldFrac = Math.min(mld / maxDepth, 1);
+        const mldY = waterTopY + mldFrac * waterHeight;
+
+        const mlRect = document.createElementNS(ns, "rect");
+        mlRect.setAttribute("x", 40);
+        mlRect.setAttribute("y", waterTopY);
+        mlRect.setAttribute("width", 120);
+        mlRect.setAttribute("height", Math.max(4, mldY - waterTopY));
+        mlRect.setAttribute("fill", "rgba(15, 23, 42, 0.15)");
+        mlRect.setAttribute("stroke", "rgba(148, 163, 184, 0.7)");
+        mlRect.setAttribute("stroke-width", "0.7");
+        mlRect.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mlRect);
+
+        const mldLine = document.createElementNS(ns, "line");
+        mldLine.setAttribute("x1", 40);
+        mldLine.setAttribute("y1", mldY);
+        mldLine.setAttribute("x2", 160);
+        mldLine.setAttribute("y2", mldY);
+        mldLine.setAttribute("stroke", "#a5b4fc");
+        mldLine.setAttribute("stroke-width", "1.1");
+        mldLine.setAttribute("stroke-dasharray", "3 2");
+        mldLine.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mldLine);
+
+        const mldText = document.createElementNS(ns, "text");
+        mldText.textContent = "MLD";
+        mldText.setAttribute("x", 162);
+        mldText.setAttribute("y", mldY + 3);
+        mldText.setAttribute("fill", "#a5b4fc");
+        mldText.setAttribute("font-size", "8");
+        mldText.setAttribute("font-family", "system-ui, sans-serif");
+        mldText.setAttribute("text-anchor", "start");
+        mldText.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mldText);
+
+        // Phytoplankton shading in the mixed layer
+        if (Psurf > 0) {
+          const intensity = Math.min(1, Psurf / maxPsurf);
+          const phytoRect = document.createElementNS(ns, "rect");
+          phytoRect.setAttribute("x", 45);
+          phytoRect.setAttribute("y", waterTopY + 2);
+          phytoRect.setAttribute("width", 110);
+          phytoRect.setAttribute("height", Math.max(2, mldY - waterTopY - 4));
+          phytoRect.setAttribute("fill", "url(#phytoGradient)");
+          phytoRect.setAttribute("opacity", 0.15 + 0.55 * intensity);
+          phytoRect.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(phytoRect);
+
+          const phytoLabel = document.createElementNS(ns, "text");
+          phytoLabel.textContent = "P";
+          phytoLabel.setAttribute("x", 48);
+          phytoLabel.setAttribute("y", waterTopY + 10);
+          phytoLabel.setAttribute("fill", "#bbf7d0");
+          phytoLabel.setAttribute("font-size", "8");
+          phytoLabel.setAttribute("font-family", "system-ui, sans-serif");
+          phytoLabel.setAttribute("text-anchor", "start");
+          phytoLabel.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(phytoLabel);
+        }
+
+        // Subsurface stratified layer
+        const stratRect = document.createElementNS(ns, "rect");
+        stratRect.setAttribute("x", 40);
+        stratRect.setAttribute("y", mldY);
+        stratRect.setAttribute("width", 120);
+        stratRect.setAttribute("height", Math.max(2, waterBottomY - mldY));
+        stratRect.setAttribute("fill", "rgba(15, 23, 42, 0.3)");
+        stratRect.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(stratRect);
+
+        // Light "sun"
+        const sunRadius = 4 + 5 * light;
+        const sun = document.createElementNS(ns, "circle");
+        sun.setAttribute("cx", 40);
+        sun.setAttribute("cy", 18);
+        sun.setAttribute("r", sunRadius);
+        sun.setAttribute("fill", "#facc15");
+        sun.setAttribute("stroke", "#fde68a");
+        sun.setAttribute("stroke-width", "0.7");
+        sun.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(sun);
+
+        if (light > 0.05) {
+          for (let i = 0; i < 3; i++) {
+            const ray = document.createElementNS(ns, "line");
+            const x1 = 45 + i * 10;
+            ray.setAttribute("x1", x1);
+            ray.setAttribute("y1", 18 + sunRadius);
+            ray.setAttribute("x2", x1 + 4);
+            ray.setAttribute("y2", 30);
+            ray.setAttribute(
+              "stroke",
+              "rgba(250, 204, 21," + (0.3 + 0.4 * light) + ")"
+            );
+            ray.setAttribute("stroke-width", "1");
+            ray.setAttribute("data-dynamic", "1");
+            columnSvg.appendChild(ray);
+          }
+        }
+      }
+
+      // --- Time series plots ---
+
+      function xScaleTS(day) {
+        return (
+          tsPad.left +
+          (day / (YEAR_DAYS - 1)) * (tsWidth - tsPad.left - tsPad.right)
+        );
+      }
+
+      function yScaleTSIceLight(val) {
+        const top = tsPad.top + 4;
+        const bottom = tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.45;
+        return bottom - val * (bottom - top);
+      }
+
+      function yScaleTSMLD(mld) {
+        const minMLD = 0;
+        const maxMLD = 70;
+        const top = tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.55;
+        const bottom = tsHeight - tsPad.bottom;
+        const frac = (mld - minMLD) / (maxMLD - minMLD);
+        return top + frac * (bottom - top);
+      }
+
+      function buildPath(series, yScaleFn) {
+        let d = "";
+        for (let i = 0; i < days.length; i++) {
+          const x = xScaleTS(days[i]);
+          const y = yScaleFn(series[i]);
+          d += (i === 0 ? "M" : "L") + x + "," + y + " ";
+        }
+        return d;
+      }
+
+      function drawPhysicsSeries() {
+        clearSvg(tsSvg);
+
+        // Axes
+        const xAxis = document.createElementNS(ns, "line");
+        xAxis.setAttribute("x1", tsPad.left);
+        xAxis.setAttribute("y1", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("x2", tsWidth - tsPad.right);
+        xAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("class", "axis");
+        tsSvg.appendChild(xAxis);
+
+        const yAxis = document.createElementNS(ns, "line");
+        yAxis.setAttribute("x1", tsPad.left);
+        yAxis.setAttribute("y1", tsPad.top);
+        yAxis.setAttribute("x2", tsPad.left);
+        yAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        yAxis.setAttribute("class", "axis");
+        tsSvg.appendChild(yAxis);
+
+        // Grid
+        const ticks = 4;
+        for (let i = 1; i <= ticks; i++) {
+          const frac = i / (ticks + 1);
+          const x = tsPad.left + frac * (tsWidth - tsPad.left - tsPad.right);
+          const vLine = document.createElementNS(ns, "line");
+          vLine.setAttribute("x1", x);
+          vLine.setAttribute("y1", tsPad.top);
+          vLine.setAttribute("x2", x);
+          vLine.setAttribute("y2", tsHeight - tsPad.bottom);
+          vLine.setAttribute("class", "grid-line");
+          tsSvg.appendChild(vLine);
+        }
+
+        const xLabel = document.createElementNS(ns, "text");
+        xLabel.textContent = "Day of year";
+        xLabel.setAttribute("x", tsWidth - tsPad.right - 4);
+        xLabel.setAttribute("y", tsHeight - 4);
+        xLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(xLabel);
+
+        const ilLabel = document.createElementNS(ns, "text");
+        ilLabel.textContent = "Ice / light";
+        ilLabel.setAttribute("x", tsPad.left + 2);
+        ilLabel.setAttribute("y", tsPad.top + 8);
+        ilLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(ilLabel);
+
+        const mldLabel = document.createElementNS(ns, "text");
+        mldLabel.textContent = "MLD (m)";
+        mldLabel.setAttribute("x", tsPad.left + 2);
+        mldLabel.setAttribute(
+          "y",
+          tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.55 + 8
+        );
+        mldLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(mldLabel);
+
+        const pathIce = document.createElementNS(ns, "path");
+        pathIce.setAttribute("d", buildPath(iceSeries, yScaleTSIceLight));
+        pathIce.setAttribute("class", "series-ice");
+        tsSvg.appendChild(pathIce);
+
+        const pathLight = document.createElementNS(ns, "path");
+        pathLight.setAttribute("d", buildPath(lightSeries, yScaleTSIceLight));
+        pathLight.setAttribute("class", "series-light");
+        tsSvg.appendChild(pathLight);
+
+        const pathMLD = document.createElementNS(ns, "path");
+        pathMLD.setAttribute("d", buildPath(mldSeries, yScaleTSMLD));
+        pathMLD.setAttribute("class", "series-mld");
+        tsSvg.appendChild(pathMLD);
+
+        const cursor = document.createElementNS(ns, "line");
+        cursor.setAttribute("id", "timeCursorPhysics");
+        cursor.setAttribute("class", "time-cursor");
+        tsSvg.appendChild(cursor);
+      }
+
+      function yScalePsurf(P) {
+        const top = tsPad.top + 8;
+        const bottom = tsHeight - tsPad.bottom - 4;
+        const frac = P / maxPsurf;
+        return bottom - frac * (bottom - top);
+      }
+
+      function yScalePint(Pint) {
+        const top = tsPad.top + 8;
+        const bottom = tsHeight - tsPad.bottom - 4;
+        const frac = Pint / maxPint;
+        return bottom - frac * (bottom - top);
+      }
+
+      function drawNPZDSeries() {
+        clearSvg(npzdSvg);
+
+        const xAxis = document.createElementNS(ns, "line");
+        xAxis.setAttribute("x1", tsPad.left);
+        xAxis.setAttribute("y1", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("x2", tsWidth - tsPad.right);
+        xAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("class", "axis");
+        npzdSvg.appendChild(xAxis);
+
+        const yAxis = document.createElementNS(ns, "line");
+        yAxis.setAttribute("x1", tsPad.left);
+        yAxis.setAttribute("y1", tsPad.top);
+        yAxis.setAttribute("x2", tsPad.left);
+        yAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        yAxis.setAttribute("class", "axis");
+        npzdSvg.appendChild(yAxis);
+
+        const ticks = 4;
+        for (let i = 1; i <= ticks; i++) {
+          const frac = i / (ticks + 1);
+          const x = tsPad.left + frac * (tsWidth - tsPad.left - tsPad.right);
+          const vLine = document.createElementNS(ns, "line");
+          vLine.setAttribute("x1", x);
+          vLine.setAttribute("y1", tsPad.top);
+          vLine.setAttribute("x2", x);
+          vLine.setAttribute("y2", tsHeight - tsPad.bottom);
+          vLine.setAttribute("class", "grid-line");
+          npzdSvg.appendChild(vLine);
+        }
+
+        const xLabel = document.createElementNS(ns, "text");
+        xLabel.textContent = "Day of year";
+        xLabel.setAttribute("x", tsWidth - tsPad.right - 4);
+        xLabel.setAttribute("y", tsHeight - 4);
+        xLabel.setAttribute("class", "axis-label");
+        npzdSvg.appendChild(xLabel);
+
+        const yLabel = document.createElementNS(ns, "text");
+        yLabel.textContent = "P (surf & ∫P dz)";
+        yLabel.setAttribute("x", tsPad.left + 2);
+        yLabel.setAttribute("y", tsPad.top + 8);
+        yLabel.setAttribute("class", "axis-label");
+        npzdSvg.appendChild(yLabel);
+
+        const pathPsurf = document.createElementNS(ns, "path");
+        pathPsurf.setAttribute("d", buildPath(PsurfSeries, yScalePsurf));
+        pathPsurf.setAttribute("class", "series-Psurf");
+        npzdSvg.appendChild(pathPsurf);
+
+        const pathPint = document.createElementNS(ns, "path");
+        pathPint.setAttribute("d", buildPath(PintSeries, yScalePint));
+        pathPint.setAttribute("class", "series-Pint");
+        npzdSvg.appendChild(pathPint);
+
+        const cursor = document.createElementNS(ns, "line");
+        cursor.setAttribute("id", "timeCursorNPZD");
+        cursor.setAttribute("class", "time-cursor");
+        npzdSvg.appendChild(cursor);
+      }
+
+      function updateTimeCursors(day) {
+        const x = xScaleTS(day);
+        const cursorPhys = tsSvg.querySelector("#timeCursorPhysics");
+        if (cursorPhys) {
+          cursorPhys.setAttribute("x1", x);
+          cursorPhys.setAttribute("x2", x);
+          cursorPhys.setAttribute("y1", tsPad.top);
+          cursorPhys.setAttribute("y2", tsHeight - tsPad.bottom);
+        }
+
+        const cursorNPZD = npzdSvg.querySelector("#timeCursorNPZD");
+        if (cursorNPZD) {
+          cursorNPZD.setAttribute("x1", x);
+          cursorNPZD.setAttribute("x2", x);
+          cursorNPZD.setAttribute("y1", tsPad.top);
+          cursorNPZD.setAttribute("y2", tsHeight - tsPad.bottom);
+        }
+      }
+
+      // --- UI text update ---
+
+      function updateText(day) {
+        const d = day;
+        dayLabel.textContent = "Day " + (d + 1);
+        const approxMonth = Math.round((d / YEAR_DAYS) * 12);
+        const months = [
+          "Early Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ];
+        dateLabel.textContent = months[Math.min(months.length - 1, approxMonth)];
+        const sName = seasonName(d);
+        seasonLabel.textContent = sName;
+
+        const state = physState[d];
+        iceStat.textContent = Math.round(state.ice * 100) + " %";
+        lightStat.textContent = state.light.toFixed(2) + " (rel.)";
+        mldStat.textContent = state.mld.toFixed(0) + " m";
+
+        const Psurf = PsurfSeries[d];
+        const Pint = PintSeries[d];
+        PsurfStat.textContent = Psurf.toFixed(2) + " (mmol N m⁻³)";
+        PintStat.textContent = Pint.toFixed(1) + " (mmol N m⁻²)";
+
+        narrativeBox.innerHTML = seasonalNarrative(d, state, Psurf);
+      }
+
+      function onDayChange() {
+        const day = parseInt(daySlider.value, 10);
+        drawColumnDynamic(day);
+        updateTimeCursors(day);
+        updateText(day);
+      }
+
+      function init() {
+        buildTimeSeries();
+        simulateNPZD();
+        drawColumnStatic();
+        drawPhysicsSeries();
+        drawNPZDSeries();
+        onDayChange();
+
+        daySlider.addEventListener("input", onDayChange);
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>

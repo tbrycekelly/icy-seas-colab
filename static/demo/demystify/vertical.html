@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vertical Mixing + Light: Stirring the Bloom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <h1>Stirring the Bloom</h1>
+          <p>Vertical mixing + light: when does the spring bloom fire?</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="header-badge-dot"></span>
+        <span>Mix the column, chase the bloom</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-panel">
+        <h2>Game: Vertical Mixing + Light</h2>
+        <p>
+          In winter, deep vertical mixing keeps nutrients high but pushes phytoplankton into the dark.
+          In spring, the surface calms and brightens, letting a bloom develop in the shallow mixed layer.
+        </p>
+        <p>
+          In this game you control:
+        </p>
+        <ul class="step-list">
+          <li><strong>Storminess</strong> – how long the mixed layer stays deep into spring.</li>
+          <li><strong>Water clarity</strong> – how efficiently light supports growth.</li>
+        </ul>
+        <p>
+          Your goal is to <strong>time and shape the bloom</strong>:
+        </p>
+        <ul class="step-list">
+          <li>Make the bloom peak near late spring (around day 140).</li>
+          <li>Maximize the total phytoplankton inventory in the growing season.</li>
+        </ul>
+
+        <div class="pill-row">
+          <div class="pill"><strong>Deep mixing</strong> = more nutrients, but dimmer average light for P.</div>
+          <div class="pill"><strong>Shallow mixing</strong> = better light, but nutrients can run out.</div>
+          <div class="pill"><strong>Your job:</strong> find the sweet spot.</div>
+        </div>
+
+        <div class="tip-box">
+          <strong>Model connection:</strong>
+          This is a tiny NP box model with prescribed light and a parameterized mixed layer depth that
+          <em>you</em> control. Large coupled models do the same thing, just with more boxes, more tracers,
+          and more physics.
+        </div>
+
+        <div class="narrative-box">
+          <strong>Next step:</strong>
+          <div class="game-link" style="background-color: #22c55e90; color:#22c55e;">
+            <a href="coupled.html">Coupled Model</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <div class="game-header">
+          <div>
+            <h3>
+              Vertical Mixing + Light
+              <span class="game-tag">Interactive NP box</span>
+            </h3>
+            <p class="game-subtitle">
+              Adjust storminess and clarity, then scrub through the year to see what you did.
+            </p>
+          </div>
+        </div>
+
+        <div class="column-card">
+          <div>
+            <div class="column-visual-wrapper">
+              <svg id="columnSvg" viewBox="0 0 200 240"
+                   aria-label="Arctic water column with mixed layer and phytoplankton">
+                <!-- Filled by JS -->
+              </svg>
+              <div class="column-caption">
+                Mixed layer depth (blue dashed), phytoplankton (green) and light icon update with your settings.
+              </div>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <div class="slider-block">
+              <div class="slider-row">
+                <div class="slider-label">
+                  <span>Storminess (spring mixing)</span>
+                  <span id="stormLabel">0.50</span>
+                </div>
+                <input type="range" id="stormSlider" min="0" max="1" step="0.01" value="0.5" />
+              </div>
+              <div class="slider-row">
+                <div class="slider-label">
+                  <span>Water clarity (light effectiveness)</span>
+                  <span id="clarityLabel">0.80</span>
+                </div>
+                <input type="range" id="claritySlider" min="0.3" max="1.2" step="0.01" value="0.8" />
+              </div>
+              <div class="slider-row">
+                <div class="slider-label">
+                  <span>Day of year</span>
+                  <span id="dayLabel">Day 1</span>
+                </div>
+                <input type="range" id="daySlider" min="0" max="364" value="0" />
+              </div>
+            </div>
+
+            <div class="stats-block">
+              <div class="stat-line">
+                <span class="stat-label">Bloom peak day</span>
+                <span class="stat-value-P" id="peakDayStat">—</span>
+              </div>
+              <div class="stat-line">
+                <span class="stat-label">Peak surface P</span>
+                <span class="stat-value-P" id="peakPStat">—</span>
+              </div>
+              <div class="stat-line">
+                <span class="stat-label">Seasonal ∫P dt (days 90–220)</span>
+                <span class="stat-value-P" id="intPStat">—</span>
+              </div>
+              <div class="stat-line">
+                <span class="stat-label">Score (timing × magnitude)</span>
+                <span class="stat-value-score" id="scoreStat">—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="series-card">
+          <div class="series-header">
+            <span>Seasonal evolution: light, mixed layer, and phytoplankton</span>
+            <div class="legend">
+              <span class="legend-item">
+                <span class="legend-swatch swatch-light"></span> Light index
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-mld"></span> MLD (m)
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-P"></span> Surface P
+              </span>
+            </div>
+          </div>
+          <svg id="timeSeriesSvg" viewBox="0 0 500 150"
+               aria-label="Light, mixed layer depth, and phytoplankton timeseries">
+            <!-- Filled by JS -->
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        Toy NP model: phytoplankton grow with light and nutrients, die at a fixed rate, and feel entrainment when the mixed layer deepens.
+      </span>
+      <span>
+        Try: low clarity + deep mixing vs high clarity + gentle mixing – how does the score change?
+      </span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const YEAR_DAYS = 365;
+      const ns = "http://www.w3.org/2000/svg";
+
+      // DOM
+      const stormSlider = document.getElementById("stormSlider");
+      const claritySlider = document.getElementById("claritySlider");
+      const daySlider = document.getElementById("daySlider");
+      const stormLabel = document.getElementById("stormLabel");
+      const clarityLabel = document.getElementById("clarityLabel");
+      const dayLabel = document.getElementById("dayLabel");
+
+      const peakDayStat = document.getElementById("peakDayStat");
+      const peakPStat = document.getElementById("peakPStat");
+      const intPStat = document.getElementById("intPStat");
+      const scoreStat = document.getElementById("scoreStat");
+
+      const columnSvg = document.getElementById("columnSvg");
+      const tsSvg = document.getElementById("timeSeriesSvg");
+
+      // Column geometry
+      const waterTopY = 35;
+      const waterBottomY = 220;
+      const waterHeight = waterBottomY - waterTopY;
+      const maxDepth = 80;
+
+      // Time series geometry
+      const tsWidth = 500;
+      const tsHeight = 150;
+      const tsPad = { left: 40, right: 18, top: 12, bottom: 26 };
+
+      // State arrays
+      let days = [];
+      let lightSeries = []; // 0-1
+      let mldSeries = [];   // m
+      let PSeries = [];     // mmol N m^-3
+      let maxP = 1;
+
+      function clearSvg(svg) {
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+      }
+
+      // Seasonal light (fixed)
+      function seasonalLight(day) {
+        const t = (day + 15) / YEAR_DAYS;
+        const angle = Math.PI * t;
+        let L = Math.max(0, Math.sin(angle));
+        return Math.pow(L, 1.05); // sharpen a bit
+      }
+
+      // Mixed layer depth as function of storminess slider
+      function seasonalMLD(day, storminess) {
+        // storminess in [0, 1]; higher = longer deep mixing into spring
+        const minMLD = 10;
+        const maxMLD = 60;
+
+        // Delay the shoaling with storminess: phase shift
+        const shiftDays = (storminess - 0.5) * 80; // -40..+40 days
+        const t = (day + 15 + shiftDays) / YEAR_DAYS;
+        const angle = 2 * Math.PI * t;
+
+        let base = minMLD + (maxMLD - minMLD) * 0.5 * (1 + Math.cos(angle));
+        // Guarantee winter deep, summer shallow
+        base = Math.max(minMLD, Math.min(maxMLD, base));
+        return base;
+      }
+
+      // Simple NP mixed-layer model
+      function runModel(storminess, clarity) {
+        days = [];
+        lightSeries = [];
+        mldSeries = [];
+        PSeries = [];
+
+        // Parameters
+        let N = 8.0;  // mixed-layer nutrient
+        let P = 0.1;  // phytoplankton
+        const Ndeep = 10.0;
+
+        const muMax = 0.8; // per day
+        const kN = 1.0;
+        const mP = 0.06;   // mortality
+        const dtSub = 0.1;
+
+        let prevMLD = seasonalMLD(0, storminess);
+
+        for (let d = 0; d < YEAR_DAYS; d++) {
+          const L0 = seasonalLight(d);
+          const L = clarity * L0; // clarity modifies effective light
+          const MLD = seasonalMLD(d, storminess);
+
+          // Entrainment if MLD deepens
+          if (MLD > prevMLD + 0.5) {
+            const f = (MLD - prevMLD) / MLD;
+            N = (1 - f) * N + f * Ndeep;
+            P = (1 - f) * P; // diluted
+          }
+          prevMLD = MLD;
+
+          let t = 0;
+          while (t < 1 - 1e-9) {
+            const dt = dtSub;
+            const mu = muMax * L * (N / (kN + N));
+
+            const uptake = mu * P;
+            const mort = mP * P;
+
+            const dP = uptake - mort;
+            const dN = -uptake;
+
+            P = Math.max(0, P + dP * dt);
+            N = Math.max(0, N + dN * dt);
+
+            t += dt;
+          }
+
+          days.push(d);
+          lightSeries.push(L0); // display base light
+          mldSeries.push(MLD);
+          PSeries.push(P);
+        }
+
+        maxP = Math.max(...PSeries, 1e-6);
+      }
+
+      function drawColumnStatic() {
+        clearSvg(columnSvg);
+
+        const defs = document.createElementNS(ns, "defs");
+        const waterGrad = document.createElementNS(ns, "linearGradient");
+        waterGrad.setAttribute("id", "waterGradient");
+        waterGrad.setAttribute("x1", "0%");
+        waterGrad.setAttribute("y1", "0%");
+        waterGrad.setAttribute("x2", "0%");
+        waterGrad.setAttribute("y2", "100%");
+        const w1 = document.createElementNS(ns, "stop");
+        w1.setAttribute("offset", "0%");
+        w1.setAttribute("stop-color", "#0ea5e9");
+        const w2 = document.createElementNS(ns, "stop");
+        w2.setAttribute("offset", "100%");
+        w2.setAttribute("stop-color", "#020617");
+        waterGrad.appendChild(w1); waterGrad.appendChild(w2);
+
+        const phyGrad = document.createElementNS(ns, "linearGradient");
+        phyGrad.setAttribute("id", "phytoGradient");
+        phyGrad.setAttribute("x1", "0%");
+        phyGrad.setAttribute("y1", "0%");
+        phyGrad.setAttribute("x2", "0%");
+        phyGrad.setAttribute("y2", "100%");
+        const p1 = document.createElementNS(ns, "stop");
+        p1.setAttribute("offset", "0%");
+        p1.setAttribute("stop-color", "#bbf7d0");
+        const p2 = document.createElementNS(ns, "stop");
+        p2.setAttribute("offset", "100%");
+        p2.setAttribute("stop-color", "#22c55e");
+        phyGrad.appendChild(p1); phyGrad.appendChild(p2);
+
+        defs.appendChild(waterGrad);
+        defs.appendChild(phyGrad);
+        columnSvg.appendChild(defs);
+
+        const waterRect = document.createElementNS(ns, "rect");
+        waterRect.setAttribute("x", 40);
+        waterRect.setAttribute("y", waterTopY);
+        waterRect.setAttribute("width", 120);
+        waterRect.setAttribute("height", waterHeight);
+        waterRect.setAttribute("fill", "url(#waterGradient)");
+        waterRect.setAttribute("stroke", "rgba(148, 163, 184, 0.8)");
+        waterRect.setAttribute("stroke-width", "1.1");
+        columnSvg.appendChild(waterRect);
+
+        const depths = [0, 20, 40, 60, 80];
+        depths.forEach((z) => {
+          const y = waterTopY + (z / maxDepth) * waterHeight;
+          const tick = document.createElementNS(ns, "line");
+          tick.setAttribute("x1", 38);
+          tick.setAttribute("y1", y);
+          tick.setAttribute("x2", 35);
+          tick.setAttribute("y2", y);
+          tick.setAttribute("stroke", "#9ca3af");
+          tick.setAttribute("stroke-width", "0.6");
+          columnSvg.appendChild(tick);
+
+          const label = document.createElementNS(ns, "text");
+          label.textContent = z === 0 ? "0 m" : z;
+          label.setAttribute("x", 30);
+          label.setAttribute("y", y + 3);
+          label.setAttribute("fill", "#9ca3af");
+          label.setAttribute("font-size", "8");
+          label.setAttribute("font-family", "system-ui, sans-serif");
+          label.setAttribute("text-anchor", "end");
+          columnSvg.appendChild(label);
+        });
+
+        const surf = document.createElementNS(ns, "line");
+        surf.setAttribute("x1", 40);
+        surf.setAttribute("y1", waterTopY);
+        surf.setAttribute("x2", 160);
+        surf.setAttribute("y2", waterTopY);
+        surf.setAttribute("stroke", "rgba(248, 250, 252, 0.85)");
+        surf.setAttribute("stroke-width", "1.1");
+        columnSvg.appendChild(surf);
+      }
+
+      function drawColumnDynamic(day) {
+        const toRemove = [];
+        columnSvg.childNodes.forEach((node) => {
+          if (node.getAttribute && node.getAttribute("data-dynamic") === "1") {
+            toRemove.push(node);
+          }
+        });
+        toRemove.forEach((n) => columnSvg.removeChild(n));
+
+        const L = seasonalLight(day);
+        const storminess = parseFloat(stormSlider.value);
+        const MLD = mldSeries[day];
+        const P = PSeries[day];
+
+        const mldFrac = Math.min(MLD / maxDepth, 1);
+        const mldY = waterTopY + mldFrac * waterHeight;
+
+        // Mixed layer highlight
+        const mlRect = document.createElementNS(ns, "rect");
+        mlRect.setAttribute("x", 40);
+        mlRect.setAttribute("y", waterTopY);
+        mlRect.setAttribute("width", 120);
+        mlRect.setAttribute("height", Math.max(4, mldY - waterTopY));
+        mlRect.setAttribute("fill", "rgba(15, 23, 42, 0.2)");
+        mlRect.setAttribute("stroke", "rgba(148, 163, 184, 0.7)");
+        mlRect.setAttribute("stroke-width", "0.7");
+        mlRect.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mlRect);
+
+        const mldLine = document.createElementNS(ns, "line");
+        mldLine.setAttribute("x1", 40);
+        mldLine.setAttribute("y1", mldY);
+        mldLine.setAttribute("x2", 160);
+        mldLine.setAttribute("y2", mldY);
+        mldLine.setAttribute("stroke", "#a5b4fc");
+        mldLine.setAttribute("stroke-width", "1.1");
+        mldLine.setAttribute("stroke-dasharray", "3 2");
+        mldLine.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mldLine);
+
+        const mldText = document.createElementNS(ns, "text");
+        mldText.textContent = "MLD";
+        mldText.setAttribute("x", 162);
+        mldText.setAttribute("y", mldY + 3);
+        mldText.setAttribute("fill", "#a5b4fc");
+        mldText.setAttribute("font-size", "8");
+        mldText.setAttribute("font-family", "system-ui, sans-serif");
+        mldText.setAttribute("text-anchor", "start");
+        mldText.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mldText);
+
+        // Phytoplankton shading
+        if (P > 0) {
+          const intensity = Math.min(1, P / maxP);
+          const phytoRect = document.createElementNS(ns, "rect");
+          phytoRect.setAttribute("x", 45);
+          phytoRect.setAttribute("y", waterTopY + 2);
+          phytoRect.setAttribute("width", 110);
+          phytoRect.setAttribute("height", Math.max(2, mldY - waterTopY - 4));
+          phytoRect.setAttribute("fill", "url(#phytoGradient)");
+          phytoRect.setAttribute("opacity", 0.12 + 0.6 * intensity);
+          phytoRect.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(phytoRect);
+        }
+
+        // Light "sun"
+        const sunRadius = 4 + 5 * L;
+        const sun = document.createElementNS(ns, "circle");
+        sun.setAttribute("cx", 40);
+        sun.setAttribute("cy", 20);
+        sun.setAttribute("r", sunRadius);
+        sun.setAttribute("fill", "#facc15");
+        sun.setAttribute("stroke", "#fde68a");
+        sun.setAttribute("stroke-width", "0.7");
+        sun.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(sun);
+
+        if (L > 0.05) {
+          for (let i = 0; i < 3; i++) {
+            const ray = document.createElementNS(ns, "line");
+            const x1 = 45 + i * 10;
+            ray.setAttribute("x1", x1);
+            ray.setAttribute("y1", 20 + sunRadius);
+            ray.setAttribute("x2", x1 + 4);
+            ray.setAttribute("y2", 32);
+            ray.setAttribute(
+              "stroke",
+              "rgba(250, 204, 21," + (0.3 + 0.4 * L) + ")"
+            );
+            ray.setAttribute("stroke-width", "1");
+            ray.setAttribute("data-dynamic", "1");
+            columnSvg.appendChild(ray);
+          }
+        }
+
+        // Little storminess hint (dots at bottom)
+        const stormDots = Math.round(3 + 5 * storminess);
+        for (let i = 0; i < stormDots; i++) {
+          const dot = document.createElementNS(ns, "circle");
+          const x = 50 + (i * 90) / (stormDots + 1);
+          const y = waterBottomY + 6 + Math.random() * 4;
+          dot.setAttribute("cx", x);
+          dot.setAttribute("cy", y);
+          dot.setAttribute("r", 1.1);
+          dot.setAttribute("fill", "rgba(148, 163, 184, 0.6)");
+          dot.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(dot);
+        }
+      }
+
+      function xScale(day) {
+        return (
+          tsPad.left +
+          (day / (YEAR_DAYS - 1)) * (tsWidth - tsPad.left - tsPad.right)
+        );
+      }
+      function yScaleLight(L) {
+        const top = tsPad.top + 2;
+        const bottom = tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.45;
+        return bottom - L * (bottom - top);
+      }
+      function yScaleMLD(MLD) {
+        const minMLD = 0, maxMLD = 70;
+        const top = tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.5;
+        const bottom = tsHeight - tsPad.bottom;
+        const frac = (MLD - minMLD) / (maxMLD - minMLD);
+        return top + frac * (bottom - top);
+      }
+      function yScaleP(P) {
+        const top = tsPad.top + 8;
+        const bottom = tsHeight - tsPad.bottom - 6;
+        const frac = P / maxP;
+        return bottom - frac * (bottom - top);
+      }
+
+      function buildPath(series, yScaleFn) {
+        let d = "";
+        for (let i = 0; i < days.length; i++) {
+          const x = xScale(days[i]);
+          const y = yScaleFn(series[i]);
+          d += (i === 0 ? "M" : "L") + x + "," + y + " ";
+        }
+        return d;
+      }
+
+      function drawTimeSeries() {
+        clearSvg(tsSvg);
+
+        const xAxis = document.createElementNS(ns, "line");
+        xAxis.setAttribute("x1", tsPad.left);
+        xAxis.setAttribute("y1", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("x2", tsWidth - tsPad.right);
+        xAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("class", "axis");
+        tsSvg.appendChild(xAxis);
+
+        const yAxis = document.createElementNS(ns, "line");
+        yAxis.setAttribute("x1", tsPad.left);
+        yAxis.setAttribute("y1", tsPad.top);
+        yAxis.setAttribute("x2", tsPad.left);
+        yAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        yAxis.setAttribute("class", "axis");
+        tsSvg.appendChild(yAxis);
+
+        const ticks = 4;
+        for (let i = 1; i <= ticks; i++) {
+          const frac = i / (ticks + 1);
+          const x = tsPad.left + frac * (tsWidth - tsPad.left - tsPad.right);
+          const vLine = document.createElementNS(ns, "line");
+          vLine.setAttribute("x1", x);
+          vLine.setAttribute("y1", tsPad.top);
+          vLine.setAttribute("x2", x);
+          vLine.setAttribute("y2", tsHeight - tsPad.bottom);
+          vLine.setAttribute("class", "grid-line");
+          tsSvg.appendChild(vLine);
+        }
+
+        const xLabel = document.createElementNS(ns, "text");
+        xLabel.textContent = "Day of year";
+        xLabel.setAttribute("x", tsWidth - tsPad.right - 4);
+        xLabel.setAttribute("y", tsHeight - 4);
+        xLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(xLabel);
+
+        const pathLight = document.createElementNS(ns, "path");
+        pathLight.setAttribute("d", buildPath(lightSeries, yScaleLight));
+        pathLight.setAttribute("class", "series-light");
+        tsSvg.appendChild(pathLight);
+
+        const pathMLD = document.createElementNS(ns, "path");
+        pathMLD.setAttribute("d", buildPath(mldSeries, yScaleMLD));
+        pathMLD.setAttribute("class", "series-mld");
+        tsSvg.appendChild(pathMLD);
+
+        const pathP = document.createElementNS(ns, "path");
+        pathP.setAttribute("d", buildPath(PSeries, yScaleP));
+        pathP.setAttribute("class", "series-P");
+        tsSvg.appendChild(pathP);
+
+        const cursor = document.createElementNS(ns, "line");
+        cursor.setAttribute("id", "timeCursor");
+        cursor.setAttribute("class", "time-cursor");
+        tsSvg.appendChild(cursor);
+      }
+
+      function updateCursor(day) {
+        const cursor = tsSvg.querySelector("#timeCursor");
+        if (!cursor) return;
+        const x = xScale(day);
+        cursor.setAttribute("x1", x);
+        cursor.setAttribute("x2", x);
+        cursor.setAttribute("y1", tsPad.top);
+        cursor.setAttribute("y2", tsHeight - tsPad.bottom);
+      }
+
+      function computeScore() {
+        // Peak day and magnitude
+        let peakP = -1, peakDay = -1;
+        for (let i = 0; i < YEAR_DAYS; i++) {
+          if (PSeries[i] > peakP) {
+            peakP = PSeries[i];
+            peakDay = i;
+          }
+        }
+        // Integrated P over days 90–220
+        let intP = 0;
+        for (let i = 90; i <= 220; i++) {
+          intP += PSeries[i] || 0;
+        }
+
+        // Timing score: ideal peak around day 140
+        const targetDay = 140;
+        const dayDiff = Math.abs(peakDay - targetDay);
+        const timingScore = Math.max(0, 1 - dayDiff / 80); // 0–1
+
+        // Magnitude score: normalize by heuristic max
+        const magScore = Math.min(1, intP / 80); // rough scaling
+
+        const totalScore = timingScore * 0.5 + magScore * 0.5;
+
+        peakDayStat.textContent = peakDay >= 0 ? "Day " + (peakDay + 1) : "—";
+        peakPStat.textContent = peakP.toFixed(2) + " (rel.)";
+        intPStat.textContent = intP.toFixed(1) + " (rel. sum)";
+        scoreStat.textContent = (totalScore * 100).toFixed(0) + " / 100";
+      }
+
+      function updateDayLabel(day) {
+        dayLabel.textContent = "Day " + (day + 1);
+      }
+
+      function rerunAndRedraw() {
+        const storminess = parseFloat(stormSlider.value);
+        const clarity = parseFloat(claritySlider.value);
+        stormLabel.textContent = storminess.toFixed(2);
+        clarityLabel.textContent = clarity.toFixed(2);
+
+        runModel(storminess, clarity);
+        drawTimeSeries();
+        updateCursor(parseInt(daySlider.value, 10));
+        drawColumnDynamic(parseInt(daySlider.value, 10));
+        computeScore();
+      }
+
+      function init() {
+        drawColumnStatic();
+        rerunAndRedraw();
+        updateDayLabel(parseInt(daySlider.value, 10));
+
+        stormSlider.addEventListener("input", () => {
+          rerunAndRedraw();
+        });
+        claritySlider.addEventListener("input", () => {
+          rerunAndRedraw();
+        });
+        daySlider.addEventListener("input", () => {
+          const day = parseInt(daySlider.value, 10);
+          updateDayLabel(day);
+          drawColumnDynamic(day);
+          updateCursor(day);
+        });
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>

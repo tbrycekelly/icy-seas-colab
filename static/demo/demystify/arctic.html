@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arctic Water Column – Season Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="brand">
+        <div class="brand-mark">
+          <div class="brand-wave"></div>
+        </div>
+        <div class="brand-text">
+          <h1>Arctic Water Column Explorer</h1>
+          <p>From winter ice cover to summer stratification and back.</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="header-badge-dot"></span>
+        <span>Seasonal physics demo</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-panel">
+        <h2>From Ice-Covered Winter to Stratified Summer</h2>
+        <p>
+          In high-latitude oceans, the water column goes through a dramatic seasonal cycle.
+          In winter, thick sea ice and deep mixing keep the column cold and well-mixed.
+          In spring and summer, ice retreats, light returns, and the surface layer
+          <strong>re-stratifies</strong>.
+        </p>
+        <p>
+          Here, you can scrub through an idealized Arctic year and watch how:
+        </p>
+        <ul class="step-list">
+          <li><strong>Sea ice cover</strong> grows and shrinks.</li>
+          <li>The <strong>mixed layer depth (MLD)</strong> shoals and deepens.</li>
+          <li><strong>Surface light</strong> ramps up in spring and fades in autumn.</li>
+        </ul>
+
+        <div class="pill-row">
+          <div class="pill"><strong>Ice cover</strong> = fraction of the surface frozen.</div>
+          <div class="pill"><strong>MLD</strong> = depth of the well-mixed surface layer.</div>
+          <div class="pill"><strong>Light index</strong> = relative sunlight at the surface.</div>
+        </div>
+
+        <div class="tip-box">
+          <strong>Next step:</strong>
+          Let's learn about how we can model the base of the foodweb with an ecosystem game!
+          <em>When does the spring bloom actually happen?</em> The same modeling
+          ideas you’ve seen in the linear regression will return here.
+          <div class="game-link" style="background-color: #22c55e90; color:#22c55e;">
+            <a href="npz_game.html">Ecosystem Module</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <div class="game-header">
+          <div>
+            <h3>
+              Seasonal Water Column
+              <span class="game-tag">Arctic year</span>
+            </h3>
+            <p class="game-subtitle">
+              Drag the time slider to watch ice, light, and stratification evolve.
+            </p>
+          </div>
+        </div>
+
+        <div class="column-card">
+          <div>
+            <div class="column-visual-wrapper">
+              <svg id="columnSvg" viewBox="0 0 200 260"
+                   aria-label="Cartoon of Arctic water column with ice and mixed layer">
+                <!-- Filled by JS -->
+              </svg>
+              <div class="column-caption">
+                Stylized water column (0–80 m). Ice, mixed layer, and stratified layer update with time.
+              </div>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <div class="time-row">
+              <div>
+                <div class="time-label">Day of year</div>
+                <div class="time-value">
+                  <span id="dayLabel">Day 1</span> · <span id="dateLabel">Early winter</span>
+                </div>
+              </div>
+              <div class="time-season" id="seasonLabel">Polar winter</div>
+            </div>
+
+            <input type="range" id="daySlider" min="0" max="364" value="0" />
+
+            <div class="stat-line">
+              <span class="stat-label">Sea ice cover</span>
+              <span class="stat-value-ice" id="iceStat">—</span>
+            </div>
+            <div class="stat-line">
+              <span class="stat-label">Surface light index</span>
+              <span class="stat-value-light" id="lightStat">—</span>
+            </div>
+            <div class="stat-line">
+              <span class="stat-label">Mixed layer depth</span>
+              <span class="stat-value-mld" id="mldStat">—</span>
+            </div>
+
+            <div class="narrative-box" id="narrativeBox">
+              <strong>What’s happening:</strong>
+              In mid-winter, ice cover is high, light is low, and the water column is deeply mixed.
+            </div>
+          </div>
+        </div>
+
+        <div class="series-card">
+          <div class="series-header">
+            <span>Seasonal cycle of ice, light, and mixed layer depth</span>
+            <div class="legend">
+              <span class="legend-item">
+                <span class="legend-swatch swatch-ice"></span> Ice cover
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-light"></span> Light index
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch swatch-mld"></span> MLD (m)
+              </span>
+            </div>
+          </div>
+          <svg id="timeSeriesSvg" viewBox="0 0 500 150"
+               aria-label="Ice, light, and mixed layer depth over the year">
+            <!-- Filled by JS -->
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        
+      </span>
+      <span>Icy Seas Co-Laboratory LLC</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const YEAR_DAYS = 365;
+
+      // DOM elements
+      const daySlider = document.getElementById("daySlider");
+      const dayLabel = document.getElementById("dayLabel");
+      const dateLabel = document.getElementById("dateLabel");
+      const seasonLabel = document.getElementById("seasonLabel");
+      const iceStat = document.getElementById("iceStat");
+      const lightStat = document.getElementById("lightStat");
+      const mldStat = document.getElementById("mldStat");
+      const narrativeBox = document.getElementById("narrativeBox");
+
+      const columnSvg = document.getElementById("columnSvg");
+      const tsSvg = document.getElementById("timeSeriesSvg");
+      const ns = "http://www.w3.org/2000/svg";
+
+      const columnWidth = 200;
+      const columnHeight = 260;
+      const waterTopY = 40;
+      const waterBottomY = 240;
+      const waterHeight = waterBottomY - waterTopY;
+      const maxDepth = 80; // m
+
+      const tsWidth = 500;
+      const tsHeight = 150;
+      const tsPad = { left: 40, right: 18, top: 12, bottom: 26 };
+
+      let days = [];
+      let iceSeries = [];
+      let lightSeries = [];
+      let mldSeries = [];
+
+      function seasonState(day) {
+        // Map day (0..364) to a "seasonal angle"
+        const t = (day + 15) / YEAR_DAYS; // slight shift
+        const angle = Math.PI * t;
+
+        // Light: peak around midsummer (day ~180), essentially 0 in winter
+        let light = Math.max(0, Math.sin(angle));
+        light = Math.pow(light, 1.4); // sharpen peak a bit
+
+        // Ice fraction: high in winter, low in summer (cosine)
+        let ice = 0.2 + 0.8 * Math.cos(angle*2 - 0.5);
+        ice = Math.min(1, Math.max(0, ice));
+        ice = Math.pow(ice+0.1, 2)
+        ice = Math.min(1, Math.max(0, ice));
+
+        // Mixed layer depth: deep in winter, shallow in summer
+        const maxMLD = 5;
+        const minMLD = 60;
+        let mld = minMLD + (maxMLD - minMLD) * 0.5 * (1 + Math.cos(2*angle + 2));
+        // Slightly shallower exactly at peak light (rough tweak)
+        //mld = 0.75 * mld + 0.25 * (maxMLD - (maxMLD - minMLD) * light);
+
+        return { ice, light, mld };
+      }
+
+      function seasonName(day) {
+        if (day < 60 || day >= 330) return "Polar winter";
+        if (day >= 60 && day < 140) return "Spring melt & shoaling";
+        if (day >= 140 && day < 240) return "Open-water summer";
+        if (day >= 240 && day < 330) return "Autumn re-freezing";
+        return "Season transition";
+      }
+
+      function seasonalNarrative(day, state) {
+        const { ice, light, mld } = state;
+
+        if (ice > 0.8 && light < 0.2) {
+          return "<strong>What’s happening:</strong> Deep winter. Thick sea ice and very low light keep the surface ocean cold and well-mixed down to tens of meters.";
+        } else if (ice > 0.3 && light > 0.2 && light < 0.6) {
+          return "<strong>What’s happening:</strong> Spring transition. Ice is thinning and breaking up, light is increasing, and the mixed layer is starting to shoal toward the surface.";
+        } else if (ice < 0.2 && light > 0.7 && mld < 25) {
+          return "<strong>What’s happening:</strong> Peak summer. The ocean surface is ice-free, light is high, and a shallow, warm mixed layer sits above a more stratified interior.";
+        } else if (ice > 0.3 && light < 0.4 && mld > 35) {
+          return "<strong>What’s happening:</strong> Autumn re-freeze. Cooling and storms deepen the mixed layer again, while new ice starts to form at the surface.";
+        } else {
+          return "<strong>What’s happening:</strong> A transition phase between seasons. Ice, light, and mixing are all shifting as the water column adjusts.";
+        }
+      }
+
+      // Precompute seasonal series
+      function buildTimeSeries() {
+        days = [];
+        iceSeries = [];
+        lightSeries = [];
+        mldSeries = [];
+
+        for (let d = 0; d < YEAR_DAYS; d++) {
+          const s = seasonState(d);
+          days.push(d);
+          iceSeries.push(s.ice);
+          lightSeries.push(s.light);
+          mldSeries.push(s.mld);
+        }
+      }
+
+      // SVG helpers
+      function clearSvg(svg) {
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+      }
+
+      function drawColumnStatic() {
+        clearSvg(columnSvg);
+
+        // Background ocean rectangle
+        const waterRect = document.createElementNS(ns, "rect");
+        waterRect.setAttribute("x", 40);
+        waterRect.setAttribute("y", waterTopY);
+        waterRect.setAttribute("width", 120);
+        waterRect.setAttribute("height", waterHeight);
+        waterRect.setAttribute(
+          "fill",
+          "url(#waterGradient)"
+        );
+        waterRect.setAttribute("stroke", "rgba(148, 163, 184, 0.8)");
+        waterRect.setAttribute("stroke-width", "1.2");
+        columnSvg.appendChild(waterRect);
+
+        // Define gradients
+        const defs = document.createElementNS(ns, "defs");
+
+        const waterGrad = document.createElementNS(ns, "linearGradient");
+        waterGrad.setAttribute("id", "waterGradient");
+        waterGrad.setAttribute("x1", "0%");
+        waterGrad.setAttribute("y1", "0%");
+        waterGrad.setAttribute("x2", "0%");
+        waterGrad.setAttribute("y2", "100%");
+        const wgStop1 = document.createElementNS(ns, "stop");
+        wgStop1.setAttribute("offset", "0%");
+        wgStop1.setAttribute("stop-color", "#0ea5e9");
+        const wgStop2 = document.createElementNS(ns, "stop");
+        wgStop2.setAttribute("offset", "100%");
+        wgStop2.setAttribute("stop-color", "#020617");
+        waterGrad.appendChild(wgStop1);
+        waterGrad.appendChild(wgStop2);
+
+        const iceGrad = document.createElementNS(ns, "linearGradient");
+        iceGrad.setAttribute("id", "iceGradient");
+        iceGrad.setAttribute("x1", "0%");
+        iceGrad.setAttribute("y1", "0%");
+        iceGrad.setAttribute("x2", "0%");
+        iceGrad.setAttribute("y2", "100%");
+        const igStop1 = document.createElementNS(ns, "stop");
+        igStop1.setAttribute("offset", "0%");
+        igStop1.setAttribute("stop-color", "#e5f2ff");
+        const igStop2 = document.createElementNS(ns, "stop");
+        igStop2.setAttribute("offset", "100%");
+        igStop2.setAttribute("stop-color", "#cbd5f5");
+        iceGrad.appendChild(igStop1);
+        iceGrad.appendChild(igStop2);
+
+        defs.appendChild(waterGrad);
+        defs.appendChild(iceGrad);
+        columnSvg.insertBefore(defs, columnSvg.firstChild);
+
+        // Depth labels
+        const depths = [0, 20, 40, 60, 80];
+        depths.forEach((z) => {
+          const y = waterTopY + (z / maxDepth) * waterHeight;
+          const tick = document.createElementNS(ns, "line");
+          tick.setAttribute("x1", 38);
+          tick.setAttribute("y1", y);
+          tick.setAttribute("x2", 35);
+          tick.setAttribute("y2", y);
+          tick.setAttribute("stroke", "#9ca3af");
+          tick.setAttribute("stroke-width", "0.6");
+          columnSvg.appendChild(tick);
+
+          const label = document.createElementNS(ns, "text");
+          label.textContent = z === 0 ? "0 m" : z;
+          label.setAttribute("x", 30);
+          label.setAttribute("y", y + 3);
+          label.setAttribute("fill", "#9ca3af");
+          label.setAttribute("font-size", "8");
+          label.setAttribute("font-family", "system-ui, sans-serif");
+          label.setAttribute("text-anchor", "end");
+          columnSvg.appendChild(label);
+        });
+
+        // Surface line
+        const surf = document.createElementNS(ns, "line");
+        surf.setAttribute("x1", 40);
+        surf.setAttribute("y1", waterTopY);
+        surf.setAttribute("x2", 160);
+        surf.setAttribute("y2", waterTopY);
+        surf.setAttribute("stroke", "rgba(248, 250, 252, 0.8)");
+        surf.setAttribute("stroke-width", "1.2");
+        columnSvg.appendChild(surf);
+      }
+
+      function drawColumnDynamic(day) {
+        // Remove previous dynamic elements
+        const toRemove = [];
+        columnSvg.childNodes.forEach((node) => {
+          if (node.getAttribute && node.getAttribute("data-dynamic") === "1") {
+            toRemove.push(node);
+          }
+        });
+        toRemove.forEach((n) => columnSvg.removeChild(n));
+
+        const state = seasonState(day);
+        const { ice, light, mld } = state;
+
+        // Ice represented as a white bar across the top
+        if (ice > 0.02) {
+          const iceWidth = 120 * (0.2 + 0.8 * ice); // always a visible strip
+          const iceRect = document.createElementNS(ns, "rect");
+          iceRect.setAttribute("x", 40 + (120 - iceWidth) / 2);
+          iceRect.setAttribute("y", 18);
+          iceRect.setAttribute("width", iceWidth);
+          iceRect.setAttribute("height", 18);
+          iceRect.setAttribute("fill", "url(#iceGradient)");
+          iceRect.setAttribute("stroke", "#e5f2ff");
+          iceRect.setAttribute("stroke-width", "0.8");
+          iceRect.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(iceRect);
+
+          // Ice label
+          const iceLabel = document.createElementNS(ns, "text");
+          iceLabel.textContent = "Sea ice";
+          iceLabel.setAttribute("x", 100);
+          iceLabel.setAttribute("y", 14);
+          iceLabel.setAttribute("fill", "#e5f2ff");
+          iceLabel.setAttribute("font-size", "8");
+          iceLabel.setAttribute("font-family", "system-ui, sans-serif");
+          iceLabel.setAttribute("text-anchor", "middle");
+          iceLabel.setAttribute("data-dynamic", "1");
+          columnSvg.appendChild(iceLabel);
+        }
+
+        // Mixed layer depth line
+        const mldFrac = Math.min(mld / maxDepth, 1);
+        const mldY = waterTopY + mldFrac * waterHeight;
+
+        // Mixed layer highlighting
+        const mlRect = document.createElementNS(ns, "rect");
+        mlRect.setAttribute("x", 40);
+        mlRect.setAttribute("y", waterTopY);
+        mlRect.setAttribute("width", 120);
+        mlRect.setAttribute("height", Math.max(4, mldY - waterTopY));
+        mlRect.setAttribute("fill", "rgba(15, 23, 42, 0.15)");
+        mlRect.setAttribute("stroke", "rgba(148, 163, 184, 0.7)");
+        mlRect.setAttribute("stroke-width", "0.7");
+        mlRect.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mlRect);
+
+        const mldLine = document.createElementNS(ns, "line");
+        mldLine.setAttribute("x1", 40);
+        mldLine.setAttribute("y1", mldY);
+        mldLine.setAttribute("x2", 160);
+        mldLine.setAttribute("y2", mldY);
+        mldLine.setAttribute("stroke", "#a5b4fc");
+        mldLine.setAttribute("stroke-width", "1.1");
+        mldLine.setAttribute("stroke-dasharray", "3 2");
+        mldLine.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mldLine);
+
+        const mldText = document.createElementNS(ns, "text");
+        mldText.textContent = "MLD";
+        mldText.setAttribute("x", 162);
+        mldText.setAttribute("y", mldY + 3);
+        mldText.setAttribute("fill", "#a5b4fc");
+        mldText.setAttribute("font-size", "8");
+        mldText.setAttribute("font-family", "system-ui, sans-serif");
+        mldText.setAttribute("text-anchor", "start");
+        mldText.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(mldText);
+
+        // Subsurface gradient hint (optional subtle shading)
+        const stratRect = document.createElementNS(ns, "rect");
+        stratRect.setAttribute("x", 40);
+        stratRect.setAttribute("y", mldY);
+        stratRect.setAttribute("width", 120);
+        stratRect.setAttribute("height", Math.max(2, waterBottomY - mldY));
+        stratRect.setAttribute("fill", "rgba(15, 23, 42, 0.35)");
+        stratRect.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(stratRect);
+
+        // Light "sun" symbol varying with light index
+        const sunRadius = 4 + 5 * light;
+        const sun = document.createElementNS(ns, "circle");
+        sun.setAttribute("cx", 40);
+        sun.setAttribute("cy", 18);
+        sun.setAttribute("r", sunRadius);
+        sun.setAttribute("fill", "#facc15");
+        sun.setAttribute("stroke", "#fde68a");
+        sun.setAttribute("stroke-width", "0.7");
+        sun.setAttribute("data-dynamic", "1");
+        columnSvg.appendChild(sun);
+
+        // Light rays (just a rough feel)
+        if (light > 0.05) {
+          for (let i = 0; i < 3; i++) {
+            const ray = document.createElementNS(ns, "line");
+            const x1 = 45 + i * 10;
+            ray.setAttribute("x1", x1);
+            ray.setAttribute("y1", 18 + sunRadius);
+            ray.setAttribute("x2", x1 + 4);
+            ray.setAttribute("y2", 30);
+            ray.setAttribute("stroke", "rgba(250, 204, 21," + (0.3 + 0.4 * light) + ")");
+            ray.setAttribute("stroke-width", "1");
+            ray.setAttribute("data-dynamic", "1");
+            columnSvg.appendChild(ray);
+          }
+        }
+      }
+
+      // Time series plotting
+      function xScaleTS(day) {
+        return (
+          tsPad.left +
+          (day / (YEAR_DAYS - 1)) * (tsWidth - tsPad.left - tsPad.right)
+        );
+      }
+
+      function yScaleTSIceLight(val) {
+        // 0..1 -> top..bottom of top half
+        const top = tsPad.top + 4;
+        const bottom = tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.45;
+        return bottom - val * (bottom - top);
+      }
+
+      function yScaleTSMLD(mld) {
+        const minMLD = 0;
+        const maxMLD = 70;
+        const top = tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.55;
+        const bottom = tsHeight - tsPad.bottom;
+        const frac = (mld - minMLD) / (maxMLD - minMLD);
+        return top + frac * (bottom - top);
+      }
+
+      function buildPath(series, yScaleFn) {
+        let d = "";
+        for (let i = 0; i < days.length; i++) {
+          const x = xScaleTS(days[i]);
+          const y = yScaleFn(series[i]);
+          d += (i === 0 ? "M" : "L") + x + "," + y + " ";
+        }
+        return d;
+      }
+
+      function drawTimeSeries() {
+        clearSvg(tsSvg);
+
+        // Axes & grid
+        const xAxis = document.createElementNS(ns, "line");
+        xAxis.setAttribute("x1", tsPad.left);
+        xAxis.setAttribute("y1", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("x2", tsWidth - tsPad.right);
+        xAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        xAxis.setAttribute("class", "axis");
+        tsSvg.appendChild(xAxis);
+
+        const yAxis = document.createElementNS(ns, "line");
+        yAxis.setAttribute("x1", tsPad.left);
+        yAxis.setAttribute("y1", tsPad.top);
+        yAxis.setAttribute("x2", tsPad.left);
+        yAxis.setAttribute("y2", tsHeight - tsPad.bottom);
+        yAxis.setAttribute("class", "axis");
+        tsSvg.appendChild(yAxis);
+
+        const ticks = 4;
+        for (let i = 1; i <= ticks; i++) {
+          const frac = i / (ticks + 1);
+          const x = tsPad.left + frac * (tsWidth - tsPad.left - tsPad.right);
+          const vLine = document.createElementNS(ns, "line");
+          vLine.setAttribute("x1", x);
+          vLine.setAttribute("y1", tsPad.top);
+          vLine.setAttribute("x2", x);
+          vLine.setAttribute("y2", tsHeight - tsPad.bottom);
+          vLine.setAttribute("class", "grid-line");
+          tsSvg.appendChild(vLine);
+        }
+
+        const xLabel = document.createElementNS(ns, "text");
+        xLabel.textContent = "Day of year";
+        xLabel.setAttribute("x", tsWidth - tsPad.right - 4);
+        xLabel.setAttribute("y", tsHeight - 4);
+        xLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(xLabel);
+
+        // Ice & light y labels
+        const ilLabel = document.createElementNS(ns, "text");
+        ilLabel.textContent = "Ice / light";
+        ilLabel.setAttribute("x", tsPad.left + 2);
+        ilLabel.setAttribute("y", tsPad.top + 8);
+        ilLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(ilLabel);
+
+        const mldLabel = document.createElementNS(ns, "text");
+        mldLabel.textContent = "MLD (m)";
+        mldLabel.setAttribute("x", tsPad.left + 2);
+        mldLabel.setAttribute(
+          "y",
+          tsPad.top + (tsHeight - tsPad.top - tsPad.bottom) * 0.55 + 8
+        );
+        mldLabel.setAttribute("class", "axis-label");
+        tsSvg.appendChild(mldLabel);
+
+        // Series paths
+        const pathIce = document.createElementNS(ns, "path");
+        pathIce.setAttribute("d", buildPath(iceSeries, yScaleTSIceLight));
+        pathIce.setAttribute("class", "series-ice");
+        tsSvg.appendChild(pathIce);
+
+        const pathLight = document.createElementNS(ns, "path");
+        pathLight.setAttribute("d", buildPath(lightSeries, yScaleTSIceLight));
+        pathLight.setAttribute("class", "series-light");
+        tsSvg.appendChild(pathLight);
+
+        const pathMLD = document.createElementNS(ns, "path");
+        pathMLD.setAttribute("d", buildPath(mldSeries, yScaleTSMLD));
+        pathMLD.setAttribute("class", "series-mld");
+        tsSvg.appendChild(pathMLD);
+
+        // Time cursor
+        const cursor = document.createElementNS(ns, "line");
+        cursor.setAttribute("id", "timeCursor");
+        cursor.setAttribute("class", "time-cursor");
+        tsSvg.appendChild(cursor);
+      }
+
+      function updateTimeCursor(day) {
+        const cursor = tsSvg.querySelector("#timeCursor");
+        if (!cursor) return;
+        const x = xScaleTS(day);
+        cursor.setAttribute("x1", x);
+        cursor.setAttribute("x2", x);
+        cursor.setAttribute("y1", tsPad.top);
+        cursor.setAttribute("y2", tsHeight - tsPad.bottom);
+      }
+
+      function updateText(day) {
+        const d = day;
+        dayLabel.textContent = "Day " + (d + 1);
+        const approxMonth = Math.round((d / YEAR_DAYS) * 12);
+        const months = [
+          "Early Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ];
+        dateLabel.textContent = months[Math.min(months.length - 1, approxMonth)];
+        const sName = seasonName(d);
+        seasonLabel.textContent = sName;
+
+        const state = seasonState(d);
+        iceStat.textContent = Math.round(state.ice * 100) + " %";
+        lightStat.textContent = state.light.toFixed(2) + " (relative)";
+        mldStat.textContent = state.mld.toFixed(0) + " m";
+
+        narrativeBox.innerHTML = seasonalNarrative(d, state);
+      }
+
+      function onDayChange() {
+        const day = parseInt(daySlider.value, 10);
+        drawColumnDynamic(day);
+        updateTimeCursor(day);
+        updateText(day);
+      }
+
+      function init() {
+        buildTimeSeries();
+        drawColumnStatic();
+        drawTimeSeries();
+        onDayChange();
+
+        daySlider.addEventListener("input", onDayChange);
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>

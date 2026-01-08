@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modeling Portal – Game 1: Fit a Line</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="brand">
+        <div class="brand-mark">
+          <div class="brand-wave"></div>
+        </div>
+        <div class="brand-text">
+          <h1>Demystifying Models</h1>
+          <p>Learn models by tweaking them, not memorizing them.</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="header-badge-dot"></span>
+        <span>Module 1 · Linear Regression</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-panel">
+        <h2>Welcome to Module 1: “Draw the Best Line”</h2>
+        <p>
+          A <strong>model</strong> is a simple tool that helps us predict or explain data. While <strong>models</strong> may often seem abstract and complex, most are built on extremely simple principles.
+          In this first stage, your model is a straight line:
+        </p>
+        <p><code>y = m × x + b</code></p>
+        <p>
+          The data points (blue dots) come from some observations--something like how quickly plants grow based on daily temperatures.
+          Your job is to adjust the slope <code>m</code> and intercept <code>b</code> so that
+          your line passes as “fairly” as possible through the cloud of points.
+        </p>
+
+        <div class="pill-row">
+          <div class="pill"><strong>m</strong> = slope (tilt of the line)</div>
+          <div class="pill"><strong>b</strong> = intercept (where the line hits the y-axis)</div>
+          <div class="pill"><strong>Score</strong> = mean squared error (MSE)</div>
+        </div>
+
+        <br />
+        <p><strong>How to play:</strong></p>
+        <ol class="step-list">
+          <li>Use the sliders on the right to adjust <code><strong>m</strong></code> and <code><strong>b</strong></code>.</li>
+          <li>Watch how the red line moves through the blue points.</li>
+          <li>Try to <strong>minimize the MSE</strong> — lower is better.</li>
+          <li>When you get close enough to the “true” best-fit line, you'll clear the level.</li>
+        </ol>
+
+        <div class="tip-box">
+          <strong>Concept hint:</strong>
+          A linear regression is a simple idea. Behind the scenes, a computer usually
+          does this search for you. Here, you're the optimizer!
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <div class="game-header">
+          <div>
+            <h3>
+              Game 1: Fit a Line
+              <span class="game-tag">Active</span>
+            </h3>
+            <p class="game-subtitle">
+              Adjust the line so it runs through the center of the data cloud.
+            </p>
+          </div>
+        </div>
+
+        <div class="plot-card">
+          <div class="plot-header-row">
+            <div class="plot-title">Data vs. Your Line</div>
+            <div class="metric-badge">
+              MSE: <span id="mseDisplay">–</span>
+            </div>
+          </div>
+          <div class="plot-wrapper">
+            <svg id="plot" viewBox="0 0 500 320" role="img" aria-label="Scatter plot with adjustable fit line">
+              <!-- axes, grid, points, and line are added by JavaScript -->
+            </svg>
+          </div>
+
+          <div class="controls-card">
+            <div class="slider-group">
+              <div class="slider-row">
+                <div class="slider-label">Slope <code>m</code></div>
+                <input id="slopeSlider" type="range" min="-4" max="4" step="0.05" value="0.5" />
+                <div class="slider-value"><span id="slopeValue">0.50</span></div>
+              </div>
+              <div class="slider-row">
+                <div class="slider-label">Intercept <code>b</code></div>
+                <input id="interceptSlider" type="range" min="-5" max="15" step="0.1" value="1" />
+                <div class="slider-value"><span id="interceptValue">1.0</span></div>
+              </div>
+            </div>
+
+            <div class="game-status">
+              <div class="status-line">
+                <span class="status-label">Fit quality</span>
+                <span id="fitStatus" class="status-value">Try adjusting the sliders…</span>
+              </div>
+              <div class="status-line">
+                <span class="status-label">Target</span>
+                <span class="status-value ok">MSE < 3.0</span>
+              </div>
+              <p class="goal-text">
+                <strong>Goal:</strong> Get the MSE below <strong>3.0</strong> to unlock the next game!
+              </p>
+              <div id="successBanner" class="success-banner">
+                <div class="success-badge">✓</div>
+                <div>
+                <div>
+                  <strong>Nice work!</strong> Your line is a solid linear regression fit.
+                   You can now progress to the next level:
+                </div>
+                <div>
+                    <a href="arctic.html"><span class="game-link">Arctic Module</span></a>.
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Up next: residuals &amp; non-linear models (future mini-games).</span>
+      <button type="button" id="resetButton">New data cloud</button>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      // Basic plot dimensions & padding
+      const svg = document.getElementById("plot");
+      const width = 500;
+      const height = 320;
+      const padding = { left: 48, right: 16, top: 10, bottom: 34 };
+
+      // DOM elements for controls & status
+      const slopeSlider = document.getElementById("slopeSlider");
+      const interceptSlider = document.getElementById("interceptSlider");
+      const slopeValue = document.getElementById("slopeValue");
+      const interceptValue = document.getElementById("interceptValue");
+      const mseDisplay = document.getElementById("mseDisplay");
+      const fitStatus = document.getElementById("fitStatus");
+      const successBanner = document.getElementById("successBanner");
+      const resetButton = document.getElementById("resetButton");
+
+      // Data model
+      let data = [];
+      let xMin, xMax, yMin, yMax;
+
+      const TARGET_MSE = 3.0;
+
+      function generateData() {
+        // Generate synthetic data around a "true" line with noise
+        const trueM = 2.0;
+        const trueB = 4;
+        const n = 18;
+        const xVals = [];
+        for (let i = 0; i < n; i++) {
+          xVals.push(0.5 + (9.5 * i) / (n - 1));
+        }
+        const newData = xVals.map((x) => {
+          const noise = randn_bm() * 1.4; // Gaussian-ish noise
+          const y = trueM * x + trueB + noise;
+          return { x, y };
+        });
+
+        data = newData;
+        // Compute bounds with margin
+        xMin = Math.min(...data.map((d) => d.x));
+        xMax = Math.max(...data.map((d) => d.x));
+        const yVals = data.map((d) => d.y);
+        yMin = Math.min(...yVals);
+        yMax = Math.max(...yVals);
+        const xMargin = 0.4 * (xMax - xMin);
+        const yMargin = 0.4 * (yMax - yMin);
+        xMin -= xMargin;
+        xMax += xMargin;
+        yMin -= yMargin;
+        yMax += yMargin;
+      }
+
+      // Normal random helper (Box-Muller transform)
+      function randn_bm() {
+        let u = 0, v = 0;
+        while (u === 0) u = Math.random();
+        while (v === 0) v = Math.random();
+        return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+      }
+
+      // Scaling functions: data -> SVG coords
+      function xScale(x) {
+        return (
+          padding.left +
+          ((x - xMin) / (xMax - xMin)) * (width - padding.left - padding.right)
+        );
+      }
+
+      function yScale(y) {
+        return (
+          height -
+          padding.bottom -
+          ((y - yMin) / (yMax - yMin)) * (height - padding.top - padding.bottom)
+        );
+      }
+
+      function clearSvg() {
+        while (svg.firstChild) {
+          svg.removeChild(svg.firstChild);
+        }
+      }
+
+      function drawAxesAndGrid() {
+        const ns = "http://www.w3.org/2000/svg";
+
+        // Axes
+        const xAxis = document.createElementNS(ns, "line");
+        xAxis.setAttribute("x1", padding.left);
+        xAxis.setAttribute("y1", height - padding.bottom);
+        xAxis.setAttribute("x2", width - padding.right);
+        xAxis.setAttribute("y2", height - padding.bottom);
+        xAxis.setAttribute("class", "axis");
+        svg.appendChild(xAxis);
+
+        const yAxis = document.createElementNS(ns, "line");
+        yAxis.setAttribute("x1", padding.left);
+        yAxis.setAttribute("y1", padding.top);
+        yAxis.setAttribute("x2", padding.left);
+        yAxis.setAttribute("y2", height - padding.bottom);
+        yAxis.setAttribute("class", "axis");
+        svg.appendChild(yAxis);
+
+        // Simple grid: 4 vertical & 4 horizontal divisions
+        const ticks = 4;
+        for (let i = 1; i <= ticks; i++) {
+          const t = i / (ticks + 1);
+
+          // Vertical grid line
+          const x = padding.left + t * (width - padding.left - padding.right);
+          const vLine = document.createElementNS(ns, "line");
+          vLine.setAttribute("x1", x);
+          vLine.setAttribute("y1", padding.top + 2);
+          vLine.setAttribute("x2", x);
+          vLine.setAttribute("y2", height - padding.bottom - 2);
+          vLine.setAttribute("class", "grid-line");
+          svg.appendChild(vLine);
+
+          // Horizontal grid line
+          const y =
+            padding.top + t * (height - padding.top - padding.bottom);
+          const hLine = document.createElementNS(ns, "line");
+          hLine.setAttribute("x1", padding.left + 2);
+          hLine.setAttribute("y1", y);
+          hLine.setAttribute("x2", width - padding.right - 2);
+          hLine.setAttribute("y2", y);
+          hLine.setAttribute("class", "grid-line");
+          svg.appendChild(hLine);
+        }
+
+        // Axis labels (very minimal)
+        const xLabel = document.createElementNS(ns, "text");
+        xLabel.textContent = "x";
+        xLabel.setAttribute("x", width - padding.right);
+        xLabel.setAttribute("y", height - padding.bottom + 22);
+        xLabel.setAttribute("class", "axis-label");
+        svg.appendChild(xLabel);
+
+        const yLabel = document.createElementNS(ns, "text");
+        yLabel.textContent = "y";
+        yLabel.setAttribute("x", padding.left - 16);
+        yLabel.setAttribute("y", padding.top + 10);
+        yLabel.setAttribute("class", "axis-label");
+        svg.appendChild(yLabel);
+      }
+
+      function drawPoints() {
+        const ns = "http://www.w3.org/2000/svg";
+        data.forEach((d) => {
+          const c = document.createElementNS(ns, "circle");
+          c.setAttribute("cx", xScale(d.x));
+          c.setAttribute("cy", yScale(d.y));
+          c.setAttribute("r", 4.2);
+          c.setAttribute("class", "data-point");
+          svg.appendChild(c);
+        });
+      }
+
+      function createLineElement() {
+        const ns = "http://www.w3.org/2000/svg";
+        const line = document.createElementNS(ns, "line");
+        line.setAttribute("id", "fitLine");
+        line.setAttribute("class", "fit-line bad");
+        svg.appendChild(line);
+        return line;
+      }
+
+      function computeMSE(m, b) {
+        let sumSq = 0;
+        for (const d of data) {
+          const pred = m * d.x + b;
+          const diff = pred - d.y;
+          sumSq += diff * diff;
+        }
+        return sumSq / data.length;
+      }
+
+      function updateLine(lineEl, m, b) {
+        // Evaluate line at extremes of x-range
+        const x1 = xMin;
+        const x2 = xMax;
+        const y1 = m * x1 + b;
+        const y2 = m * x2 + b;
+        lineEl.setAttribute("x1", xScale(x1));
+        lineEl.setAttribute("y1", yScale(y1));
+        lineEl.setAttribute("x2", xScale(x2));
+        lineEl.setAttribute("y2", yScale(y2));
+      }
+
+      function updateStatus(m, b, mse, lineEl) {
+        mseDisplay.textContent = mse.toFixed(3);
+        let qualityText = "";
+        let qualityClass = "";
+
+        if (mse < TARGET_MSE) {
+          qualityText = "Excellent fit!";
+          qualityClass = "good";
+          lineEl.classList.remove("bad");
+          lineEl.classList.add("good");
+          successBanner.classList.add("visible");
+        } else if (mse < TARGET_MSE * 2.5) {
+          qualityText = "Getting close…";
+          qualityClass = "ok";
+          lineEl.classList.add("bad");
+          lineEl.classList.remove("good");
+          successBanner.classList.remove("visible");
+        } else {
+          qualityText = "Line is far off; keep tweaking.";
+          qualityClass = "bad";
+          lineEl.classList.add("bad");
+          lineEl.classList.remove("good");
+          successBanner.classList.remove("visible");
+        }
+
+        fitStatus.textContent = qualityText;
+        fitStatus.classList.remove("good", "ok", "bad");
+        if (qualityClass) {
+          fitStatus.classList.add(qualityClass);
+        }
+      }
+
+      function updateFromSliders(lineEl) {
+        const m = parseFloat(slopeSlider.value);
+        const b = parseFloat(interceptSlider.value);
+        slopeValue.textContent = m.toFixed(2);
+        interceptValue.textContent = b.toFixed(1);
+
+        updateLine(lineEl, m, b);
+        const mse = computeMSE(m, b);
+        updateStatus(m, b, mse, lineEl);
+      }
+
+      function init() {
+        generateData();
+        clearSvg();
+        drawAxesAndGrid();
+        drawPoints();
+        const lineEl = createLineElement();
+        updateFromSliders(lineEl);
+
+        slopeSlider.addEventListener("input", () => updateFromSliders(lineEl));
+        interceptSlider.addEventListener("input", () =>
+          updateFromSliders(lineEl)
+        );
+
+        resetButton.addEventListener("click", () => {
+          generateData();
+          clearSvg();
+          drawAxesAndGrid();
+          drawPoints();
+          const newLineEl = createLineElement();
+          successBanner.classList.remove("visible");
+          updateFromSliders(newLineEl);
+        });
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>
