@@ -1,13 +1,12 @@
 publishdir = "public"
 static = "/static"
 builddrafts = false
-# Replace this with your website URL
 baseurl = "https://icyseascolab.io"
 canonifyurls = true
 theme = ["hugo-shortcode-roneo-collection", "hugo-academic-group"]
 title = "Icy Seas Co-Lab"
 math = true
-copyright = "&copy; Thomas Bryce Kelly, 2025 "
+copyright = "&copy; Thomas Bryce Kelly, 2025"
 pygmentsOptions = "linenos=table"
 rssURI = "index.xml"
 ignoreFiles = ["\\.psd$"]
@@ -31,7 +30,7 @@ tag = "tags"
   author = "Thomas Bryce Kelly"
   email = "tkelly@icyseascolab.io"
   address = "762 Lancaster Drive, Fairbanks, AK 99712"
-  phone = "(844) ICY-SEAS"
+  phone = "(844) 429-7327"
 
   [[params.logo]]
     image = "favicon.png"
