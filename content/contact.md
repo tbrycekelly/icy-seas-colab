@@ -12,7 +12,7 @@ We welcome questions, collaborations, and new ideas. Whether you're interested i
 
 ## General Inquiries  
 For general questions about projects, data systems, or collaborations, email us at:  
-📬  **[tkelly@icyseascolab.io](mailto:tkelly@icyseascolab.io)**  
+📬  **[info@icyseascolab.io](mailto:info@icyseascolab.io)**  
 
 ---
 

@@ -22,7 +22,7 @@ If you’re interested in contributing to our projects, please reach out with yo
 
 ## How to Apply
 
-To express interest in future opportunities, email:  **[tkelly@icyseascolab.io](mailto:tkelly@icyseascolab.io)**  
+To express interest in future opportunities, email:  **[admin@icyseascolab.io](mailto:admin@icyseascolab.io)**  
 
 Include a short description of your skills, interests, and how you’d like to contribute. Links to GitHub repositories, datasets, publications, or personal projects are encouraged.
 

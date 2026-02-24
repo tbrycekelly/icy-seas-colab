@@ -41,7 +41,7 @@ tag = "tags"
 
  # [[params.slogan_columns]]
  #   title = "About"
- #   text =  "At Icy Seas Co-Laboratory LLC, we bring together science, technology, and collaboration to better understand our changing oceans. Founded in Fairbanks, Alaska, we specialize in oceanographic research, data-driven solutions, and scientific consulting."
+ #   text =  "At Icy Seas Co-Laboratory, we bring together science, technology, and collaboration to better understand our changing oceans. Founded in Fairbanks as a private research institute, Alaska, we specialize in oceanographic research, data-driven solutions, and scientific consulting."
  #   link = "/about"
  #   link_text = "Our Policies"
  #   weight = 1
@@ -55,7 +55,7 @@ tag = "tags"
 
  # [[params.slogan_columns]]
  #   title = "Approach"
- #   text = "We combine environmental observational systems, modeling tools, and creativity to diagnose processes in the earth climate system. This work bridges both discplines and scales."
+ #   text = "We combine environmental observational systems, modeling tools, and creativity to diagnose processes in the earth climate system. This work bridges disciplines and scales."
  #   link = "/approach"
  #   link_text = "Read more"
  #   weight = 3

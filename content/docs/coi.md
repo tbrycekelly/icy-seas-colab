@@ -71,8 +71,8 @@ The Organization designates a Conflict of Interest Officer (COI Officer) to impl
 
 The COI Officer may consult external experts as needed.
 
-### 4.2 Conflict of Interest Committee (Optional)
-When appropriate, the COI Officer may convene an ad hoc Conflict of Interest Review Committee (e.g., Executive Director plus two independent advisors) to support review and management decisions.
+### 4.2 Conflict of Interest Committee
+When appropriate, the COI Officer may convene an ad hoc Conflict of Interest Review Committee (e.g., Director plus two independent advisors) to support review and management decisions.
 
 ### 4.3 Determinations
 
