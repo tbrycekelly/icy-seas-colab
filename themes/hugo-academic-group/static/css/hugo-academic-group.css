@@ -546,8 +546,6 @@ img.in-text {
     padding: 20px;
 }
 
-}
-
 /*************************************************
  *  Publications
  **************************************************/
@@ -791,6 +789,32 @@ nav#navbar-main li {
     padding-bottom: 5px;
 }
 
+.navbar-default .navbar-nav .dropdown-menu > li > a,
+.navbar-default .navbar-nav .dropdown-menu > li > a:visited {
+    line-height: 1.35;
+    padding: 6px 16px;
+    color: #565a5f;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+    color: #006199;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > .dropdown-parent-link > a,
+.navbar-default .navbar-nav .dropdown-menu > .dropdown-parent-link > a:visited {
+    color: #197997;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > .dropdown-parent-link > a:hover {
+    background-color: #e8f2f7;
+    color: #004f7d;
+}
+
+.navbar-nav .dropdown-menu .divider {
+    margin: 4px 0;
+}
+
 .navbar-brand{
     font-weight: bold;
     font-size: 1.2em;
@@ -811,10 +835,6 @@ nav#navbar-main li {
     float:inherit;
     padding-right: 10px;
     text-decoration: none;
-}
-
-.nav-with-drop {
-    margin-right: -15px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -874,9 +894,6 @@ nav#navbar-main li {
     .navbar-brand a img {
         height: 40px;
         display:inline;
-    }
-    li.dropdown {
-        left: 30px;
     }
 }
 
