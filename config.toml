@@ -124,10 +124,31 @@ tag = "tags"
       url = "/#top"
       weight = 1
 
+# Research examples
   [[menu.main]]
       name = "Research"
       url = "/research"
       weight = 2
+      identifier = "research"
+  
+  [[menu.main]]
+      name = "Alaska Science Stories"
+      url = "/project/akss"
+      weight = 3
+      parent = "research"
+
+    [[menu.main]]
+      name = "Pelagic Imaging"
+      url = "/project/pelagic_imaging"
+      weight = 3
+      parent = "research"
+
+    [[menu.main]]
+      name = "Oceanographic Modeling"
+      url = "/project/modeling"
+      weight = 3
+      parent = "research"
+
 
 # Products and Services
  [[menu.main]]
@@ -136,16 +157,21 @@ tag = "tags"
       identifier = "sales"
       url = "/docs/services"
 
+  [[menu.main]]
+      name = "FixPoint"
+      url = "/product/fixpoint"
+      weight = 3
+      parent = "sales"
 
   [[menu.main]]
       name = "FixPoint"
-      url = "/project/fixpoint"
+      url = "/product/baseline"
       weight = 3
       parent = "sales"
 
   [[menu.main]]
       name = "Other"
-      url = "/project/other"
+      url = "/product/other"
       weight = 3
       parent = "sales"
 
