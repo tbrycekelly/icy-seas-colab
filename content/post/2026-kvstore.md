@@ -1,6 +1,6 @@
 +++
-date = "2026-06-10T14:36:58-09:00"
-short_text = ""
+date = "2026-06-06T14:36:58-09:00"
+short_text = "kvstore"
 title = "A Small Key-Value Store for Large Scientific Images"
 [[authors]]
     name = "Thomas Bryce Kelly"
