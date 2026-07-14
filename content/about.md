@@ -9,12 +9,19 @@ Icy Seas Co-Laboratory LLC is a scientific consultancy and software company base
 
 Our role is often to bridge gaps: between a field instrument and an analysis pipeline, between evolving project files and an archive-ready dataset, or between a large image collection and the ecological measurements a research team actually needs.
 
+<figure class="portfolio-feature-image portfolio-feature-image-float-right">
+<img src="/assets/snowmachine-1800.webp" alt="A field researcher working with a snowmachine on a remote winter trail in Alaska." loading="eager" decoding="async">
+<figcaption>Based in Alaska, we understand that scientific systems must work beyond the laboratory and outside reliable infrastructure.</figcaption>
+</figure>
+
 ## What makes us different
 
 - **Scientific context.** We understand field constraints, analytical uncertainty, metadata, and the standards expected of research products.
 - **Practical engineering.** We design systems that can operate offline, remain inspectable, and fit the people and infrastructure already in place.
 - **Reproducibility.** We preserve inputs, transformations, versions, and decisions so results can be understood and revisited.
 - **Collaboration.** We work with researchers, Indigenous research centers, agencies, institutions, students, and community partners.
+
+<div class="portfolio-clear"></div>
 
 ## The co-laboratory idea
 

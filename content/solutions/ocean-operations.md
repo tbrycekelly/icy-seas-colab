@@ -9,6 +9,11 @@ weight = 2
 
 Shipboard and remote work demand systems that remain understandable when bandwidth, power, time, and attention are limited. We connect operational events, instrument data, positions, processing decisions, and post-cruise delivery without assuming continuous internet access.
 
+<figure class="portfolio-feature-image portfolio-feature-image-wide">
+<img src="/assets/arctic-1800.webp" alt="Research vessels operating in sea ice in the Arctic Ocean." loading="eager" decoding="async">
+<figcaption>Remote ocean operations require systems designed for constrained communications, complex logistics, and difficult environments.</figcaption>
+</figure>
+
 ## Capabilities
 
 - Offline-first event, station, and sequence logging
@@ -18,6 +23,17 @@ Shipboard and remote work demand systems that remain understandable when bandwid
 - Local databases, backups, and resilient deployment planning
 - Post-cruise reconciliation and data handoff
 - Configuration, operator training, and field support
+
+<div class="portfolio-image-grid">
+<figure>
+<img src="/assets/ctd-launch-1800.webp" alt="A CTD rosette being lowered from a research vessel over calm water." loading="lazy" decoding="async">
+<figcaption>CTD deployment connects operational events, position, configuration, and raw instrument data.</figcaption>
+</figure>
+<figure>
+<img src="/assets/a-frame-1000.webp" alt="A field team deploying an oceanographic instrument through a ship's A-frame." loading="lazy" decoding="async">
+<figcaption>Field-ready workflows must remain clear during active deck operations.</figcaption>
+</figure>
+</div>
 
 ## Systems that support this work
 

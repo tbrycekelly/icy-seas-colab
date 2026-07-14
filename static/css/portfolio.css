@@ -28,6 +28,9 @@ body { color: var(--icy-text); }
   gap: 60px;
   grid-template-columns: minmax(0, 3fr) minmax(260px, 2fr);
 }
+.portfolio-split-top {
+  align-items: start;
+}
 
 .portfolio-hero h1 {
   color: #fff;
@@ -121,6 +124,74 @@ main#top p,
 .portfolio-meta p { margin: 4px 0; }
 .button-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
 
+.portfolio-feature-image {
+  margin: 34px auto 46px;
+  width: 80%;
+}
+.portfolio-feature-image img,
+.portfolio-image-grid img {
+  border: 1px solid var(--icy-line);
+  border-radius: 14px;
+  box-shadow: 0 14px 36px rgba(6,43,70,.10);
+  width: 100%;
+}
+.portfolio-feature-image-wide img {
+  aspect-ratio: 16 / 7;
+  max-height: 520px;
+  object-fit: cover;
+}
+.portfolio-feature-image-compact {
+  align-self: start;
+  margin: 0 auto;
+}
+.portfolio-feature-image-compact img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.portfolio-feature-image-portrait {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 780px;
+}
+.portfolio-feature-image-portrait img {
+  aspect-ratio: 4 / 3;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center 68%;
+}
+.portfolio-feature-image-float-right {
+  float: right;
+  margin: 8px 0 28px 36px;
+  max-width: 420px;
+  width: 36%;
+}
+.portfolio-feature-image-float-right img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.portfolio-clear { clear: both; }
+.portfolio-feature-image figcaption,
+.portfolio-image-grid figcaption {
+  color: #5a6d77;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.portfolio-feature-image figcaption {
+  text-align: left;
+  width: 100%;
+}
+.portfolio-image-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 34px 0 46px;
+}
+.portfolio-image-grid figure { margin: 0; }
+.portfolio-image-grid img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 @media (max-width: 900px) {
   .portfolio-hero-grid, .portfolio-split { grid-template-columns: 1fr; gap: 30px; }
   .portfolio-grid-3, .portfolio-grid-4 { grid-template-columns: 1fr 1fr; }
@@ -132,4 +203,13 @@ main#top p,
   .portfolio-hero h1 { font-size: 38px; }
   .portfolio-grid-3, .portfolio-grid-4 { grid-template-columns: 1fr; }
   .portfolio-lead { font-size: 19px; }
+  .portfolio-image-grid { grid-template-columns: 1fr; }
+  .portfolio-feature-image-wide img,
+  .portfolio-feature-image-portrait img { aspect-ratio: 4 / 3; }
+  .portfolio-feature-image-float-right {
+    float: none;
+    margin: 28px auto 38px;
+    max-width: none;
+    width: 80%;
+  }
 }

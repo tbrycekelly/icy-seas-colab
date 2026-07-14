@@ -34,6 +34,7 @@ tag = "tags"
   slogan = "Scientific data systems built for the field, the lab, and the long-term record."
   slogan_text = "Oceanographic expertise. Practical software. Reproducible science."
   custom_css = ["portfolio.css"]
+  asset_version = "20260713-2"
 
   [[params.logo]]
     image = "favicon.png"

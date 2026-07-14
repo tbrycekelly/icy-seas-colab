@@ -9,6 +9,11 @@ weight = 4
 
 Not every research problem needs a new product. We provide focused technical capacity for projects that need an experienced scientific partner, a defined deliverable, or help connecting several parts of a workflow.
 
+<figure class="portfolio-feature-image portfolio-feature-image-portrait">
+<img src="/assets/on-ice-collaboration-1000.webp" alt="A field research team collaborating around scientific equipment on sea ice." loading="eager" decoding="async">
+<figcaption>Effective scientific consulting begins with the people doing the work and the conditions in which decisions are made.</figcaption>
+</figure>
+
 ## Engagement areas
 
 - Statistical, spatial, time-series, and environmental data analysis

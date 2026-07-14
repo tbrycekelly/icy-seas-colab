@@ -9,6 +9,11 @@ weight = 1
 
 Scientific datasets evolve through collection, correction, interpretation, collaboration, and publication. We design systems that preserve that history while helping a team move toward a trustworthy, reusable release.
 
+<figure class="portfolio-feature-image portfolio-feature-image-wide">
+<img src="/assets/pelagia-dashboard-1600.webp" alt="PelagiaView operational dashboard showing storage health, workers, and image-processing pipeline status." loading="eager" decoding="async">
+<figcaption>Operational visibility connects stored research data with the processing systems that transform it.</figcaption>
+</figure>
+
 ## What we help solve
 
 - Project data architecture and workflow design
