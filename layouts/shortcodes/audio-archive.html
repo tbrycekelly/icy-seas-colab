@@ -1,0 +1,17 @@
+{{- $src := .Get 0 -}}
+{{ $archiveMetadata := replace $src "/details/" "/metadata/" }}
+{{ with resources.GetRemote $archiveMetadata }}
+  {{ $data := . | transform.Unmarshal }}
+  {{ $identifier := $data.metadata.identifier }}
+  <ul class="audio-treeview">
+  {{ range $data.files }}
+    {{ if or (eq .format "VBR MP3") (eq .format "MPEG-4 Audio") }}
+      {{ $audioPath := printf "https://archive.org/download/%s/%s" $identifier .name }}
+      {{ $heading := replaceRE ".*/" "" .name }}
+      <li>{{ strings.TrimSuffix (path.Ext $heading) $heading }}<figure><audio controls class="player"><source src="{{ $audioPath }}" type="audio/mpeg"></audio></figure></li>
+    {{ end }}
+  {{ end }}
+  </ul>
+{{ else }}
+  {{ errorf "Unable to load archive metadata from %s" $archiveMetadata }}
+{{ end }}

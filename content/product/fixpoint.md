@@ -1,158 +1,60 @@
 +++
-date = "2025-10-10T16:10:22+02:00"
-description = "Fixpoint is a next-generation shipboard event and data logging system for oceanographic cruises, currently under development."
-external_link = ""
-#image = ""
-project_id = "fixpoint"
-short_description = ""
 title = "FixPoint"
-
-[[participants]]
-    name = "Thomas Bryce Kelly"
-    is_member = true
-    id = "Thomas Bryce Kelly"
-
+date = "2026-07-13T00:00:00-09:00"
+description = "Offline-first event, position, and operational logging for oceanographic cruises and field programs."
+status = "Field-test MVP"
+weight = 2
 +++
 
-# Fixpoint
+# Preserve what happened, when, and where
 
-**Fixpoint** is a modern shipboard logging and data coordination system built for oceanographic research cruises. It brings operational event logging, vessel tracking, and instrument data capture together into a single, reliable platform designed specifically for work at sea.
+FixPoint is an offline-capable scientific event logging system for oceanographic operations. It gives watch standers, technicians, and science teams one structured record of deployments, recoveries, positions, notes, corrections, and instrument context.
 
-Fixpoint is currently under active development, with pilot deployments planned in collaboration with research partners.
+<div class="portfolio-meta">
+<p><strong>Status:</strong> Field-test MVP under active development</p>
+<p><strong>Availability:</strong> Pilot deployments and collaborative evaluation</p>
+<p><strong>Best for:</strong> Research cruises and remote field programs that need dependable local operation and a coherent post-mission record</p>
+</div>
 
----
+## Built around operational sequences
 
-## Why Fixpoint?
+Cruise events are more than isolated timestamps. A CTD cast, net tow, or instrument deployment follows a sequence of valid actions. FixPoint models those sequences explicitly so the interface can show operators what may happen next while the backend preserves the rules.
 
-At sea, clarity matters.
+- Backend-enforced state-machine transitions
+- Append-only event actions with UUIDv7 identifiers
+- UTC timestamps and canonical latitude/longitude fields
+- Corrections that preserve the original record
+- Sequence notes and configurable action types
+- Configurable CTD, net-tow, and instrument workflows
 
-Cruises generate thousands of decisions, deployments, samples, and observations — alongside continuous streams of navigation and sensor data. Too often, these records are scattered across notebooks, spreadsheets, disconnected logging tools, and instrument consoles.
+## Position and instrument context
 
-Fixpoint is designed to simplify this complexity.
+FixPoint can attach operator-provided coordinates or the nearest recent position observation to actions that require a location. The MVP includes NMEA 0183 RMC and GGA parsing, diagnostic packet ingestion, and UDP listener support, with initial TCP and serial workflows.
 
-It provides a single system where:
+The shipboard dashboard shows recent activity, system state, and available position context. Its default map uses bundled Natural Earth data so core operations do not require an internet connection.
 
-- Cruise events are logged clearly and consistently  
-- Vessel position and tracklines are visible in real time  
-- Instrument feeds are captured alongside operational context  
-- Data integrity is preserved from the moment of entry  
+## Exports and operational resilience
 
-The result is a cleaner operational workflow during the cruise — and a more coherent dataset afterward.
+- CSV event-action exports
+- JSONL timeline exports
+- GeoJSON spatial exports
+- Local SQLite operation with WAL mode
+- SQLite database and raw-packet backup workflows
+- Plain latitude/longitude fallback if the map cannot initialize
 
----
+## Example workflow
 
-## Built for Real Cruise Conditions
+Before a cruise, a team defines its instruments and valid sequences in readable TOML configuration. During operations, the watch creates a CTD sequence and records deploy, bottom, and recover actions. FixPoint attaches UTC time and position, retains later corrections without overwriting the original actions, and produces timeline and spatial exports for post-cruise reconciliation.
 
-Fixpoint is not a generic web application adapted for ships. It is purpose-built for marine research environments.
+## Current boundaries
 
-It is designed to:
+FixPoint is ready for controlled field testing, not unattended production deployment. Full authentication, durable listener supervision across restarts, high-rate packet queueing, detailed offline basemaps, Postgres backups, and complete browser end-to-end testing remain planned work. Every deployment should include a hardware, GPS/clock, backup, and operator smoke test.
 
-- Operate fully offline  
-- Run on a shipboard workstation or small dedicated computer  
-- Tolerate unstable local networks  
-- Continue functioning during brief power interruptions  
-- Clearly indicate system health and status  
+## Plan a pilot
 
-The system prioritizes reliability and transparency. Operators always know whether data are flowing, whether feeds are healthy, and whether the system is operating normally.
+We are seeking research teams willing to test FixPoint against real operational sequences and provide structured feedback before broader release.
 
----
-
-## Core Capabilities
-
-### Structured Event Logging
-
-Fixpoint provides a clean interface for logging cruise activities such as:
-
-- CTD deployments and recoveries  
-- Net tows and trawl operations  
-- Station changes  
-- Instrument calibrations  
-- Operational notes and anomalies  
-
-Events are structured, timestamped, and preserved in a way that supports both operational awareness and long-term data integrity.
-
----
-
-### Real-Time Vessel Mapping
-
-The integrated map view allows cruise teams to:
-
-- Monitor vessel position and tracklines  
-- Add and manage waypoints  
-- Measure distances between locations  
-- Visualize sampling locations in context  
-
-This provides immediate situational awareness and supports decision-making on deck and in the lab.
-
----
-
-### Instrument Data Capture
-
-Fixpoint can ingest common shipboard data streams such as GPS, underway systems, and environmental sensors. These data are captured alongside operational events, helping teams connect measurements to actions taken during the cruise.
-
-Instead of reconstructing context after the fact, Fixpoint preserves it as part of the record.
-
----
-
-### Dashboard & Oversight
-
-A centralized dashboard provides:
-
-- Recent event summaries  
-- Feed status indicators  
-- Quick visibility into cruise activity  
-- High-level system health  
-
-This makes it easy for chief scientists, technicians, and watch standers to maintain awareness without digging through logs.
-
----
-
-## Who Is It For?
-
-Fixpoint is designed for:
-
-- University-led oceanographic cruises  
-- Arctic and polar field campaigns  
-- Fisheries and ecosystem surveys  
-- Biogeochemical and physical oceanography programs  
-- Coastal observatories and long-term monitoring efforts  
-
-Whether supporting a small coastal cruise or a multi-week expedition, the system scales to fit the operational complexity of the mission.
-
----
-
-## A Practical Example
-
-During a recent cruise planning discussion, a chief scientist described spending weeks after a voyage reconciling timestamps between CTD logs, GPS files, and handwritten notes. Fixpoint is being built to eliminate that friction — by aligning operational actions and instrument data at the moment they occur.
-
-Another marine technician noted that “the hardest part isn’t collecting data — it’s keeping track of what happened when.” Fixpoint addresses exactly that problem.
-
----
-
-## Currently in Development
-
-Fixpoint is under active development, with a focus on:
-
-- Reliability under shipboard conditions  
-- Clear operator workflows  
-- Robust data capture and export  
-- Modular design for diverse cruise needs  
-
-Field testing and iterative feedback from research teams will shape early releases.
-
----
-
-## Looking Ahead
-
-Future enhancements may include:
-
-- Expanded export and integration tools  
-- Role-based access controls  
-- Additional visualization capabilities  
-- Optional synchronization with shore-based systems  
-
-Fixpoint is being developed with a long-term goal: to provide a dependable foundation for cruise logging that supports both operational efficiency and scientific reproducibility.
-
----
-
-If you are planning a research cruise or interested in collaborating during early development, we would welcome a conversation
+<div class="button-row">
+<a class="btn btn-primary" href="/contact/">Discuss a FixPoint pilot</a>
+<a class="btn btn-default" href="https://github.com/Icy-Seas-Co-Laboratory/FixPoint">View public source</a>
+</div>

@@ -1,0 +1,15 @@
+{{ $url := .Get "url" }}
+{{ with resources.GetRemote $url }}
+  {{ $data := . | transform.Unmarshal }}
+  <div class="wordpress-api">
+  {{ range $data }}
+    <article class="wordpress-article">
+      <h3>{{ .title.rendered | safeHTML }}</h3>
+      <div class="wordpress-content">{{ .content.rendered | safeHTML }}</div>
+      <p class="wordpress-metadata">Updated {{ substr .modified 0 10 }} · <a href="{{ .link }}">Permalink</a></p>
+    </article>
+  {{ end }}
+  </div>
+{{ else }}
+  {{ errorf "Unable to load WordPress API data from %s" $url }}
+{{ end }}

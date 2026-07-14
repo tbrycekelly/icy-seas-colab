@@ -5,7 +5,9 @@ external_link = ""
 #image = ""
 project_id = "other"
 short_description = ""
-title = "Data Science Products"
+title = "Additional Data Science Tools"
+status = "Maintained projects"
+weight = 10
 
 [[participants]]
     name = "Thomas Bryce Kelly"
@@ -35,4 +37,3 @@ You may also be interested in a color palette package available based on the exc
 
 ## batlow
 This is an easy to use wrapper package for the wonderful, scientifically accurate color palettes curated by Fabio Crameri and others (see references). This package seeks to make these color palettes available to the R community outside of ggplot2 (see the [scico](https://github.com/thomasp85/scico) package for ggplot2 compatible implementation) in a manner consistent with the excellent _pals_ package [link](https://cran.r-project.org/web/packages/pals/index.html).
-

@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<main class="container portfolio-page">
+  <header class="portfolio-page-header">
+    <p class="eyebrow">Icy Seas Co-Laboratory</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="portfolio-lead">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ with .Content }}<div class="portfolio-page-content">{{ . }}</div>{{ end }}
+
+  {{ if .Pages }}
+  <div class="portfolio-grid portfolio-grid-3 portfolio-list-grid">
+    {{ range .Pages.ByWeight }}
+    <article class="portfolio-card">
+      {{ with .Params.status }}<span class="status-badge">{{ . }}</span>{{ end }}
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ else }}<p>{{ .Summary | plainify | truncate 180 }}</p>{{ end }}
+      <a href="{{ .RelPermalink }}">Learn more &rarr;</a>
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+</main>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

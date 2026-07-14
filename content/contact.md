@@ -4,9 +4,9 @@ date: 2025-11-04
 type: page
 ---
 
-# Get in Touch
+# Bring Us the Difficult Part
 
-We welcome questions, collaborations, and new ideas. Whether you're interested in partnering on Arctic research, exploring open-source data solutions, or learning more about our outreach work, we’d love to hear from you.
+Tell us about the dataset, instrument, deployment, analysis, or workflow that needs to work better. A useful first note includes the scientific objective, current constraint, desired timeline, and the people who will use the result.
 
 ---
 
@@ -16,8 +16,9 @@ For general questions about projects, data systems, or collaborations, email us 
 
 ---
 
-## Collaboration and Research  
-If you’re a researcher, educator, or community partner interested in joining or initiating a project with us, please contact:  
+## Projects, Pilots, and Research
+
+For consulting, product pilots, research partnerships, or validation collaborations, contact:
 **[tkelly@icyseascolab.io](mailto:tkelly@icyseascolab.io)**  
 
 ---
@@ -36,7 +37,8 @@ Fairbanks, Alaska, USA  99712
 ---
 
 ## 🌐 Connect Online  
-- [GitHub](https://github.com/icyseascolab)  
+- [GitHub](https://github.com/Icy-Seas-Co-Laboratory)
+- [Pelagia](https://pelagia.studio/)
 - [LinkedIn](https://www.linkedin.com/company/icyseascolab)  
 - [Substack](https://icyseascolab.substack.com)  
 

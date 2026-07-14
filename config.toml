@@ -2,11 +2,11 @@ publishdir = "public"
 static = "/static"
 builddrafts = false
 baseurl = "https://icyseascolab.io"
-canonifyurls = true
+canonifyurls = false
 theme = ["hugo-shortcode-roneo-collection", "hugo-academic-group"]
 title = "Icy Seas Co-Lab"
 math = true
-copyright = "&copy; Thomas Bryce Kelly, 2025"
+copyright = "&copy; Icy Seas Co-Laboratory LLC, 2026"
 pygmentsOptions = "linenos=table"
 rssURI = "index.xml"
 ignoreFiles = ["\\.psd$"]
@@ -26,18 +26,18 @@ tag = "tags"
       unsafe = true
 
 [params]
-  description = "Icy Seas Co-Laboratory LLC"
+  description = "Scientific data systems for the field, the lab, and the long-term record."
   author = "Thomas Bryce Kelly"
   email = "tkelly@icyseascolab.io"
   address = "762 Lancaster Drive, Fairbanks, AK 99712"
   phone = "(844) 429-7327"
+  slogan = "Scientific data systems built for the field, the lab, and the long-term record."
+  slogan_text = "Oceanographic expertise. Practical software. Reproducible science."
+  custom_css = ["portfolio.css"]
 
   [[params.logo]]
     image = "favicon.png"
     link = "/"
-
-  slogan = "Icy Seas Co-Laboratory LLC"
-  slogan_text = "Oceanographic Research"
 
  # [[params.slogan_columns]]
  #   title = "About"
@@ -124,67 +124,80 @@ tag = "tags"
       url = "/#top"
       weight = 1
 
-# Research examples
+  [[menu.main]]
+      name = "Solutions"
+      url = "/solutions/"
+      weight = 2
+      identifier = "solutions"
+
+  [[menu.main]]
+      name = "Research Data Systems"
+      url = "/solutions/research-data-systems/"
+      weight = 1
+      parent = "solutions"
+
+  [[menu.main]]
+      name = "Ocean Operations"
+      url = "/solutions/ocean-operations/"
+      weight = 2
+      parent = "solutions"
+
+  [[menu.main]]
+      name = "Imaging & Machine Learning"
+      url = "/solutions/imaging-machine-learning/"
+      weight = 3
+      parent = "solutions"
+
+  [[menu.main]]
+      name = "Scientific Consulting"
+      url = "/solutions/scientific-consulting/"
+      weight = 4
+      parent = "solutions"
+
+  [[menu.main]]
+      name = "Open Software"
+      url = "/software/"
+      weight = 3
+
   [[menu.main]]
       name = "Research"
-      url = "/research"
-      weight = 2
+      url = "/research/"
+      weight = 4
       identifier = "research"
-  
+
   [[menu.main]]
-      name = "Alaska Science Stories"
-      url = "/project/akss"
+      name = "Case Studies"
+      url = "/project/"
       weight = 3
       parent = "research"
 
-    [[menu.main]]
-      name = "Pelagic Imaging"
-      url = "/project/pelagic_imaging"
+  [[menu.main]]
+      name = "Publications"
+      url = "/publication/"
       weight = 3
       parent = "research"
 
-    [[menu.main]]
-      name = "Oceanographic Modeling"
-      url = "/project/modeling"
-      weight = 3
-      parent = "research"
-
-
-# Products and Services
- [[menu.main]]
-      name = "Products & Services"
-      weight = 3
-      identifier = "sales"
-      url = "/docs/services"
-
   [[menu.main]]
-      name = "FixPoint"
-      url = "/product/fixpoint"
-      weight = 3
-      parent = "sales"
-
-  [[menu.main]]
-      name = "FixPoint"
-      url = "/product/baseline"
-      weight = 3
-      parent = "sales"
-
-  [[menu.main]]
-      name = "Other"
-      url = "/product/other"
-      weight = 3
-      parent = "sales"
-
-
-  [[menu.main]]
-      name = "Members"
-      url = "/member"
+      name = "Insights"
+      url = "/post/"
       weight = 5
 
   [[menu.main]]
-      name = "Documentation"
-      url = "/docs"
+      name = "About"
+      url = "/about/"
       weight = 6
+      identifier = "about"
+
+  [[menu.main]]
+      name = "Team"
+      url = "/member/"
+      weight = 3
+      parent = "about"
+
+  [[menu.main]]
+      name = "Contact"
+      url = "/contact/"
+      weight = 7
 
 [outputs]
 home = ["HTML", "RSS"]           # site-wide feed at /index.xml

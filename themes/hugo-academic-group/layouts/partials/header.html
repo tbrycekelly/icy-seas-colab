@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ with .Site.Language.Locale }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
         "alternateName": "Icy Seas Co-Lab",
         "url": "https://icyseascolab.io/",
         "logo": "https://icyseascolab.io/favicon.png",
-        "description": "A scientific consultancy specializing in Arctic research, data analysis, software development, and scientific advising.",
+        "description": "Scientific data systems, oceanographic software, analysis, and research consulting for the field, the lab, and the long-term record.",
         "foundingDate": "2025",
         "founder": {
             "@type": "Person",
@@ -39,10 +39,10 @@
 </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="{{ .Site.BaseURL }}/js/hugo-academic-group.js"></script>
+    <script src="{{ "js/hugo-academic-group.js" | relURL }}"></script>
 
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.min.css">
-    <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+    <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 
@@ -54,10 +54,10 @@
 
     <script defer data-domain="icyseascolab.io" src="https://analytics.icyseascolab.io/js/script.js"></script>
 
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/academicons.min.css">
+    <link rel="stylesheet" href="{{ "css/font-awesome.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/academicons.min.css" | relURL }}">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:100,400,700|Roboto+Mono">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/hugo-academic-group.css">
+    <link rel="stylesheet" href="{{ "css/hugo-academic-group.css" | relURL }}">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18311710201"></script>
@@ -70,11 +70,11 @@
     </script>
 
     {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/{{ . }}">
+    <link rel="stylesheet" href="{{ printf "css/%s" . | relURL }}">
     {{ end }}
 
 
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon">
     <link rel="canonical" href="{{ .Permalink }}">
     {{- with .OutputFormats.Get "RSS" -}}
     <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">

@@ -1,0 +1,124 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<main id="top">
+  <header class="portfolio-hero">
+    <div class="container portfolio-hero-grid">
+      <div>
+        <p class="eyebrow">Icy Seas Co-Laboratory</p>
+        <h1>Scientific data systems built for the field, the lab, and the long-term record.</h1>
+        <p class="portfolio-lead">We combine oceanographic experience with software engineering to build reliable data, imaging, and operational tools for research teams.</p>
+        <div class="portfolio-actions">
+          <a class="btn btn-primary btn-lg" href="/contact/">Discuss a project</a>
+          <a class="btn btn-default btn-lg" href="/solutions/">Explore our solutions</a>
+        </div>
+      </div>
+      <aside class="portfolio-hero-note">
+        <strong>From observation to usable evidence</strong>
+        <p>Instrument integration, field operations, data stewardship, image analysis, modeling, and reproducible delivery—all grounded in the realities of scientific work.</p>
+      </aside>
+    </div>
+  </header>
+
+  <section class="home-section">
+    <div class="container">
+      <p class="eyebrow">What we build</p>
+      <h2>Connected systems for modern research</h2>
+      <div class="portfolio-grid portfolio-grid-3">
+        <article class="portfolio-card">
+          <h3>Research data systems</h3>
+          <p>Organize evolving files, metadata, versions, permissions, and publication-ready releases without losing scientific context.</p>
+          <a href="/solutions/research-data-systems/">Explore data systems &rarr;</a>
+        </article>
+        <article class="portfolio-card">
+          <h3>Ocean operations</h3>
+          <p>Capture cruise events, positions, instrument streams, and CTD processing decisions in transparent, offline-capable workflows.</p>
+          <a href="/solutions/ocean-operations/">Explore field systems &rarr;</a>
+        </article>
+        <article class="portfolio-card">
+          <h3>Imaging &amp; machine learning</h3>
+          <p>Turn large pelagic image collections into reviewable regions of interest, measurements, labels, and analysis-ready records.</p>
+          <a href="/solutions/imaging-machine-learning/">Explore imaging systems &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section portfolio-products">
+    <div class="container">
+      <p class="eyebrow">Systems in practice</p>
+      <h2>Tools shaped around real research workflows</h2>
+      <div class="portfolio-grid portfolio-grid-3">
+        <article class="portfolio-card product-card">
+          <span class="status-badge status-preview">Private preview</span>
+          <h3>Datum</h3>
+          <p>A research data workspace for documenting datasets, tracking revisions, validating metadata, and publishing reproducible releases.</p>
+          <a href="/product/datum/">Meet Datum &rarr;</a>
+        </article>
+        <article class="portfolio-card product-card">
+          <span class="status-badge status-pilot">Field-test MVP</span>
+          <h3>FixPoint</h3>
+          <p>Offline-first event and position logging for oceanographic cruises, with structured sequences and non-destructive corrections.</p>
+          <a href="/product/fixpoint/">Explore FixPoint &rarr;</a>
+        </article>
+        <article class="portfolio-card product-card">
+          <span class="status-badge status-active">Active development</span>
+          <h3>Pelagia</h3>
+          <p>An open-source analysis server and closed-source web workspace for turning pelagic imagery into usable oceanographic data.</p>
+          <a href="https://pelagia.studio/">Visit pelagia.studio &rarr;</a>
+        </article>
+      </div>
+      <p class="portfolio-more"><a href="/solutions/">See how these systems support our solutions &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container portfolio-split">
+      <div>
+        <p class="eyebrow">Open scientific software</p>
+        <h2>Transparent tools that preserve the work behind the result.</h2>
+        <p><strong>castx</strong> converts raw Sea-Bird SBE 911/911plus CTD cruise data into inspectable SQLite projects and standards-oriented scientific exports. It records recipes, comparisons, and validation state instead of hiding them.</p>
+        <div class="portfolio-actions">
+          <a class="btn btn-primary" href="/software/castx/">Explore castx</a>
+          <a class="btn btn-default" href="https://github.com/Icy-Seas-Co-Laboratory/castx">View source</a>
+        </div>
+      </div>
+      <aside class="portfolio-callout">
+        <span class="status-badge status-alpha">Alpha</span>
+        <h3>Validation partners wanted</h3>
+        <p>We welcome research groups with representative cruise datasets who want transparent processing and are willing to help test results against trusted references.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="home-section portfolio-engagements">
+    <div class="container">
+      <p class="eyebrow">Ways to work with us</p>
+      <h2>Start with the scientific need, not a fixed technology stack.</h2>
+      <div class="portfolio-grid portfolio-grid-4">
+        <article><h3>Custom development</h3><p>Data pipelines, scientific applications, APIs, dashboards, and instrument integrations.</p></article>
+        <article><h3>Pilots &amp; deployments</h3><p>Focused field or laboratory trials with configuration, training, and operational support.</p></article>
+        <article><h3>Analysis &amp; modeling</h3><p>Reproducible statistical, spatial, time-series, and environmental modeling workflows.</p></article>
+        <article><h3>Data stewardship</h3><p>Metadata, curation, publication, archive delivery, and long-term project support.</p></article>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "index/posts.html" . }}
+
+  <section class="home-section portfolio-final-cta">
+    <div class="container portfolio-split">
+      <div>
+        <p class="eyebrow">Start a conversation</p>
+        <h2>What part of your research workflow needs to work better?</h2>
+        <p>Bring the dataset, instrument, field constraint, or operational problem. We will help define a practical next step.</p>
+      </div>
+      <div class="portfolio-actions portfolio-actions-right">
+        <a class="btn btn-primary btn-lg" href="/contact/">Discuss your project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

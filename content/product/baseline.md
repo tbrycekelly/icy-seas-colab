@@ -6,6 +6,8 @@ external_link = ""
 project_id = "other"
 short_description = ""
 title = "Baseline by Icy Seas"
+status = "Pilot engagements"
+weight = 4
 
 [[participants]]
     name = "Thomas Bryce Kelly"

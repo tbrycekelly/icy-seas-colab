@@ -1,0 +1,16 @@
+{{ $url := .Get "url" }}
+{{ with resources.GetRemote $url }}
+  {{ $data := . | transform.Unmarshal }}
+  <ul class="github-api">
+  {{ range $data }}
+    <li>
+      <div class="github-avatar"><img src="{{ .owner.avatar_url }}" alt="Avatar of {{ .owner.login }}"></div>
+      <div class="github-name"><strong><a href="{{ .html_url }}" target="_blank" rel="noopener">{{ .name | humanize }}</a></strong></div>
+      <div class="github-description"><p>{{ .description }}</p></div>
+      <div class="github-metadata"><small>Stars: {{ .stargazers_count }} | Forks: {{ .forks_count }} | Size: {{ .size }}{{ if .archived }} | Archived{{ end }}<br>Updated: {{ substr .updated_at 0 10 }} | Language: {{ .language }}</small></div>
+    </li>
+  {{ end }}
+  </ul>
+{{ else }}
+  {{ errorf "Unable to load GitHub API data from %s" $url }}
+{{ end }}

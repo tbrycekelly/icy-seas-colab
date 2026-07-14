@@ -2,6 +2,17 @@
 title = "Products & Services"
 +++
 
+# Scientific Consulting
+
+We design engagements around the research outcome: a field-ready system, a documented dataset, an analysis, a technical review, or a maintainable software workflow. Existing products such as [Datum](/product/datum/), [FixPoint](/product/fixpoint/), and [Pelagia](/product/pelagia/) can be adapted within a larger engagement.
+
+Common starting points include:
+
+- **Research data systems:** metadata, versioning, databases, portals, APIs, and archive delivery
+- **Ocean operations:** cruise logging, instrument integration, field dashboards, and deployment support
+- **Imaging and machine learning:** ingestion, segmentation, annotation, model development, and scalable processing
+- **Analysis and modeling:** statistical, spatial, time-series, and environmental workflows
+- **Technical communication:** proposals, manuscripts, reports, software documentation, and training
 
 A non-exhaustive list of services offered include:
 - Data Analysis
@@ -12,6 +23,8 @@ A non-exhaustive list of services offered include:
 - Data Management Services
 - Guest Lectures and Seminars
 - Software and Project Reviews
+
+[Contact us](/contact/) for a scoped conversation, pilot plan, or statement of work.
 
 ---
 
@@ -49,4 +62,3 @@ In addition to hourly services, we offer a comprehensive set of specialized serv
 - Federal contracts follow FAR-compliant billing structures.  
 - Detailed quotes and Statements of Work (SOWs) are provided upon request.  
 - ^ Field services are charged in blocks with a daily minimum of 4 hours and a maximum of 12 hours.
-

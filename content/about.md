@@ -1,51 +1,33 @@
 +++
-title = "About"
+title = "About Icy Seas"
+description = "An Alaska scientific consultancy connecting oceanographic experience, practical software, and reproducible data systems."
 +++
 
-# About Icy Seas Co-Laboratory LLC
+# Science works better when its systems do, too
 
-## Who We Are
-Icy Seas Co-Laboratory LLC is a scientific consultancy based in Fairbanks, Alaska.  
-We bring together expertise in oceanography, data science, and technical computing to help researchers, communities, and organizations better understand and respond to environmental change.  
+Icy Seas Co-Laboratory LLC is a scientific consultancy and software company based in Fairbanks, Alaska. We work where oceanography, data stewardship, instrumentation, modeling, and software engineering meet.
 
-Our work emphasizes:
-- **Oceanographic research** – from field observations to modeling.
-- **Data-driven solutions** – analysis, visualization, and reproducible workflows.
-- **Collaboration** – supporting Indigenous research centers, academic partners, and public stakeholders.
-- **Communication** – making science approachable through outreach, education, and storytelling.
+Our role is often to bridge gaps: between a field instrument and an analysis pipeline, between evolving project files and an archive-ready dataset, or between a large image collection and the ecological measurements a research team actually needs.
 
-We believe science works best when it is transparent, accessible, and collaborative.
+## What makes us different
 
----
+- **Scientific context.** We understand field constraints, analytical uncertainty, metadata, and the standards expected of research products.
+- **Practical engineering.** We design systems that can operate offline, remain inspectable, and fit the people and infrastructure already in place.
+- **Reproducibility.** We preserve inputs, transformations, versions, and decisions so results can be understood and revisited.
+- **Collaboration.** We work with researchers, Indigenous research centers, agencies, institutions, students, and community partners.
 
-## Mission
-Our mission is to connect advanced research with practical solutions, supporting sustainable decision-making in a rapidly changing Arctic.
+## The co-laboratory idea
 
----
+Icy Seas was founded on the belief that the strongest science crosses institutional and disciplinary boundaries. “Co-Laboratory” describes how we work: bringing the people who understand the science together with the people who operate the instruments, manage the data, build the software, and use the result.
 
-## Vision
-We envision a future where Arctic science and technology are integrated with community knowledge, ensuring resilient ecosystems and societies.
+## Based in Alaska, working across systems
 
----
+Our experience includes Arctic and sub-Arctic oceanography, shipboard and autonomous observations, pelagic imaging, biogeochemical modeling, scientific computing, and research-data delivery. The same principles also apply in laboratories and environmental programs beyond oceanography.
 
-## Policies
+## Professional standards
 
-Icy Seas Co-Laboratory LLC is committed to maintaining the highest professional and ethical standards in all of our work. As a contractor and collaborator with federal agencies, we maintain compliance with all required policies and documentation, including:
+Icy Seas maintains the business and compliance documentation required for professional and federal contracting. Our commitments include equal employment opportunity, non-discrimination, responsible data handling, transparent scopes of work, and clear project documentation.
 
-- **Equal Employment Opportunity (EEO):**  
-  We provide equal employment opportunities without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, or veteran status.  
+Review our [business policies](/docs/business_policies/) or request specific compliance documentation through our [contact page](/contact/).
 
-- **Non-Discrimination:**  
-  We do not discriminate in any program, service, or activity. We are committed to providing a welcoming, inclusive, and respectful environment for all collaborators, clients, and employees.  
-
-- **Affirmative Action:**  
-  We follow federal requirements to promote affirmative action in recruitment, hiring, training, and advancement.  
-
-- **Compliance Documentation:**  
-  We maintain all necessary certifications and documentation required for federal contracts, including but not limited to:
-  - EEO and Non-Discrimination Statements
-  - Affirmative Action Plan
-  - Federal Acquisition Regulation (FAR) compliance statements
-  - Business license, EIN, and SAM.gov registration  
-
-See a full directory of our policies [here](/docs/policies). Copies of specific policies and compliance documentation are available upon request.
+<div class="button-row"><a class="btn btn-primary" href="/contact/">Start a conversation</a><a class="btn btn-default" href="/member/">Meet the team</a></div>
