@@ -44,9 +44,13 @@ sort_position = 1
     name = "Icy Seas Co-Laboratory"
     role = "Founder"
 
+[[organizations]]
+    name = "International Arctic Research Center"
+    role = "Affiliate Faculty"
+
 +++
 
-I’m an oceanographer and founder of Icy Seas Co-Laboratory. I am also Affiliate Professor at the International Arctic Research Center. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail.
+I’m an oceanographer and founder of Icy Seas Co-Laboratory. I am also Affiliate Faculty at the International Arctic Research Center. The ocean is an amazing place, and I am excited to share my science of the ocean with you. I study how marine ecosystems interact with their physical environment. When not working I spend most of my time either on house projects or with my family our on a trail.
 
 I founded Icy Seas Co-Laboratory to create a space where science, technology, and community meet on equal footing. After years of working in academic oceanography, I saw the need for an organization that could move more nimbly-bridging rigorous research with open-source tools, transparent data systems, and meaningful collaboration across the Arctic. I wanted to build a platform that empowers scientists, students, and local observers alike to engage directly with the data and models shaping our understanding of the changing ocean.
 
@@ -66,4 +70,3 @@ Ultimately I am always interested in learning new approaches and working togethe
 **Mailing:**
 762 Lancaster Drive
 Fairbanks AK, 99775
-
