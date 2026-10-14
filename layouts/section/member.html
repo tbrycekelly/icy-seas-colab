@@ -7,22 +7,49 @@
     {{ partial "member_li" . }}
   {{ end }}
 
-  {{ $guests := where .Site.RegularPages "Section" "guests" }}
-  {{ if gt (len $guests) 0 }}
-    <section>
-      <h2>Affiliates</h2>
-      <div class="row">
-        {{ range $guests }}
-          {{ partial "guests_li" . }}
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
+  <section class="tag-team" aria-labelledby="tag-team-heading">
+    <div class="tag-team-intro">
+      <p class="eyebrow">Research collaboration</p>
+      <h2 id="tag-team-heading">The TAG</h2>
+      <p>The Trace Analysis Group at the University of Alaska Fairbanks’ International Arctic Research Center brings together researchers and technical partners to measure trace elements and nutrients in challenging environmental samples. Its work connects clean sample handling, analytical methods, quality control, and data stewardship across ocean, sea-ice, river, and terrestrial research.</p>
+      <p>Thomas supports The TAG through Icy Seas’ scientific software, laboratory systems, and reproducible data workflows.</p>
+      <p><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/">Explore The TAG at IARC &rarr;</a></p>
+    </div>
 
-  <section class="team-research-group" aria-labelledby="thetag-heading">
-    <h2 id="thetag-heading">The Trace Analysis Group (TheTAG)</h2>
-    <p>TheTAG is a research group at the University of Alaska Fairbanks’ International Arctic Research Center. Laura Whitmore Kelly’s work uses trace elements to investigate Arctic Ocean circulation, biogeochemical processes, and connections between sea ice and the water column.</p>
-    <p><a href="/guests/laurawhitmore/">Meet Laura Whitmore Kelly &rarr;</a></p>
+    <div class="tag-people-grid">
+      <article class="tag-person-card">
+        <img src="/avatar/tag-laura-whitmore.webp" alt="Laura Whitmore in Arctic field gear" width="700" height="700" loading="lazy" decoding="async">
+        <div>
+          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#laura-whitmore">Laura Whitmore</a></h3>
+          <p class="tag-person-role">Research Assistant Professor · IARC</p>
+          <p>Studies Arctic circulation and biogeochemistry using trace elements and nutrients.</p>
+        </div>
+      </article>
+      <article class="tag-person-card">
+        <img src="/avatar/tag-ana-aguilar-islas.webp" alt="Ana M. Aguilar-Islas" width="700" height="700" loading="lazy" decoding="async">
+        <div>
+          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#ana-aguilar-islas">Ana M. Aguilar-Islas</a></h3>
+          <p class="tag-person-role">Professor and Associate Dean · CFOS</p>
+          <p>Studies trace-metal cycling in high-latitude marine systems and develops seawater methods.</p>
+        </div>
+      </article>
+      <article class="tag-person-card">
+        <img src="/avatar/tag-mette-kaufman.webp" alt="Mette R. Kaufman in Arctic fieldwork" width="255" height="255" loading="lazy" decoding="async">
+        <div>
+          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#mette-kaufman">Mette R. Kaufman</a></h3>
+          <p class="tag-person-role">Research Technician · IARC</p>
+          <p>Supports environmental sampling, nutrient analysis, and laboratory operations.</p>
+        </div>
+      </article>
+      <article class="tag-person-card">
+        <img src="/avatar/tag-eleanor-bates.webp" alt="Eleanor Bates" width="900" height="900" loading="lazy" decoding="async">
+        <div>
+          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#eleanor-bates">Eleanor Bates</a></h3>
+          <p class="tag-person-role">Marine Geochemist · IARC</p>
+          <p>Studies iron and other trace-metal cycles in the upper ocean.</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   {{ $alumni := where .Site.RegularPages "Section" "alumni" }}
