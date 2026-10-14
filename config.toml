@@ -37,8 +37,8 @@ tag = "tags"
   asset_version = "20261014-1"
 
   [params.support]
-    one_time_url = "https://buy.stripe.com/00wcMY9ELeE27pmaJ7gA801"
-    monthly_url = "https://buy.stripe.com/eVqaEQ5ovgMaaBy4kJgA800"
+    one_time_url = "https://buy.stripe.com/eVqaEQ5ovgMaaBy4kJgA800"
+    monthly_url = "https://buy.stripe.com/00wcMY9ELeE27pmaJ7gA801"
 
   [[params.logo]]
     image = "favicon.png"
