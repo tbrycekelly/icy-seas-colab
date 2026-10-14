@@ -1,0 +1,27 @@
+[[members]]
+name = "Laura Whitmore"
+portrait = "avatar/tag-laura-whitmore.webp"
+link = "https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#laura-whitmore"
+interests = ["Arctic Ocean circulation", "Trace elements and nutrients", "Sea-ice biogeochemistry"]
+organizations = [{ role = "Research Assistant Professor", name = "IARC" }]
+
+[[members]]
+name = "Ana M. Aguilar-Islas"
+portrait = "avatar/tag-ana-aguilar-islas.webp"
+link = "https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#ana-aguilar-islas"
+interests = ["Marine trace-metal biogeochemistry", "High-latitude field sampling", "Analytical methods for seawater"]
+organizations = [{ role = "Professor and Associate Dean", name = "CFOS" }]
+
+[[members]]
+name = "Mette R. Kaufman"
+portrait = "avatar/tag-mette-kaufman.webp"
+link = "https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#mette-kaufman"
+interests = ["Nutrient analysis", "Marine and sea-ice field programs", "Laboratory operations"]
+organizations = [{ role = "Research Technician", name = "IARC" }]
+
+[[members]]
+name = "Eleanor Bates"
+portrait = "avatar/tag-eleanor-bates.webp"
+link = "https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#eleanor-bates"
+interests = ["Iron and trace-metal biogeochemistry", "Ocean time-series observations", "Dissolved and particulate metal cycling"]
+organizations = [{ role = "Marine Geochemist", name = "IARC" }]

@@ -16,40 +16,9 @@
       <p><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/">Explore The TAG at IARC &rarr;</a></p>
     </div>
 
-    <div class="tag-people-grid">
-      <article class="tag-person-card">
-        <img src="/avatar/tag-laura-whitmore.webp" alt="Laura Whitmore in Arctic field gear" width="700" height="700" loading="lazy" decoding="async">
-        <div>
-          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#laura-whitmore">Laura Whitmore</a></h3>
-          <p class="tag-person-role">Research Assistant Professor · IARC</p>
-          <p>Studies Arctic circulation and biogeochemistry using trace elements and nutrients.</p>
-        </div>
-      </article>
-      <article class="tag-person-card">
-        <img src="/avatar/tag-ana-aguilar-islas.webp" alt="Ana M. Aguilar-Islas" width="700" height="700" loading="lazy" decoding="async">
-        <div>
-          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#ana-aguilar-islas">Ana M. Aguilar-Islas</a></h3>
-          <p class="tag-person-role">Professor and Associate Dean · CFOS</p>
-          <p>Studies trace-metal cycling in high-latitude marine systems and develops seawater methods.</p>
-        </div>
-      </article>
-      <article class="tag-person-card">
-        <img src="/avatar/tag-mette-kaufman.webp" alt="Mette R. Kaufman in Arctic fieldwork" width="255" height="255" loading="lazy" decoding="async">
-        <div>
-          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#mette-kaufman">Mette R. Kaufman</a></h3>
-          <p class="tag-person-role">Research Technician · IARC</p>
-          <p>Supports environmental sampling, nutrient analysis, and laboratory operations.</p>
-        </div>
-      </article>
-      <article class="tag-person-card">
-        <img src="/avatar/tag-eleanor-bates.webp" alt="Eleanor Bates" width="900" height="900" loading="lazy" decoding="async">
-        <div>
-          <h3><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/people/#eleanor-bates">Eleanor Bates</a></h3>
-          <p class="tag-person-role">Marine Geochemist · IARC</p>
-          <p>Studies iron and other trace-metal cycles in the upper ocean.</p>
-        </div>
-      </article>
-    </div>
+    {{ range hugo.Data.tag_members.members }}
+      {{ partial "member_li" (dict "Params" . "Permalink" .link "Site" $.Site) }}
+    {{ end }}
   </section>
 
   {{ $alumni := where .Site.RegularPages "Section" "alumni" }}
