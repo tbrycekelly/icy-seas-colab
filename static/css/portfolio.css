@@ -56,7 +56,32 @@ body { color: var(--icy-text); }
 .eyebrow { color: var(--icy-teal); font-size: 14px; font-weight: 700; letter-spacing: .13em; margin-bottom: 12px; text-transform: uppercase; }
 .portfolio-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .portfolio-actions-right { justify-content: flex-end; }
-.btn-primary { background: var(--icy-blue); border-color: var(--icy-blue); }
+.btn-primary,
+.btn-primary:visited {
+  background: var(--icy-blue);
+  border-color: var(--icy-blue);
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: var(--icy-navy);
+  border-color: var(--icy-navy);
+  color: #fff;
+}
+.btn-primary.btn-outline,
+.btn-primary.btn-outline:visited {
+  background: transparent;
+  border-color: var(--icy-blue);
+  color: var(--icy-blue);
+}
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:active {
+  background: var(--icy-blue);
+  border-color: var(--icy-blue);
+  color: #fff;
+}
 
 .portfolio-hero-note,
 .portfolio-callout {
@@ -123,6 +148,14 @@ main#top p,
 }
 .portfolio-meta p { margin: 4px 0; }
 .button-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+.support-options { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 32px 0; }
+.support-option { background: var(--icy-ice); border: 1px solid var(--icy-line); border-radius: 12px; padding: 28px; }
+.support-option h2 { margin-top: 0; }
+.support-option .support-amount { color: var(--icy-navy); font-size: 28px; font-weight: 700; margin: 12px 0; }
+.support-option .btn { margin-top: 12px; }
+.support-note { color: #49616e; font-size: 15px; }
+.team-research-group { background: var(--icy-ice); border-left: 4px solid var(--icy-teal); margin: 36px 0; padding: 24px 28px; }
+.team-research-group h2 { margin-top: 0; }
 
 .portfolio-feature-image {
   margin: 34px auto 46px;
@@ -209,6 +242,7 @@ main#top p,
 }
 
 @media (max-width: 620px) {
+  .support-options { grid-template-columns: 1fr; }
   .portfolio-hero { padding: 65px 0 55px; }
   .portfolio-hero h1 { font-size: 38px; }
   .portfolio-grid-3, .portfolio-grid-4 { grid-template-columns: 1fr; }

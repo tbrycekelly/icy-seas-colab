@@ -34,7 +34,11 @@ tag = "tags"
   slogan = "Scientific data systems built for the field, the lab, and the long-term record."
   slogan_text = "Oceanographic expertise. Practical software. Reproducible science."
   custom_css = ["portfolio.css"]
-  asset_version = "20260714-1"
+  asset_version = "20261014-1"
+
+  [params.support]
+    one_time_url = "https://buy.stripe.com/00wcMY9ELeE27pmaJ7gA801"
+    monthly_url = "https://buy.stripe.com/eVqaEQ5ovgMaaBy4kJgA800"
 
   [[params.logo]]
     image = "favicon.png"
@@ -193,6 +197,12 @@ tag = "tags"
       name = "Team"
       url = "/member/"
       weight = 3
+      parent = "about"
+
+  [[menu.main]]
+      name = "Support Our Science"
+      url = "/support-our-science/"
+      weight = 4
       parent = "about"
 
   [[menu.main]]

@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<main class="container portfolio-page">
+  <h1>Team</h1>
+  {{ range (sort .Data.Pages ".Params.sort_position") }}
+    {{ partial "member_li" . }}
+  {{ end }}
+
+  {{ $guests := where .Site.RegularPages "Section" "guests" }}
+  {{ if gt (len $guests) 0 }}
+    <section>
+      <h2>Affiliates</h2>
+      <div class="row">
+        {{ range $guests }}
+          {{ partial "guests_li" . }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="team-research-group" aria-labelledby="thetag-heading">
+    <h2 id="thetag-heading">The Trace Analysis Group (TheTAG)</h2>
+    <p>TheTAG is a research group at the University of Alaska Fairbanks’ International Arctic Research Center. Laura Whitmore Kelly’s work uses trace elements to investigate Arctic Ocean circulation, biogeochemical processes, and connections between sea ice and the water column.</p>
+    <p><a href="/guests/laurawhitmore/">Meet Laura Whitmore Kelly &rarr;</a></p>
+  </section>
+
+  {{ $alumni := where .Site.RegularPages "Section" "alumni" }}
+  {{ if gt (len $alumni) 0 }}
+    <section>
+      <h2>Alumni</h2>
+      {{ range $alumni }}
+        {{ partial "alumni_li" . }}
+      {{ end }}
+    </section>
+  {{ end }}
+</main>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

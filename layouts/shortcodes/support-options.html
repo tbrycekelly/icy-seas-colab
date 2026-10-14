@@ -1,0 +1,22 @@
+<div class="support-options">
+  <section class="support-option" aria-labelledby="support-once-heading">
+    <h2 id="support-once-heading">Give once</h2>
+    <p class="support-amount">$25</p>
+    <p>Make a one-time contribution to Icy Seas science and open research tools.</p>
+    {{ with .Site.Params.support.one_time_url }}
+      <a class="btn btn-primary" href="{{ . }}">Contribute $25 once</a>
+    {{ else }}
+      <p class="support-note">Online checkout is coming soon. <a href="/contact/">Contact us to contribute</a>.</p>
+    {{ end }}
+  </section>
+  <section class="support-option" aria-labelledby="support-monthly-heading">
+    <h2 id="support-monthly-heading">Give monthly</h2>
+    <p class="support-amount">$20 / month</p>
+    <p>Provide ongoing support for research, data stewardship, and open tools.</p>
+    {{ with .Site.Params.support.monthly_url }}
+      <a class="btn btn-primary" href="{{ . }}">Contribute $20 monthly</a>
+    {{ else }}
+      <p class="support-note">Online checkout is coming soon. <a href="/contact/">Contact us to contribute</a>.</p>
+    {{ end }}
+  </section>
+</div>
