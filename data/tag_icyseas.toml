@@ -1,0 +1,6 @@
+[peter]
+name = "Peter Morton"
+portrait = "avatar/tag-peter-morton.jpg"
+link = "https://artsci.tamu.edu/oceanography/contact/profiles/peter-morton.html"
+interests = ["Marine trace metals", "Marine aerosols and particles", "Clean sampling and analytical methods"]
+organizations = [{ role = "Associate Research Scientist", name = "Texas A&M University" }]

@@ -157,6 +157,13 @@ main#top p,
 .tag-team { margin: 48px 0; }
 .tag-team-intro { margin-bottom: 28px; }
 .tag-team-intro p { max-width: 850px; }
+.tag-brand { align-items: center; display: flex; gap: 16px; margin: 0 0 24px; }
+.tag-brand img { flex: 0 0 auto; height: 96px; width: 96px; }
+.tag-brand-copy { display: flex; flex-direction: column; min-width: 0; }
+.tag-brand-title { align-items: baseline; display: flex; flex-wrap: wrap; line-height: 1; }
+.tag-brand-name { color: #005787; font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 4.8vw, 64px); font-weight: 700; letter-spacing: -.035em; }
+.tag-brand-location { color: #236192; font-size: clamp(20px, 2.3vw, 31px); font-weight: 900; letter-spacing: -.02em; margin-left: 5px; }
+.tag-brand-subtitle { color: #5e7786; font-size: clamp(11px, 1.2vw, 18px); font-weight: 800; letter-spacing: .13em; margin-top: 8px; text-align: center; text-transform: uppercase; }
 
 .portfolio-feature-image {
   margin: 34px auto 46px;
@@ -243,6 +250,11 @@ main#top p,
 }
 
 @media (max-width: 620px) {
+  .tag-brand { gap: 10px; }
+  .tag-brand img { height: 68px; width: 68px; }
+  .tag-brand-name { font-size: 37px; }
+  .tag-brand-location { font-size: 18px; }
+  .tag-brand-subtitle { font-size: 10px; }
   .support-options { grid-template-columns: 1fr; }
   .portfolio-hero { padding: 65px 0 55px; }
   .portfolio-hero h1 { font-size: 38px; }

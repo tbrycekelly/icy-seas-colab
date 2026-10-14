@@ -9,15 +9,27 @@
 
   <section class="tag-team" aria-labelledby="tag-team-heading">
     <div class="tag-team-intro">
-      <p class="eyebrow">Research collaboration</p>
-      <h2 id="tag-team-heading">The TAG</h2>
+      {{ partial "tag_brand" (dict "id" "tag-team-heading" "location" "IARC") }}
       <p>The Trace Analysis Group at the University of Alaska Fairbanks’ International Arctic Research Center brings together researchers and technical partners to measure trace elements and nutrients in challenging environmental samples. Its work connects clean sample handling, analytical methods, quality control, and data stewardship across ocean, sea-ice, river, and terrestrial research.</p>
-      <p>Thomas supports The TAG through Icy Seas’ scientific software, laboratory systems, and reproducible data workflows.</p>
       <p><a href="https://tbrycekelly.github.io/edu.uaf.iarc.tag/">Explore The TAG at IARC &rarr;</a></p>
     </div>
 
     {{ range hugo.Data.tag_members.members }}
       {{ partial "member_li" (dict "Params" . "Permalink" .link "Site" $.Site) }}
+    {{ end }}
+  </section>
+
+  <section class="tag-team" aria-labelledby="tag-icyseas-heading">
+    <div class="tag-team-intro">
+      {{ partial "tag_brand" (dict "id" "tag-icyseas-heading" "location" "IcySeas") }}
+      <p>The TAG at Icy Seas connects marine biogeochemistry and trace-metal analysis with scientific software and reproducible data systems. Thomas Bryce Kelly and Peter Morton bring complementary experience in ocean science, analytical methods, and research tools.</p>
+    </div>
+
+    {{ with site.GetPage "/member/thomaskelly" }}
+      {{ partial "member_li" . }}
+    {{ end }}
+    {{ with hugo.Data.tag_icyseas.peter }}
+      {{ partial "member_li" (dict "Params" . "Permalink" .link "Site" site) }}
     {{ end }}
   </section>
 
