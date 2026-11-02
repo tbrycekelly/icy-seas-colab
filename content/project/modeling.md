@@ -64,6 +64,14 @@ These questions often require combining sparse in situ observations with larger-
 
 # Featured Research
 
+## Gulf of Alaska Productivity and Bloom Timing
+
+[Waga and colleagues (2025)](/publication/2025waga/) evaluated primary-production estimates from shipboard optical observations, resolving productivity gradients across ocean fronts. A related [2026 study](/publication/2026waga/) used satellite chlorophyll records to examine how marine heatwaves reorganize bloom seasons. Together, these studies connect high-resolution observations with regional ecosystem variability.
+
+## Following Water Parcels in the Eastern Indian Ocean
+
+The [BLOOFINZ/INDITUN overview (Landry and colleagues, 2025)](/publication/2025landry/) connects nutrient supply, plankton food webs, and southern bluefin tuna spawning habitat. [Romero Fernández and colleagues (2026)](/publication/2026romero-fernandez/) examined the vertical movement of water during the field experiments, showing why comparisons along density surfaces help distinguish physical displacement from changes within a water parcel.
+
 ## Lateral Advection Supports Nitrogen Export in the Oligotrophic Open-Ocean Gulf of Mexico
 
 One example of this work is research examining nitrogen export dynamics in the oligotrophic Gulf of Mexico (see [details here](https://icyseascolab.io/publication/2021kelly/)).
@@ -108,8 +116,7 @@ Additional collaborative work has focused on the interaction between physical ci
 
 ### Publication
 
-- Journal of Geophysical Research: Oceans
-  - https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JC019723
+- [Journal of Geophysical Research: Oceans article](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JC019723)
 
 These projects typically involve:
 

@@ -1,0 +1,22 @@
+{{ $highlights := slice
+  (dict "page" "/publication/2026waga" "summary" "Examining how marine heatwaves reorganize the timing and seasonal pattern of phytoplankton blooms in the Gulf of Alaska.")
+  (dict "page" "/publication/2026odaly" "summary" "Connecting particle imagery, aggregate flux, and mesopelagic grazing with carbon storage in the Southern Ocean.")
+  (dict "page" "/publication/2025waga" "summary" "Using shipboard optical observations to resolve primary production and fine-scale gradients in the northern Gulf of Alaska.")
+  (dict "page" "/publication/2021kelly" "summary" "Combining field observations, remote sensing, and modeling to explain how lateral transport sustains nitrogen export in the open-ocean Gulf of Mexico.")
+  (dict "page" "/publication/2022whitmore" "summary" "Using a pan-Arctic synthesis to reveal the influence of continental margins on the Arctic Ocean's barium cycle.")
+  (dict "page" "/publication/2023mcgillicuddy" "summary" "Investigating nutrient supply and the relationship between phosphorus limitation and arsenic in pelagic Sargassum.")
+}}
+<div class="portfolio-grid portfolio-grid-3">
+{{ range $highlights }}
+  {{ $highlight := . }}
+  {{ with $.Site.GetPage .page }}
+  <article class="portfolio-card publication-card">
+    {{ partial "publication-thumbnail.html" . }}
+    <p class="publication-citation">{{ .Params.publication }} &middot; {{ .Date.Format "2006" }}</p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ $highlight.summary }}</p>
+    <a href="{{ .RelPermalink }}">Read the research &rarr;</a>
+  </article>
+  {{ end }}
+{{ end }}
+</div>

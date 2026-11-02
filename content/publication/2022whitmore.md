@@ -2,7 +2,7 @@
 abstract = "Early studies revealed relationships between barium (Ba), particulate organic carbon and silicate, suggesting applications for Ba as a paleoproductivity tracer and as a tracer of modern ocean circulation. But, what controls the distribution of barium (Ba) in the oceans? Here, we investigated the Arctic Ocean Ba cycle through a one-of-a-kind data set containing dissolved (dBa), particulate (pBa), and stable isotope Ba ratio (δ138Ba) data from four Arctic GEOTRACES expeditions conducted in 2015. We hypothesized that margins would be a substantial source of Ba to the Arctic Ocean water column. The dBa, pBa, and δ138Ba distributions all suggest significant modification of inflowing Pacific seawater over the shelves, and the dBa mass balance implies that ∼50% of the dBa inventory (upper 500 m of the Arctic water column) was supplied by nonconservative inputs. Calculated areal dBa fluxes are up to 10 μmol m−2 day−1 on the margin, which is comparable to fluxes described in other regions. Applying this approach to dBa data from the 1994 Arctic Ocean Survey yields similar results. The Canadian Arctic Archipelago did not appear to have a similar margin source; rather, the dBa distribution in this section is consistent with mixing of Arctic Ocean-derived waters and Baffin Bay-derived waters. Although we lack enough information to identify the specifics of the shelf sediment Ba source, we suspect that a sedimentary remineralization and terrigenous sources (e.g., submarine groundwater discharge or fluvial particles) are contributors."
 date = "2022-03-22T16:37:31+02:00"
 image = ""
-image_preview = ""
+image_preview = "/publications/previews/2022whitmore.webp"
 math = false
 publication = "Journal of Geophysical Research: Oceans"
 publication_short = ""

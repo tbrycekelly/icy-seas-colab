@@ -2,7 +2,7 @@
 abstract = "The oceanographic ecology of pelagic Sargassum, and the means by which these floating macroalgae thrive in the nutrient-poor waters of the open ocean, have been studied for decades. Beginning in 2011, the Great Atlantic Sargassum Belt (GASB) emerged, with Sargassum proliferating in the tropical Atlantic and Caribbean where it had not previously been abundant. Here we show that the nutritional status of Sargassum in the GASB is distinct, with higher nitrogen and phosphorus content than populations residing in its Sargasso Sea habitat. Moreover, we find that variations in arsenic content of Sargassum reflect phosphorus limitation, following a hyperbolic relationship predicted from Michaelis-Menten nutrient uptake kinetics. Although the sources of nutrients fueling the GASB are not yet clear, our results suggest that nitrogen and phosphorus content of Sargassum, together with its isotopic composition, can be used to identify those sources, whether they be atmospheric, oceanic, or riverine in origin."
 date = "2023-10-12T16:37:31+02:00"
 image = ""
-image_preview = ""
+image_preview = "/publications/previews/2023mcgillicuddy.webp"
 math = false
 publication = "Nature Communications"
 publication_short = ""

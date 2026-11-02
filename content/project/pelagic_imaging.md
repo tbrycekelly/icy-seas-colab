@@ -5,7 +5,7 @@ image = ""
 project_id = ""
 short_description = ""
 title = "Pelagic Imaging and Machine Learning"
-description = "Pelagic imaging workflows, machine learning, and autonomous observing systems for marine ecosystem research."
+description = "Pelagic imaging, machine learning, and autonomous observations for ecosystem research and ocean carbon cycling."
 tags = ["oceanography", "machine-learning", "plankton", "imaging", "autonomous-systems", "Arctic"]
 
 [[participants]]
@@ -132,6 +132,12 @@ I am particularly interested in building systems that move imaging workflows clo
 ---
 
 ## Featured Research
+
+### Particle Imaging and Carbon Storage in the Southern Ocean
+
+In [O'Daly and colleagues (2026)](/publication/2026odaly/), underwater imaging and image classification distinguished living organisms and detrital particles across Southern Ocean transects. The study identified contrasting export pathways involving fluffy aggregates and zooplankton-mediated particle transformations. It connects observations of particle type and grazing below the sunlit ocean with the processes that store carbon at depth.
+
+This collaboration illustrates the scientific questions behind our imaging work. It complements our Northern Gulf of Alaska research by extending the focus from plankton community structure to particle transformations and deep-ocean carbon storage.
 
 ### Using In Situ Imaging to Describe Zooplankton Communities in the Northern Gulf of Alaska
 

@@ -1,79 +1,74 @@
 +++
 title = "Research"
+description = "Icy Seas is an Alaska-based research institute advancing ocean science, reproducible image analysis, open data standards, and connected laboratories."
 +++
 
-<figure style="float: right; margin: 1em 1em 1em 1em; text-align: center; max-width: 25%; min-width: 200px;" >
-  <img src="/assets/arctic.jpg" alt="" style="border: 2px solid #444; border-radius: 8px;">
-  <figcaption style="font-size: 0.9em; color: #666;">
-    We work globally and have the experience to prove it. 
-  </figcaption>
+<p class="eyebrow">Research at Icy Seas</p>
+
+# An Alaska research institute exploring a changing ocean
+
+<p class="portfolio-lead">Icy Seas Co-Laboratory is a private research institute based in Fairbanks, Alaska. We bring oceanography, scientific computing, and collaborative discovery together to understand marine systems and improve how science is done.</p>
+
+We carry out research, develop scientific methods and software, and work with researchers, students, institutions, and community partners. Our consulting and engineering work grows from that scientific practice: the questions we ask in the field shape the tools we build, and those tools make new investigations possible.
+
+## What we're working on
+
+Our current work connects four priorities: turning imagery into ecological evidence, making machine-learning results reproducible, keeping scientific data portable, and connecting laboratory observations with the conditions in which they were collected.
+
+<div class="portfolio-grid portfolio-grid-2">
+<article class="portfolio-card">
+<p class="eyebrow">Ocean observation</p>
+<h3>Pelagia</h3>
+<p>How can large collections of underwater imagery help us understand marine ecosystems? We are developing Pelagia to connect raw images with reviewed detections, measurements, classifications, and usable oceanographic datasets. The work brings image processing and scientific review together so researchers can trace ecological measurements back to the original observation.</p>
+<a href="/product/pelagia/">Explore Pelagia &rarr;</a>
+</article>
+<article class="portfolio-card">
+<p class="eyebrow">Reproducible machine learning</p>
+<h3>Oracle Builder</h3>
+<p>We are developing workflows that preserve the evidence behind scientific image models: the dataset used, its annotations, the model configuration, and the resulting training and evaluation records. Oracle Builder connects this work with Pelagia, supporting classification, segmentation, and repeatable experiments that researchers can inspect and compare.</p>
+<a href="/software/technology-lab/#oracle-builder">About Oracle Builder &rarr;</a>
+</article>
+<article class="portfolio-card">
+<p class="eyebrow">Open research infrastructure</p>
+<h3>Open data standards</h3>
+<p>Scientific records need to remain understandable across instruments, software, and research teams. We are developing portable data structures and documented formats that keep observations connected to metadata, calibration, and processing history. This includes work on the Telemetry Archive Standard and transparent processing and export workflows in castx.</p>
+<a href="/software/castx/">See reproducible data processing &rarr;</a>
+</article>
+<article class="portfolio-card">
+<p class="eyebrow">Connected laboratories</p>
+<h3>Laboratory integrations</h3>
+<p>We are exploring how instrument connections, environmental sensors, and smart laboratory monitoring can strengthen scientific reliability. Our work includes Baseline monitoring pilots and a collaboration around UAF's new Element XR facility, linking instrument status, laboratory conditions, sample information, and data stewardship with the research workflow.</p>
+<a href="/post/2026-element-xr/">Read about the smart laboratory pilot &rarr;</a>
+</article>
+</div>
+
+<figure class="portfolio-feature-image portfolio-feature-image-wide">
+<img src="/assets/dpi-on-deck-1800.webp" alt="Pelagic imaging equipment on the deck of a research vessel." loading="lazy" decoding="async">
+<figcaption>Our research connects field observations with the computational tools needed to interpret them.</figcaption>
 </figure>
 
-# Mission
+## The science behind our work
 
-At Icy Seas Co-Laboratory LLC, our mission is to bridge science, technology, and community to advance understanding of our changing oceans. We combine rigorous research, innovative data tools, and collaborative partnerships to transform complex information into actionable knowledge. By making science transparent, reproducible, and accessible, we empower decision-makers, support Indigenous and local communities, and contribute to resilient ecosystems in the Arctic and beyond.
+Our broader research asks how ocean circulation, nutrient supply, and biological communities interact. We combine shipboard observations, chemical measurements, pelagic imaging, satellite data, and numerical models to study carbon cycling and ecosystem change in the Arctic, sub-Arctic, and beyond.
 
----
+That experience includes work on plankton communities in the Northern Gulf of Alaska, autonomous pelagic imaging, physical-biogeochemical modeling, and immersive science education through Alaska Science Stories. Across these efforts, we connect observations at the scale of individual organisms and samples with processes operating across entire ocean regions.
 
-### Philosophy
-At **Icy Seas Co-Laboratory LLC**, we believe that effective science consulting blends rigorous analysis with transparency and collaboration.  
-Our approach emphasizes:
-- **Reproducibility** – clear, documented workflows that can be revisited and reused.
-- **Flexibility** – tailoring solutions to the unique needs of each partner.
-- **Clarity** – turning complex datasets and models into actionable insights.
-- **Collaboration** – building long-term relationships with communities, agencies, and research groups.
+Recent collaborations connect [Southern Ocean particle imaging with carbon storage](/publication/2026odaly/), [underway optical measurements with primary production](/publication/2025waga/), and [marine heatwaves with bloom timing in the Gulf of Alaska](/publication/2026waga/). In the eastern Indian Ocean, [BLOOFINZ/INDITUN](/publication/2025landry/) and [analysis of vertical water movements](/publication/2026romero-fernandez/) link careful field sampling with the interpretation of plankton ecosystems and tuna spawning habitat.
 
----
+Learn more about our [pelagic imaging research](/project/pelagic_imaging/), [modeling and scientific computing](/project/modeling/), and [science outreach](/project/akss/).
 
-### Workflow
-Our typical workflow follows these steps:
+## Selected contributions
 
-1. **Discovery & Scoping** – understanding your goals, needs, and existing resources.  
-2. **Data Integration** – organizing and structuring datasets (field, model, and observational).  
-3. **Analysis & Modeling** – applying statistical and computational techniques.  
-4. **Interpretation** – translating results into clear reports, visualizations, and recommendations.  
-5. **Delivery & Support** – sharing final products and providing training or long-term support as needed.  
+Our researchers have contributed to collaborative science across their careers, including work that predates Icy Seas. These recent studies and earlier contributions illustrate the scientific foundation of the institute's research.
 
-This workflow is designed to be iterative, with opportunities for feedback at every stage.
+{{< research-publications >}}
 
----
+[Browse all publications](/publication/).
 
-### Tools We Use
-We use open-source and industry-standard tools to ensure reproducibility and accessibility:  
+## How we work
 
-- **Programming & Analysis:** Python, R, Julia  
-- **Databases:** PostgreSQL, MongoDB, SQLite  
-- **Modeling & Simulation:** Numerical ocean models, machine learning workflows  
-- **Collaboration:** GitHub, Jupyter, R Shiny, interactive dashboards  
-- **Infrastructure:** Cloud platforms, HPC clusters, and self-hosted secure servers  
+We build research around questions, observations, and methods that others can examine and extend. That means documenting uncertainty and analytical decisions, preserving the connection between source data and results, sharing methods and open-source components, and developing workflows with the people who will use them.
 
-Learn more about our [tools here](/docs/tools).
+Collaboration is central to the co-laboratory idea. We welcome connections with researchers, laboratories, students, and community partners interested in ocean science, imaging, open data, or scientific instrumentation.
 
----
-# Contributions to Science
-
-As a team of professional scientists, we have contributed to more than 100 peer-reviewed scientific publications within our various disciplines. Here are several projects of which we are particularly proud.
-
-<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; width: 30%;">
-  <a href="/publication/2021kelly/"><img src="/research/kelly-2021.png" width="250px" alt="cover page of kelly et al. 2021." style="border: 2px solid #444; border-radius: 8px;"></a>
-  <figcaption style="font-size: 0.9em; color: #666; max-width: 250px;">
-    Analyzing ocean circulation, biological rates, and carbon export to determine the source and fate of nutrients in the Gulf of Mexico.
-  </figcaption>
-</figure>
-
-<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; width: 30%;" >
-  <a href="/publication/2022whitmore/"><img src="/research/whitmore-2022.png" width="250px" alt="cover page of kelly et al. 2021." style="border: 2px solid #444; border-radius: 8px;"></a>
-  <figcaption style="font-size: 0.9em; color: #666; max-width: 250px;">
-    A comprehensive study of metals within the Arctic Ocean's Pacific-sector. 
-  </figcaption>
-</figure>
-
-<figure style="float: left; margin: 1em 1em 1em 1em; text-align: center; width: 30%;">
-  <a href="/publication/2023mcgillicuddy/"><img src="/research/mcgillicuddy-2023.png" width="250px" alt="cover page of kelly et al. 2021." style="border: 2px solid #444; border-radius: 8px;"></a>
-  <figcaption style="font-size: 0.9em; color: #666; max-width: 250px;">
-    Exploring how and why Sargassum is enriched in Arsenic.
-  </figcaption>
-</figure>
-
-_See a full list of our publications [here](/publication/)._
-
+<div class="button-row"><a class="btn btn-primary" href="/contact/">Discuss a research collaboration</a><a class="btn btn-default" href="/support-our-science/">Support our science</a></div>

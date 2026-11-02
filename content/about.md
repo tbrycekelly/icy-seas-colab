@@ -1,11 +1,11 @@
 +++
 title = "About Icy Seas"
-description = "An Alaska scientific consultancy connecting oceanographic experience, practical software, and reproducible data systems."
+description = "An Alaska research institute connecting oceanographic experience, practical software, and reproducible science."
 +++
 
 # Science works better when its systems do, too
 
-Icy Seas Co-Laboratory LLC is a scientific consultancy and software company based in Fairbanks, Alaska. We work where oceanography, data stewardship, instrumentation, modeling, and software engineering meet.
+Icy Seas Co-Laboratory LLC is a private research institute based in Fairbanks, Alaska, carrying out collaborative science alongside scientific consulting and software development. We work where oceanography, data stewardship, instrumentation, modeling, and software engineering meet.
 
 Our role is often to bridge gaps: between a field instrument and an analysis pipeline, between evolving project files and an archive-ready dataset, or between a large image collection and the ecological measurements a research team actually needs.
 

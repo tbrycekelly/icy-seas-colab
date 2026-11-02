@@ -1,0 +1,14 @@
+{{ $preview := or .Params.image_preview .Params.image }}
+<a class="publication-thumbnail" href="{{ $.RelPermalink }}" aria-label="Read {{ $.Title }}">
+{{ with $preview }}
+  <img src="{{ . | relURL }}" alt="Article preview of {{ $.Title }}" loading="lazy" decoding="async" width="480" height="640">
+  {{ with $.Params.preview_label }}<span class="publication-preview-label">{{ . }}</span>{{ end }}
+{{ else }}
+  <span class="publication-record-preview" aria-hidden="true">
+    <span class="publication-record-label">Citation preview</span>
+    <strong>{{ .Title }}</strong>
+    <span>{{ .Params.publication }}</span>
+    <span>{{ .Date.Format "2006" }}</span>
+  </span>
+{{ end }}
+</a>

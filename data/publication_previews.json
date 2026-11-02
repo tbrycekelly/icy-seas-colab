@@ -1,0 +1,128 @@
+{
+  "2018kelly": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Kelly_et_al-2018.pdf"
+  },
+  "2019kelly": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2019.00508/pdf"
+  },
+  "2019whitmore": {
+    "kind": "citation-preview",
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0304420319302087",
+    "note": "No accessible article PDF found; the template renders a labeled citation preview."
+  },
+  "2020charette": {
+    "kind": "article-page",
+    "page": 2,
+    "source_url": "https://oceanrep.geomar.de/id/eprint/49484/1/2019JC015920.pdf"
+  },
+  "2020kahru": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Kahru_et_al-2019.pdf"
+  },
+  "2020kranz": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Kranz_et_al-2020.pdf"
+  },
+  "2020wang": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Wang_et_al-2020.pdf"
+  },
+  "2020whitmore": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2019JC015842"
+  },
+  "2021kelly": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://www.nature.com/articles/s41467-021-23678-9.pdf"
+  },
+  "2022whitmore": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2021JC017417",
+    "source_asset": "static/research/whitmore-2022.png"
+  },
+  "2022yingling": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Yingling_et_al-2021.pdf"
+  },
+  "2023decima": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://www.nature.com/articles/s41467-022-35204-6.pdf"
+  },
+  "2023mcgillicuddy": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://www.nature.com/articles/s41467-023-41904-4.pdf"
+  },
+  "2023stukel": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://www.nature.com/articles/s41467-023-37771-8.pdf"
+  },
+  "2024gilbert": {
+    "kind": "citation-preview",
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S000326702300020X",
+    "note": "No accessible article PDF found; the template renders a labeled citation preview."
+  },
+  "2024lowin": {
+    "kind": "citation-preview",
+    "source_url": "https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-12-20491",
+    "note": "No accessible article PDF found; the template renders a labeled citation preview."
+  },
+  "2024odaly": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.1002/lno.12561"
+  },
+  "2024stukel": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Stukel_et_al-2024-GBC.pdf"
+  },
+  "2025kanna": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://bg.copernicus.org/articles/22/1057/2025/bg-22-1057-2025.pdf"
+  },
+  "2025landry": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://myweb.fsu.edu/mstukel/Manuscripts/Landry_et_al-2025-BLOOFINZ-IO-Overview.pdf"
+  },
+  "2025polyakov": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://www.vliz.be/imisdocs/publications/411892.pdf"
+  },
+  "2025waga": {
+    "kind": "citation-preview",
+    "source_url": "https://doi.org/10.1364/OE.573466",
+    "note": "No accessible article PDF found; the template renders a labeled citation preview."
+  },
+  "2026odaly": {
+    "kind": "article-page",
+    "page": 1,
+    "source_url": "https://repository.library.noaa.gov/view/noaa/76125/noaa_76125_DS1.pdf"
+  },
+  "2026romero-fernandez": {
+    "kind": "preprint-page",
+    "page": 1,
+    "source_url": "https://www.biorxiv.org/content/biorxiv/early/2025/10/24/2025.10.23.680922.full.pdf"
+  },
+  "2026waga": {
+    "kind": "citation-preview",
+    "source_url": "https://doi.org/10.1002/lno.70487",
+    "note": "No accessible article PDF found; the template renders a labeled citation preview."
+  }
+}
