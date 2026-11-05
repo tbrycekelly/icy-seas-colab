@@ -3,6 +3,7 @@
 
 <main class="container portfolio-page">
   <h1>Team</h1>
+  <p>Interested in joining Icy Seas? Learn about our <a href="/opportunities/">staff scientist application process and funding model</a>.</p>
   {{ range (sort .Data.Pages ".Params.sort_position") }}
     {{ partial "member_li" . }}
   {{ end }}

@@ -71,4 +71,6 @@ We build research around questions, observations, and methods that others can ex
 
 Collaboration is central to the co-laboratory idea. We welcome connections with researchers, laboratories, students, and community partners interested in ocean science, imaging, open data, or scientific instrumentation.
 
+Interested in building your research program at Icy Seas? We review staff scientist applications on an ongoing basis. Learn about our [employment opportunities, soft-money funding model, and proposal support](/opportunities/).
+
 <div class="button-row"><a class="btn btn-primary" href="/contact/">Discuss a research collaboration</a><a class="btn btn-default" href="/support-our-science/">Support our science</a></div>

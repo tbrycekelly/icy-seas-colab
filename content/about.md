@@ -31,6 +31,10 @@ Icy Seas was founded on the belief that the strongest science crosses institutio
 
 Our experience includes Arctic and sub-Arctic oceanography, shipboard and autonomous observations, pelagic imaging, biogeochemical modeling, scientific computing, and research-data delivery. The same principles also apply in laboratories and environmental programs beyond oceanography.
 
+## Build your research with us
+
+We review staff scientist applications on an ongoing basis. Our soft-money appointments offer benefits, proposal support, and the possibility of bringing existing awards to Icy Seas where transfers are feasible. Read about [employment, funding, and how to apply](/opportunities/).
+
 ## Professional standards
 
 Icy Seas maintains the business and compliance documentation required for professional and federal contracting. Our commitments include equal employment opportunity, non-discrimination, responsible data handling, transparent scopes of work, and clear project documentation.

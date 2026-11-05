@@ -1,4 +1,5 @@
 +++
+draft = true
 description = "Awesome vacancy!"
 external_link = "https://google.com"
 vacancy_id = ""

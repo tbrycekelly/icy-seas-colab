@@ -23,6 +23,12 @@ For consulting, product pilots, research partnerships, or validation collaborati
 
 ---
 
+## Staff scientist applications
+
+We have no current unfilled positions, but we review staff scientist applications on an ongoing basis. Read about [employment, funding, benefits, and how to apply](/opportunities/), or email **[admin@icyseascolab.io](mailto:admin@icyseascolab.io?subject=Staff%20scientist%20application)**.
+
+---
+
 ## File and Data Access  
 Collaborators can access shared project data, documents, and tools through our secure Nextcloud instance:  
 ☁️ [cloud.icyseascolab.io](https://cloud.icyseascolab.io)
